@@ -14,6 +14,7 @@ import { simulateWithConfidence } from "../lib/confidence";
 import type { SimulationWithCI } from "../lib/confidence";
 import type { SharedPartyInput } from "../lib/share-types";
 import DistrictDrilldown from "./DistrictDrilldown";
+import Hemicycle from "./Hemicycle";
 
 interface PartyRow {
   id: string;
@@ -217,6 +218,13 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
 
       {/* Results */}
       {result && <SimulationResults result={result} parties={parties} />}
+
+      {/* Hemicycle */}
+      {result && (
+        <div className="mt-4">
+          <Hemicycle seats={result.result.seats} />
+        </div>
+      )}
 
       {/* Share */}
       {result && (
