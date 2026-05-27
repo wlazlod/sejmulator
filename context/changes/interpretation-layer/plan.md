@@ -59,7 +59,7 @@ razem → lewica → ko → polska2050 → psl → pis → konfederacja → kkp
 
 ## Progress
 
-- Phase 1: pending
-- Phase 2: pending
-- Phase 3: pending
-- Phase 4: pending
+- Phase 1: done (commit `c0af122`)
+- Phase 2: done (commit `541a6ee`)
+- Phase 3: done (commit `32a1436`)
+- Phase 4: done (commit `98d08c5`)
