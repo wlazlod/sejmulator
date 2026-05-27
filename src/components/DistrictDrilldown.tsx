@@ -1,0 +1,208 @@
+/**
+ * DistrictDrilldown — per-district seat breakdown with sort/filter.
+ *
+ * Renders below SimulationResults. Shows 41 districts with stacked seat bars,
+ * tight race indicators, and controls for sorting/filtering.
+ */
+
+import { useState, useMemo } from "react";
+import type { DistrictSimulationResult } from "../lib/types";
+import { PARTY_COLORS } from "./party-colors";
+
+type SortKey = "number" | "name" | "seats" | "tightRaces";
+
+interface PartyInfo {
+  id: string;
+  shortName: string;
+}
+
+interface DistrictDrilldownProps {
+  districts: DistrictSimulationResult[];
+  parties: PartyInfo[];
+}
+
+export default function DistrictDrilldown({ districts, parties }: DistrictDrilldownProps) {
+  const [expanded, setExpanded] = useState(false);
+  const [sortKey, setSortKey] = useState<SortKey>("number");
+  const [filterTightRaces, setFilterTightRaces] = useState(false);
+
+  const totalTightRaces = useMemo(() => districts.reduce((sum, d) => sum + d.tightRaces.length, 0), [districts]);
+
+  const filtered = useMemo(() => {
+    let result = [...districts];
+    if (filterTightRaces) {
+      result = result.filter((d) => d.tightRaces.length > 0);
+    }
+    result.sort((a, b) => {
+      switch (sortKey) {
+        case "number":
+          return a.districtNumber - b.districtNumber;
+        case "name":
+          return a.districtName.localeCompare(b.districtName, "pl");
+        case "seats":
+          return b.districtSize - a.districtSize;
+        case "tightRaces":
+          return b.tightRaces.length - a.tightRaces.length;
+      }
+    });
+    return result;
+  }, [districts, sortKey, filterTightRaces]);
+
+  const partyNameMap = useMemo(() => {
+    const map: Record<string, string> = {};
+    for (const p of parties) {
+      map[p.id] = p.shortName;
+    }
+    return map;
+  }, [parties]);
+
+  if (!expanded) {
+    return (
+      <div className="mt-4">
+        <button
+          onClick={() => {
+            setExpanded(true);
+          }}
+          className="w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-left text-sm font-medium text-gray-700 hover:bg-gray-50"
+        >
+          Pokaż okręgi ({districts.length} okręgów
+          {totalTightRaces > 0 && `, ${totalTightRaces} tight races`})
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-4 rounded-lg border border-gray-200 bg-white p-4">
+      {/* Header */}
+      <div className="mb-3 flex items-center justify-between">
+        <h2 className="font-semibold">
+          Okręgi wyborcze ({filtered.length}/{districts.length})
+        </h2>
+        <button
+          onClick={() => {
+            setExpanded(false);
+          }}
+          className="text-sm text-gray-500 hover:text-gray-700"
+        >
+          Zwiń
+        </button>
+      </div>
+
+      {/* Controls */}
+      <div className="mb-4 flex flex-wrap items-center gap-3">
+        <div className="flex items-center gap-1.5">
+          <label className="text-xs text-gray-500">Sortuj:</label>
+          <select
+            value={sortKey}
+            onChange={(e) => {
+              setSortKey(e.target.value as SortKey);
+            }}
+            className="rounded border px-2 py-1 text-xs"
+          >
+            <option value="number">Nr okręgu</option>
+            <option value="name">Nazwa</option>
+            <option value="seats">Liczba mandatów</option>
+            <option value="tightRaces">Tight races</option>
+          </select>
+        </div>
+
+        <label className="flex items-center gap-1.5 text-xs text-gray-500">
+          <input
+            type="checkbox"
+            checked={filterTightRaces}
+            onChange={(e) => {
+              setFilterTightRaces(e.target.checked);
+            }}
+            className="rounded"
+          />
+          Tylko tight races
+        </label>
+      </div>
+
+      {/* District list */}
+      <div className="space-y-2">
+        {filtered.map((district) => (
+          <DistrictCard key={district.districtNumber} district={district} partyNameMap={partyNameMap} />
+        ))}
+      </div>
+
+      {filtered.length === 0 && (
+        <p className="py-4 text-center text-sm text-gray-400">Brak okręgów spełniających kryteria.</p>
+      )}
+    </div>
+  );
+}
+
+function DistrictCard({
+  district,
+  partyNameMap,
+}: {
+  district: DistrictSimulationResult;
+  partyNameMap: Record<string, string>;
+}) {
+  const seatEntries = Object.entries(district.seats)
+    .filter(([, seats]) => seats > 0)
+    .sort((a, b) => b[1] - a[1]);
+
+  return (
+    <div className="rounded border border-gray-100 p-2.5">
+      {/* Header row */}
+      <div className="mb-1.5 flex items-baseline justify-between">
+        <div className="text-sm">
+          <span className="font-medium text-gray-500">#{district.districtNumber}</span>{" "}
+          <span className="font-medium">{district.districtName}</span>
+          <span className="ml-1.5 text-xs text-gray-400">({district.districtSize} mandatów)</span>
+        </div>
+        {district.tightRaces.length > 0 && (
+          <span className="rounded bg-amber-50 px-1.5 py-0.5 text-xs text-amber-600">
+            {district.tightRaces.length} tight
+          </span>
+        )}
+      </div>
+
+      {/* Stacked bar */}
+      <div className="mb-1 flex h-5 overflow-hidden rounded bg-gray-100">
+        {seatEntries.map(([partyId, seats]) => {
+          const width = (seats / district.districtSize) * 100;
+          const color = PARTY_COLORS[partyId] ?? "#6b7280";
+          return (
+            <div
+              key={partyId}
+              className="flex items-center justify-center text-[10px] font-bold text-white"
+              style={{ width: `${width}%`, backgroundColor: color }}
+              title={`${partyNameMap[partyId] ?? partyId}: ${seats}`}
+            >
+              {seats >= 2 ? seats : ""}
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Seat breakdown text */}
+      <div className="flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-gray-600">
+        {seatEntries.map(([partyId, seats]) => (
+          <span key={partyId}>
+            <span
+              className="mr-0.5 inline-block h-2 w-2 rounded-full"
+              style={{ backgroundColor: PARTY_COLORS[partyId] ?? "#6b7280" }}
+            />
+            {partyNameMap[partyId] ?? partyId} {seats}
+          </span>
+        ))}
+      </div>
+
+      {/* Tight race details */}
+      {district.tightRaces.length > 0 && (
+        <div className="mt-1.5 space-y-0.5">
+          {district.tightRaces.map((tr, i) => (
+            <div key={i} className="text-xs text-amber-600">
+              {partyNameMap[tr.currentHolder] ?? tr.currentHolder} / {partyNameMap[tr.challenger] ?? tr.challenger}
+              <span className="ml-1 text-amber-400">({(tr.margin * 100).toFixed(1)}%)</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}

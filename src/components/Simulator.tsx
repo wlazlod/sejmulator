@@ -12,6 +12,7 @@ import type { PartyPollInput } from "../lib/types";
 import type { ElectionData } from "../data/types";
 import { simulateWithConfidence } from "../lib/confidence";
 import type { SimulationWithCI } from "../lib/confidence";
+import DistrictDrilldown from "./DistrictDrilldown";
 
 interface PartyRow {
   id: string;
@@ -51,16 +52,7 @@ function getDefaultParties(): PartyRow[] {
   });
 }
 
-const PARTY_COLORS: Record<string, string> = {
-  pis: "#1e3a8a",
-  ko: "#f97316",
-  polska2050: "#eab308",
-  psl: "#22c55e",
-  lewica: "#dc2626",
-  konfederacja: "#1e293b",
-  kkp: "#7c3aed",
-  razem: "#be185d",
-};
+import { PARTY_COLORS } from "./party-colors";
 
 export default function Simulator() {
   const [parties, setParties] = useState<PartyRow[]>(getDefaultParties);
@@ -174,6 +166,14 @@ export default function Simulator() {
 
       {/* Results */}
       {result && <SimulationResults result={result} parties={parties} />}
+
+      {/* District Drilldown */}
+      {result && (
+        <DistrictDrilldown
+          districts={result.result.districts}
+          parties={parties.map((p) => ({ id: p.id, shortName: p.shortName }))}
+        />
+      )}
 
       {/* Disclaimer */}
       <p className="mt-4 text-center text-xs text-gray-400">
