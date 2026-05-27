@@ -15,6 +15,8 @@ import type { SimulationWithCI } from "../lib/confidence";
 import type { SharedPartyInput } from "../lib/share-types";
 import DistrictDrilldown from "./DistrictDrilldown";
 import Hemicycle from "./Hemicycle";
+import Coalitions from "./Coalitions";
+import { normalizePolls } from "../lib/normalization";
 
 interface PartyRow {
   id: string;
@@ -76,28 +78,57 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
   const [result, setResult] = useState<SimulationWithCI | null>(null);
   const [shareUrl, setShareUrl] = useState<string | null>(null);
   const [sharing, setSharing] = useState(false);
+  const [undecided, setUndecided] = useState(0);
+  const [otherParties, setOtherParties] = useState(0);
+  const [perturbationPct, setPerturbationPct] = useState(1.5);
 
   const electionDatasets = useMemo(() => {
     return elections as unknown as Record<string, ElectionData>;
   }, []);
 
   const handleSimulate = useCallback(() => {
+    // Normalize polls (remove undecided, keep other parties in vote pool)
+    const normResult = normalizePolls({
+      partyPercentages: parties
+        .filter((p) => p.percentage > 0)
+        .map((p) => ({ partyId: p.id, percentage: p.percentage })),
+      undecided,
+      otherParties,
+    });
+
     const poll: PartyPollInput[] = parties
       .filter((p) => p.percentage > 0)
       .map((p) => {
         const { electionId, partyId } = parseDistributionId(p.distributionId);
+        const realEntry = normResult.realPercentages.find((r) => r.partyId === p.id);
         return {
           partyId: p.id,
           partyName: p.shortName,
-          percentage: p.percentage,
+          percentage: realEntry?.realPct ?? p.percentage,
           distributionElectionId: electionId,
           distributionPartyId: partyId,
         };
       });
 
-    const simResult = simulateWithConfidence(poll, electionDatasets, 5);
+    // Add "inne partie" as a virtual party (will be filtered by threshold)
+    if (otherParties > 0 && normResult.otherPartiesReal > 0) {
+      // Use first available distribution as proxy (doesn't matter — won't pass threshold)
+      const refParty = parties[0];
+      if (refParty) {
+        const { electionId, partyId } = parseDistributionId(refParty.distributionId);
+        poll.push({
+          partyId: "__inne__",
+          partyName: "Inne",
+          percentage: normResult.otherPartiesReal,
+          distributionElectionId: electionId,
+          distributionPartyId: partyId,
+        });
+      }
+    }
+
+    const simResult = simulateWithConfidence(poll, electionDatasets, 5, perturbationPct);
     setResult(simResult);
-  }, [parties, electionDatasets]);
+  }, [parties, electionDatasets, undecided, otherParties, perturbationPct]);
 
   const updatePercentage = useCallback((id: string, value: number) => {
     setParties((prev) => prev.map((p) => (p.id === id ? { ...p, percentage: value } : p)));
@@ -203,6 +234,49 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
           </div>
         )}
 
+        {/* Advanced parameters */}
+        <div className="mt-3 grid grid-cols-1 gap-2 border-t border-gray-100 pt-3 sm:grid-cols-3">
+          <label className="flex items-center gap-2 text-sm text-gray-600">
+            Niezdecydowani
+            <input
+              type="number"
+              min={0}
+              max={100}
+              step={0.1}
+              value={undecided}
+              onChange={(e) => setUndecided(parseFloat(e.target.value) || 0)}
+              className="w-16 rounded border px-2 py-1 text-right text-sm"
+            />
+            <span className="text-gray-400">%</span>
+          </label>
+          <label className="flex items-center gap-2 text-sm text-gray-600">
+            Inne partie
+            <input
+              type="number"
+              min={0}
+              max={100}
+              step={0.1}
+              value={otherParties}
+              onChange={(e) => setOtherParties(parseFloat(e.target.value) || 0)}
+              className="w-16 rounded border px-2 py-1 text-right text-sm"
+            />
+            <span className="text-gray-400">%</span>
+          </label>
+          <label className="flex items-center gap-2 text-sm text-gray-600">
+            Przedział ufności ±
+            <input
+              type="number"
+              min={0.1}
+              max={10}
+              step={0.1}
+              value={perturbationPct}
+              onChange={(e) => setPerturbationPct(parseFloat(e.target.value) || 1.5)}
+              className="w-16 rounded border px-2 py-1 text-right text-sm"
+            />
+            <span className="text-gray-400">pp</span>
+          </label>
+        </div>
+
         <div className="mt-3 flex items-center justify-between">
           <span className={`text-sm ${totalPercentage > 100 ? "font-bold text-red-600" : "text-gray-500"}`}>
             Suma: {totalPercentage.toFixed(1)}%
@@ -217,12 +291,25 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
       </div>
 
       {/* Results */}
-      {result && <SimulationResults result={result} parties={parties} />}
+      {result && (
+        <SimulationResults result={result} parties={parties} undecided={undecided} otherParties={otherParties} />
+      )}
 
       {/* Hemicycle */}
       {result && (
         <div className="mt-4">
-          <Hemicycle seats={result.result.seats} />
+          <Hemicycle
+            seats={Object.fromEntries(Object.entries(result.result.seats).filter(([id]) => id !== "__inne__"))}
+          />
+        </div>
+      )}
+
+      {/* Coalitions */}
+      {result && (
+        <div className="mt-4">
+          <Coalitions
+            seats={Object.fromEntries(Object.entries(result.result.seats).filter(([id]) => id !== "__inne__"))}
+          />
         </div>
       )}
 
@@ -251,7 +338,7 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
       {result && (
         <DistrictDrilldown
           districts={result.result.districts}
-          parties={parties.map((p) => ({ id: p.id, shortName: p.shortName }))}
+          parties={parties.filter((p) => p.id !== "__inne__").map((p) => ({ id: p.id, shortName: p.shortName }))}
         />
       )}
 
@@ -333,10 +420,34 @@ function formatDistributionLabel(dist: string): string {
   return `${partyLabel} (${electionLabel})`;
 }
 
-function SimulationResults({ result, parties }: { result: SimulationWithCI; parties: PartyRow[] }) {
+function SimulationResults({
+  result,
+  parties,
+  undecided,
+  otherParties,
+}: {
+  result: SimulationWithCI;
+  parties: PartyRow[];
+  undecided: number;
+  otherParties: number;
+}) {
   const { result: sim, confidence } = result;
-  const sortedSeats = Object.entries(sim.seats).sort((a, b) => b[1] - a[1]);
+  const sortedSeats = Object.entries(sim.seats)
+    .filter(([id]) => id !== "__inne__")
+    .sort((a, b) => b[1] - a[1]);
   const maxSeats = sortedSeats[0]?.[1] ?? 1;
+
+  // Compute real percentages for display
+  const showReal = undecided > 0 || otherParties > 0;
+  const normResult = showReal
+    ? normalizePolls({
+        partyPercentages: parties
+          .filter((p) => p.percentage > 0)
+          .map((p) => ({ partyId: p.id, percentage: p.percentage })),
+        undecided,
+        otherParties,
+      })
+    : null;
 
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-4">
@@ -351,13 +462,19 @@ function SimulationResults({ result, parties }: { result: SimulationWithCI; part
           const color = PARTY_COLORS[partyId] ?? "#6b7280";
           const barWidth = (seats / maxSeats) * 100;
           const ci = confidence[partyId];
-          const hasRange = ci.min !== ci.max;
+          const hasRange = ci && ci.min !== ci.max;
+          const realEntry = normResult?.realPercentages.find((r) => r.partyId === partyId);
 
           return (
             <div key={partyId} className="flex items-center gap-2">
               <span className="w-16 flex-shrink-0 text-right text-sm font-medium sm:w-20">
                 {party?.shortName ?? partyId}
               </span>
+              {showReal && realEntry && (
+                <span className="w-12 flex-shrink-0 text-right text-xs text-gray-400">
+                  {realEntry.realPct.toFixed(1)}%
+                </span>
+              )}
               <div className="relative h-6 flex-1 overflow-hidden rounded bg-gray-100">
                 <div className="h-full rounded" style={{ width: `${barWidth}%`, backgroundColor: color }} />
                 <span className="absolute inset-y-0 right-2 flex items-center text-xs font-bold">
