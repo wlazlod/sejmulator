@@ -244,14 +244,14 @@ Testy spójności danych + eksport modułowy z `src/data/index.ts` gotowy do kon
 
 #### Automated
 
-- [ ] 2.1 Skrypt uruchamia się bez błędów (`npx tsx scripts/prepare-pkw-data.ts`)
-- [ ] 2.2 Wygenerowane JSONy przechodzą walidację typów
-- [ ] 2.3 `npx tsc --noEmit` przechodzi
+- [x] 2.1 Skrypt uruchamia się bez błędów (`npx tsx scripts/prepare-pkw-data.ts`) — d4c6314
+- [x] 2.2 Wygenerowane JSONy przechodzą walidację typów — d4c6314
+- [x] 2.3 `npx tsc --noEmit` przechodzi — d4c6314
 
 #### Manual
 
-- [ ] 2.4 Wygenerowane pliki zawierają dane dla 41 okręgów
-- [ ] 2.5 Spot-check: losowy okręg vs dane PKW online
+- [x] 2.4 Wygenerowane pliki zawierają dane dla 41 okręgów — d4c6314
+- [x] 2.5 Spot-check: losowy okręg vs dane PKW online — d4c6314
 
 ### Phase 3: Data Validation & Module Export
 

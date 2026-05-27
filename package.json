@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "prepare-data": "tsx scripts/prepare-pkw-data.ts"
+    "prepare-data": "tsx scripts/prepare-pkw-data.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",
@@ -57,6 +59,7 @@
     "tsx": "^4.22.3",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.59.2",
+    "vitest": "^4.1.7",
     "wrangler": "^4.90.0"
   },
   "overrides": {

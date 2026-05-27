@@ -14,7 +14,7 @@ import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";
 import Papa from "papaparse";
-import type { ElectionData, ElectionMeta, DistrictResult, PartyResult, DistrictMeta } from "../src/data/types";
+import type { ElectionData, ElectionMeta, DistrictResult, PartyResult } from "../src/data/types";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -144,7 +144,7 @@ function normalizeCandidateId(name: string): string {
   const clean = name.replace(/^"|"$/g, "").trim();
   const parts = clean.split(/\s+/);
   // Find surname: the word that is ALL UPPERCASE (at least 2 chars)
-  const surname = parts.find((p) => p.length >= 2 && p === p.toUpperCase()) || parts[0];
+  const surname = parts.find((p) => p.length >= 2 && p === p.toUpperCase()) ?? parts[0];
   return surname
     .toLowerCase()
     .replace(/[ąà]/g, "a")
@@ -336,7 +336,8 @@ function processPrezydenckie(electionId: string, terytMap: Map<string, number>):
       continue;
     }
 
-    const agg = districtAgg.get(districtNum)!;
+    const agg = districtAgg.get(districtNum);
+    if (!agg) continue;
     const rowTotalVotes = parseInt(row[totalVotesCol]?.replace(/"/g, "").trim() || "0", 10);
     agg.totalValidVotes += isNaN(rowTotalVotes) ? 0 : rowTotalVotes;
 
@@ -360,7 +361,8 @@ function processPrezydenckie(electionId: string, terytMap: Map<string, number>):
   // Build district results
   const districts: DistrictResult[] = [];
   for (let d = 1; d <= 41; d++) {
-    const agg = districtAgg.get(d)!;
+    const agg = districtAgg.get(d);
+    if (!agg) continue;
     const districtInfo = DISTRICT_SIZES[d];
 
     const results: PartyResult[] = [];

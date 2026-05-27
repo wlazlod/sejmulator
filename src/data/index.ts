@@ -10,10 +10,15 @@ export type { ElectionData, ElectionMeta, DistrictResult, DistrictMeta, PartyRes
 export { partyDefaults } from "./party-mapping";
 export type { PartyDefaults, PartyDefault, DistributionSource } from "./party-mapping";
 
-// Election data (static imports — total ~200-600KB, acceptable for MVP)
-// These will be populated in Phase 2 after the processing script runs.
+// Election data (static imports — total ~400KB, acceptable for MVP)
 import parlamentarne2023 from "./parlamentarne-2023.json";
+import parlamentarne2019 from "./parlamentarne-2019.json";
+import prezydenckie2025 from "./prezydenckie-2025.json";
+import prezydenckie2020 from "./prezydenckie-2020.json";
 
 export const elections = {
   "parlamentarne-2023": parlamentarne2023,
+  "parlamentarne-2019": parlamentarne2019,
+  "prezydenckie-2025": prezydenckie2025,
+  "prezydenckie-2020": prezydenckie2020,
 } as const;
