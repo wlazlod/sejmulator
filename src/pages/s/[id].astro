@@ -1,0 +1,46 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Simulator from "@/components/Simulator";
+import { createClient } from "@/lib/supabase";
+import type { SharedPartyInput } from "@/lib/share-types";
+
+const { id } = Astro.params;
+
+let sharedParties: SharedPartyInput[] | null = null;
+let error: string | null = null;
+
+const supabase = createClient(Astro.request.headers, Astro.cookies);
+if (!supabase) {
+  error = "Usługa udostępniania jest niedostępna.";
+} else if (id) {
+  const { data, error: dbError } = await supabase
+    .from("shared_simulations")
+    .select("parties, expires_at")
+    .eq("id", id)
+    .single();
+
+  if (dbError || !data) {
+    error = "Nie znaleziono symulacji lub link wygasł.";
+  } else if (new Date(data.expires_at) < new Date()) {
+    error = "Link do tej symulacji wygasł.";
+  } else {
+    sharedParties = data.parties as SharedPartyInput[];
+  }
+}
+---
+
+<Layout title={error ? "Sejmulator — Link nieaktywny" : "Sejmulator — Udostępniona symulacja"}>
+  {error ? (
+    <div class="mx-auto max-w-4xl p-6">
+      <h1 class="mb-4 text-2xl font-bold">Sejmulator</h1>
+      <div class="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700">
+        {error}
+      </div>
+      <a href="/" class="mt-4 inline-block text-sm text-blue-600 hover:underline">
+        ← Nowa symulacja
+      </a>
+    </div>
+  ) : (
+    <Simulator client:load sharedParties={sharedParties} />
+  )}
+</Layout>

@@ -25,13 +25,13 @@ Sondaże w Polsce podają globalny wynik procentowy, ale ordynacja d'Hondta w 41
 
 ## At a glance
 
-| ID   | Change ID           | Outcome (user can …)                                                            | Prerequisites | PRD refs                                      | Status   |
-| ---- | ------------------- | ------------------------------------------------------------------------------- | ------------- | --------------------------------------------- | -------- |
-| F-01 | pkw-historical-data | (foundation) dane historyczne PKW per okręg przygotowane i dostępne w aplikacji | —             | FR-003, FR-004                                | ready    |
-| F-02 | deploy-skeleton     | (foundation) aplikacja deployowalna na Cloudflare Pages z CI                    | —             | NFR-02                                        | ready    |
-| S-01 | core-simulation     | użytkownik wpisuje sondaż, wybiera model geograficzny i widzi mandaty z CI      | F-01, F-02    | US-01, FR-001, FR-002, FR-003, FR-004, FR-005 | proposed |
-| S-02 | district-drilldown  | użytkownik przechodzi do widoku per okręg z tight races                         | S-01          | FR-006                                        | proposed |
-| S-03 | share-link          | użytkownik zapisuje symulację i udostępnia link z TTL                           | S-01          | FR-007                                        | proposed |
+| ID   | Change ID           | Outcome (user can …)                                                            | Prerequisites | PRD refs                                      | Status |
+| ---- | ------------------- | ------------------------------------------------------------------------------- | ------------- | --------------------------------------------- | ------ |
+| F-01 | pkw-historical-data | (foundation) dane historyczne PKW per okręg przygotowane i dostępne w aplikacji | —             | FR-003, FR-004                                | done   |
+| F-02 | deploy-skeleton     | (foundation) aplikacja deployowalna na Cloudflare Pages z CI                    | —             | NFR-02                                        | done   |
+| S-01 | core-simulation     | użytkownik wpisuje sondaż, wybiera model geograficzny i widzi mandaty z CI      | F-01, F-02    | US-01, FR-001, FR-002, FR-003, FR-004, FR-005 | done   |
+| S-02 | district-drilldown  | użytkownik przechodzi do widoku per okręg z tight races                         | S-01          | FR-006                                        | done   |
+| S-03 | share-link          | użytkownik zapisuje symulację i udostępnia link z TTL                           | S-01          | FR-007                                        | done   |
 
 ## Streams
 

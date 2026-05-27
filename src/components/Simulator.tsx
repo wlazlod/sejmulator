@@ -4,7 +4,7 @@
  * Handles: party input form, simulation execution, results display.
  */
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, useEffect } from "react";
 import { partyDefaults } from "../data/party-mapping";
 import type { PartyDefault } from "../data/party-mapping";
 import { elections } from "../data/index";
@@ -12,6 +12,7 @@ import type { PartyPollInput } from "../lib/types";
 import type { ElectionData } from "../data/types";
 import { simulateWithConfidence } from "../lib/confidence";
 import type { SimulationWithCI } from "../lib/confidence";
+import type { SharedPartyInput } from "../lib/share-types";
 import DistrictDrilldown from "./DistrictDrilldown";
 
 interface PartyRow {
@@ -54,9 +55,26 @@ function getDefaultParties(): PartyRow[] {
 
 import { PARTY_COLORS } from "./party-colors";
 
-export default function Simulator() {
-  const [parties, setParties] = useState<PartyRow[]>(getDefaultParties);
+interface SimulatorProps {
+  sharedParties?: SharedPartyInput[] | null;
+}
+
+export default function Simulator({ sharedParties }: SimulatorProps) {
+  const [parties, setParties] = useState<PartyRow[]>(() => {
+    if (sharedParties && sharedParties.length > 0) {
+      return sharedParties.map((p) => ({
+        id: p.id,
+        displayName: p.displayName,
+        shortName: p.shortName,
+        percentage: p.percentage,
+        distributionId: p.distributionId,
+      }));
+    }
+    return getDefaultParties();
+  });
   const [result, setResult] = useState<SimulationWithCI | null>(null);
+  const [shareUrl, setShareUrl] = useState<string | null>(null);
+  const [sharing, setSharing] = useState(false);
 
   const electionDatasets = useMemo(() => {
     return elections as unknown as Record<string, ElectionData>;
@@ -105,6 +123,39 @@ export default function Simulator() {
         distributionId: def.defaultDistribution,
       },
     ]);
+  }, []);
+
+  const handleShare = useCallback(async () => {
+    if (!result) return;
+    setSharing(true);
+    try {
+      const res = await fetch("/api/share", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ parties }),
+      });
+      if (!res.ok) throw new Error("Share failed");
+      const data = (await res.json()) as { url: string };
+      setShareUrl(data.url);
+    } catch {
+      alert("Nie udało się utworzyć linku.");
+    } finally {
+      setSharing(false);
+    }
+  }, [result, parties]);
+
+  const copyShareUrl = useCallback(() => {
+    if (shareUrl) {
+      navigator.clipboard.writeText(shareUrl).catch(() => {});
+    }
+  }, [shareUrl]);
+
+  // Auto-simulate when loaded from a shared link
+  useEffect(() => {
+    if (sharedParties && sharedParties.length > 0) {
+      handleSimulate();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const availableToAdd = Object.keys(partyDefaults).filter((id) => !parties.some((p) => p.id === id));
@@ -166,6 +217,27 @@ export default function Simulator() {
 
       {/* Results */}
       {result && <SimulationResults result={result} parties={parties} />}
+
+      {/* Share */}
+      {result && (
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <button
+            onClick={handleShare}
+            disabled={sharing}
+            className="rounded-lg bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 disabled:opacity-50"
+          >
+            {sharing ? "Udostępnianie..." : "Udostępnij"}
+          </button>
+          {shareUrl && (
+            <div className="flex items-center gap-2 rounded border bg-gray-50 px-3 py-1.5 text-sm">
+              <span className="max-w-[200px] truncate sm:max-w-none">{shareUrl}</span>
+              <button onClick={copyShareUrl} className="text-blue-600 hover:text-blue-800" title="Kopiuj">
+                Kopiuj
+              </button>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* District Drilldown */}
       {result && (
