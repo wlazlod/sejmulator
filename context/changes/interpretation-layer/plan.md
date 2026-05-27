@@ -63,3 +63,8 @@ razem → lewica → ko → polska2050 → psl → pis → konfederacja → kkp
 - Phase 2: done (commit `541a6ee`)
 - Phase 3: done (commit `32a1436`)
 - Phase 4: done (commit `98d08c5`)
+
+## Post-plan refinements
+
+- `c679b2d` — Hemicycle: Wikipedia-style L→R column coloring + center gap; Coalitions: sort by seats, hide impossible, +3 new; Threshold: 4-case display logic; Undecided auto-calculated
+- `fa2868c` — Filter case-4 parties before simulation (no wasted d'Hondt runs)
