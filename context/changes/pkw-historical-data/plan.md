@@ -257,11 +257,11 @@ Testy spójności danych + eksport modułowy z `src/data/index.ts` gotowy do kon
 
 #### Automated
 
-- [ ] 3.1 Testy spójności przechodzą (`npx vitest run`)
-- [ ] 3.2 TypeScript kompiluje (`npx tsc --noEmit`)
-- [ ] 3.3 Lint przechodzi (`npm run lint`)
+- [x] 3.1 Testy spójności przechodzą (`npx vitest run`) — 5218691
+- [x] 3.2 TypeScript kompiluje (`npx tsc --noEmit`) — 5218691
+- [x] 3.3 Lint przechodzi (`npm run lint`) — 5218691
 
 #### Manual
 
-- [ ] 3.4 Import `from '@/data'` działa w komponencie
-- [ ] 3.5 Dane dostępne client-side (dev tools)
+- [x] 3.4 Import `from '@/data'` działa w komponencie — 5218691
+- [x] 3.5 Dane dostępne client-side (dev tools) — 5218691
