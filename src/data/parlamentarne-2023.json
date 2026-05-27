@@ -1,0 +1,10 @@
+{
+  "election": {
+    "id": "parlamentarne-2023",
+    "name": "Parlamentarne 2023",
+    "type": "parlamentarne",
+    "year": 2023,
+    "date": "2023-10-15"
+  },
+  "districts": []
+}

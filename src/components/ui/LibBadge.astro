@@ -1,0 +1,13 @@
+---
+interface Props {
+  label: string;
+  version?: string;
+}
+
+const { label, version } = Astro.props;
+---
+
+<span class="inline-flex items-center gap-2 rounded-lg bg-blue-900/50 px-3 py-1.5 font-mono text-blue-200 shadow-sm">
+  {label}
+  {version && <span class="rounded-full bg-purple-500/30 px-2 py-0.5 text-xs text-purple-200">{version}</span>}
+</span>

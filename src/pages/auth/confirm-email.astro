@@ -1,0 +1,36 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+const isAutoConfirmed = import.meta.env.DEV;
+
+const content = isAutoConfirmed
+  ? {
+      emoji: "✅",
+      heading: "Registration successful",
+      description: "Your account has been created. You can now sign in.",
+      linkText: "Go to sign in",
+    }
+  : {
+      emoji: "📧",
+      heading: "Check your email",
+      description: "We've sent a confirmation link to your email address. Click it to activate your account.",
+      linkText: "Back to sign in",
+    };
+---
+
+<Layout title={content.heading}>
+  <div class="bg-cosmic flex min-h-screen items-center justify-center p-4">
+    <div
+      class="w-full max-w-sm rounded-2xl border border-white/10 bg-white/10 p-8 text-center text-white backdrop-blur-xl"
+    >
+      <div class="mb-4 text-5xl">{content.emoji}</div>
+      <h1 class="mb-3 bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-2xl font-bold text-transparent">
+        {content.heading}
+      </h1>
+      <p class="mb-6 text-blue-100/80">{content.description}</p>
+      <a href="/auth/signin" class="text-sm text-purple-300 hover:underline">
+        {content.linkText}
+      </a>
+    </div>
+  </div>
+</Layout>

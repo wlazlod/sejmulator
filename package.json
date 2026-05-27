@@ -1,0 +1,69 @@
+{
+  "name": "10x-astro-starter",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.8",
+    "@astrojs/cloudflare": "^13.5.0",
+    "@astrojs/react": "^5.0.4",
+    "@astrojs/sitemap": "^3.7.2",
+    "@eslint/config-helpers": "^0.6.0",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.99.1",
+    "@tailwindcss/vite": "^4.2.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^6.3.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.14.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "^4.2.4",
+    "tw-animate-css": "^1.4.0"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^2.0.3",
+    "@eslint/js": "^9.29.0",
+    "@przeprogramowani/10x-cli": "^1.6.1",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-astro": "^1.7.0",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-compiler": "^19.1.0-rc.2",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "husky": "9.1.7",
+    "lint-staged": "^16.3.3",
+    "prettier": "^3.8.3",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "supabase": "^2.23.4",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.59.2",
+    "wrangler": "^4.90.0"
+  },
+  "overrides": {
+    "vite": "^7.3.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,astro}": [
+      "eslint --fix"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
+  }
+}
