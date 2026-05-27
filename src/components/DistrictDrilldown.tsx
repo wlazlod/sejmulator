@@ -1,15 +1,17 @@
 /**
- * DistrictDrilldown — per-district seat breakdown with sort/filter.
+ * DistrictDrilldown — per-district seat breakdown with sort/filter and map view.
  *
- * Renders below SimulationResults. Shows 41 districts with stacked seat bars,
- * tight race indicators, and controls for sorting/filtering.
+ * Renders below SimulationResults. Shows 41 districts via a list or an
+ * interactive SVG map of Poland. Supports sorting, filtering by tight races.
  */
 
 import { useState, useMemo } from "react";
 import type { DistrictSimulationResult } from "../lib/types";
 import { PARTY_COLORS } from "./party-colors";
+import DistrictMap from "./DistrictMap";
 
 type SortKey = "number" | "name" | "seats" | "tightRaces";
+type ViewMode = "map" | "list";
 
 interface PartyInfo {
   id: string;
@@ -23,6 +25,7 @@ interface DistrictDrilldownProps {
 
 export default function DistrictDrilldown({ districts, parties }: DistrictDrilldownProps) {
   const [expanded, setExpanded] = useState(false);
+  const [viewMode, setViewMode] = useState<ViewMode>("map");
   const [sortKey, setSortKey] = useState<SortKey>("number");
   const [filterTightRaces, setFilterTightRaces] = useState(false);
 
@@ -76,60 +79,100 @@ export default function DistrictDrilldown({ districts, parties }: DistrictDrilld
     <div className="mt-4 rounded-lg border border-gray-200 bg-white p-4">
       {/* Header */}
       <div className="mb-3 flex items-center justify-between">
-        <h2 className="font-semibold">
-          Okręgi wyborcze ({filtered.length}/{districts.length})
-        </h2>
-        <button
-          onClick={() => {
-            setExpanded(false);
-          }}
-          className="text-sm text-gray-500 hover:text-gray-700"
-        >
-          Zwiń
-        </button>
-      </div>
-
-      {/* Controls */}
-      <div className="mb-4 flex flex-wrap items-center gap-3">
-        <div className="flex items-center gap-1.5">
-          <label className="text-xs text-gray-500">Sortuj:</label>
-          <select
-            value={sortKey}
-            onChange={(e) => {
-              setSortKey(e.target.value as SortKey);
+        <h2 className="font-semibold">Okręgi wyborcze</h2>
+        <div className="flex items-center gap-2">
+          {/* View mode toggle */}
+          <div className="flex rounded border border-gray-200">
+            <button
+              onClick={() => {
+                setViewMode("map");
+              }}
+              className={`px-2.5 py-1 text-xs ${viewMode === "map" ? "bg-blue-600 text-white" : "text-gray-600 hover:bg-gray-50"}`}
+            >
+              Mapa
+            </button>
+            <button
+              onClick={() => {
+                setViewMode("list");
+              }}
+              className={`px-2.5 py-1 text-xs ${viewMode === "list" ? "bg-blue-600 text-white" : "text-gray-600 hover:bg-gray-50"}`}
+            >
+              Lista
+            </button>
+          </div>
+          <button
+            onClick={() => {
+              setExpanded(false);
             }}
-            className="rounded border px-2 py-1 text-xs"
+            className="text-sm text-gray-500 hover:text-gray-700"
           >
-            <option value="number">Nr okręgu</option>
-            <option value="name">Nazwa</option>
-            <option value="seats">Liczba mandatów</option>
-            <option value="tightRaces">Tight races</option>
-          </select>
+            Zwiń
+          </button>
         </div>
-
-        <label className="flex items-center gap-1.5 text-xs text-gray-500">
-          <input
-            type="checkbox"
-            checked={filterTightRaces}
-            onChange={(e) => {
-              setFilterTightRaces(e.target.checked);
-            }}
-            className="rounded"
-          />
-          Tylko tight races
-        </label>
       </div>
 
-      {/* District list */}
-      <div className="space-y-2">
-        {filtered.map((district) => (
-          <DistrictCard key={district.districtNumber} district={district} partyNameMap={partyNameMap} />
+      {/* Map view */}
+      {viewMode === "map" && <DistrictMap districts={districts} parties={parties} />}
+
+      {/* List view */}
+      {viewMode === "list" && (
+        <>
+          {/* Controls */}
+          <div className="mb-4 flex flex-wrap items-center gap-3">
+            <div className="flex items-center gap-1.5">
+              <label className="text-xs text-gray-500">Sortuj:</label>
+              <select
+                value={sortKey}
+                onChange={(e) => {
+                  setSortKey(e.target.value as SortKey);
+                }}
+                className="rounded border px-2 py-1 text-xs"
+              >
+                <option value="number">Nr okręgu</option>
+                <option value="name">Nazwa</option>
+                <option value="seats">Liczba mandatów</option>
+                <option value="tightRaces">Tight races</option>
+              </select>
+            </div>
+
+            <label className="flex items-center gap-1.5 text-xs text-gray-500">
+              <input
+                type="checkbox"
+                checked={filterTightRaces}
+                onChange={(e) => {
+                  setFilterTightRaces(e.target.checked);
+                }}
+                className="rounded"
+              />
+              Tylko tight races
+            </label>
+          </div>
+
+          {/* District list */}
+          <div className="space-y-2">
+            {filtered.map((district) => (
+              <DistrictCard key={district.districtNumber} district={district} partyNameMap={partyNameMap} />
+            ))}
+          </div>
+
+          {filtered.length === 0 && (
+            <p className="py-4 text-center text-sm text-gray-400">Brak okręgów spełniających kryteria.</p>
+          )}
+        </>
+      )}
+
+      {/* Legend */}
+      <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 border-t pt-2 text-xs text-gray-500">
+        {parties.map((p) => (
+          <span key={p.id} className="flex items-center gap-1">
+            <span
+              className="inline-block h-2.5 w-2.5 rounded-sm"
+              style={{ backgroundColor: PARTY_COLORS[p.id] ?? "#6b7280" }}
+            />
+            {p.shortName}
+          </span>
         ))}
       </div>
-
-      {filtered.length === 0 && (
-        <p className="py-4 text-center text-sm text-gray-400">Brak okręgów spełniających kryteria.</p>
-      )}
     </div>
   );
 }
