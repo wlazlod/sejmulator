@@ -7,27 +7,27 @@ FR-006: Użytkownik może przejść do szczegółowego widoku podziału mandató
 
 ## Phase 1: District list + filter/sort
 
-- [ ] Extract `PARTY_COLORS` to `src/components/party-colors.ts`
-- [ ] Create `src/components/DistrictDrilldown.tsx`:
+- [x] Extract `PARTY_COLORS` to `src/components/party-colors.ts`
+- [x] Create `src/components/DistrictDrilldown.tsx`:
   - Collapsible section below SimulationResults
   - Sort by: district number, name, seats, tight race count
   - Filter: "Tylko tight races"
   - District cards: number + name + stacked bar + tight race badges
-- [ ] Wire into `Simulator.tsx`, pass `result.result.districts` + `parties`
+- [x] Wire into `Simulator.tsx`, pass `result.result.districts` + `parties`
 
 ## Phase 2: SVG Map visualization
 
-- [ ] Download Wikipedia SVG (CC BY-SA 4.0), clean Inkscape metadata
-- [ ] Build path-to-district-number mapping (41 entries, manual visual inspection)
-- [ ] Create `src/components/DistrictMap.tsx`:
+- [x] Download Wikipedia SVG (CC BY-SA 4.0), extract paths to JSON
+- [x] Build path-to-district-number mapping (41 entries, centroid matching)
+- [x] Create `src/components/DistrictMap.tsx`:
   - Inline SVG colored by winning party per district
   - Hover tooltip: district name, seat breakdown
-  - Highlight tight races
-- [ ] Add "Lista / Mapa" toggle in DistrictDrilldown
+  - Highlight tight races (dashed amber border)
+- [x] Add "Mapa / Lista" toggle + party color legend in DistrictDrilldown
 
 ## Phase 3: Tests
 
-- [ ] Unit tests for sort/filter logic (vitest)
+- [x] Unit tests for map data integrity + sort/filter logic (8 tests)
 
 ## Data source
 
@@ -35,6 +35,12 @@ FR-006: Użytkownik może przejść do szczegółowego widoku podziału mandató
 
 ## Progress
 
-- Phase 1: pending
-- Phase 2: pending
-- Phase 3: pending
+- Phase 1: done (commit `5a318ca`)
+- Phase 2: done (commit `34ae008`)
+- Phase 3: done (commit pending)
+
+## Known issues
+
+- District-to-path mapping was built via automated centroid matching. Some districts
+  in dense areas (Silesia cluster: 27-32) may be swapped. Visual inspection needed
+  after running the app — corrections go in `district-map-data.ts`.
