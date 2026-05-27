@@ -17,42 +17,42 @@ export const PATH_TO_DISTRICT: Record<string, number> = {
   path3393: 3, // Wrocław
   path3712: 4, // Bydgoszcz
   path3617: 5, // Toruń
-  path3507: 6, // Lublin
-  path3428: 7, // Chełm
+  path3428: 6, // Lublin
+  path3507: 7, // Chełm
   path3465: 8, // Zielona Góra
-  path3557: 9, // Łódź
-  path3626: 10, // Piotrków Trybunalski
-  path3487: 11, // Sieradz
-  path3653: 12, // Kraków (I)
-  path3580: 13, // Kraków (II)
+  path3626: 9, // Łódź
+  path3557: 10, // Piotrków Trybunalski
+  path3525: 11, // Sieradz
+  path3653: 12, // Chrzanów (Kraków II / okręg 12)
+  path3510: 13, // Kraków (I)
   path3608: 14, // Nowy Sącz
   path3555: 15, // Tarnów
-  path3529: 16, // Płock
-  path3525: 17, // Radom
-  path3614: 18, // Siedlce
-  path4296: 19, // Warszawa (I)
-  path4250: 20, // Warszawa (II)
-  path3913: 21, // Opole
-  path3444: 22, // Krosno
-  path3407: 23, // Rzeszów
+  path4350: 16, // Płock
+  path3614: 17, // Radom
+  path3479: 18, // Siedlce
+  path4250: 19, // Warszawa (I)
+  path4296: 20, // Warszawa (II)
+  path3453: 21, // Opole
+  path3407: 22, // Krosno
+  path3444: 23, // Rzeszów
   path3840: 24, // Białystok
-  path3488: 25, // Gdańsk
+  path3498: 25, // Gdańsk
   path3464: 26, // Gdynia
-  path3436: 27, // Bielsko-Biała
-  path3510: 28, // Częstochowa
+  path3929: 27, // Bielsko-Biała
+  path3913: 28, // Częstochowa
   path4467: 29, // Katowice
-  path4429: 30, // Bieruń
+  path4429: 30, // Rybnik
   path3396: 31, // Sosnowiec
-  path3929: 32, // Gliwice
-  path3453: 33, // Kielce
-  path3498: 34, // Elbląg
+  path3436: 32, // Gliwice
+  path3580: 33, // Kielce
+  path3488: 34, // Elbląg
   path3532: 35, // Olsztyn
-  path4350: 36, // Kalisz
-  path3479: 37, // Konin
+  path3487: 36, // Kalisz
+  path3529: 37, // Konin
   path3486: 38, // Piła
   path3506: 39, // Poznań
-  path4387: 40, // Koszalin
-  path4412: 41, // Szczecin
+  path4412: 40, // Koszalin
+  path4387: 41, // Szczecin
 };
 
 /** Reverse mapping: district number → SVG path ID */
