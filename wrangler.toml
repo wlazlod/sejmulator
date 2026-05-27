@@ -1,0 +1,7 @@
+# Cloudflare Pages configuration for Sejmulator
+# Deployment via Cloudflare GitHub integration (auto-deploy on push to main)
+
+name = "sejmulator"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "dist"
