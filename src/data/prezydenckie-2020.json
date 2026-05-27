@@ -846,7 +846,7 @@
     {
       "district": {
         "number": 12,
-        "name": "Kraków (I)",
+        "name": "Chrzanów",
         "districtSize": 8
       },
       "results": [
@@ -922,7 +922,7 @@
     {
       "district": {
         "number": 13,
-        "name": "Kraków (II)",
+        "name": "Kraków",
         "districtSize": 14
       },
       "results": [
@@ -1378,7 +1378,7 @@
     {
       "district": {
         "number": 19,
-        "name": "Warszawa (I)",
+        "name": "Warszawa",
         "districtSize": 20
       },
       "results": [
@@ -1454,7 +1454,7 @@
     {
       "district": {
         "number": 20,
-        "name": "Warszawa (II)",
+        "name": "Warszawa (obwarzanek)",
         "districtSize": 12
       },
       "results": [
@@ -2214,7 +2214,7 @@
     {
       "district": {
         "number": 30,
-        "name": "Bieruń",
+        "name": "Rybnik",
         "districtSize": 9
       },
       "results": [

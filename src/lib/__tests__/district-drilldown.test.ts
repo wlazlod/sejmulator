@@ -31,7 +31,7 @@ describe("district sort/filter logic", () => {
   const mockDistricts: DistrictSimulationResult[] = [
     {
       districtNumber: 19,
-      districtName: "Warszawa (I)",
+      districtName: "Warszawa",
       districtSize: 20,
       seats: { ko: 12, pis: 6, lewica: 2 },
       tightRaces: [],
@@ -62,7 +62,7 @@ describe("district sort/filter logic", () => {
 
   it("sorts by name (Polish locale)", () => {
     const sorted = [...mockDistricts].sort((a, b) => a.districtName.localeCompare(b.districtName, "pl"));
-    expect(sorted.map((d) => d.districtName)).toEqual(["Białystok", "Legnica", "Warszawa (I)"]);
+    expect(sorted.map((d) => d.districtName)).toEqual(["Białystok", "Legnica", "Warszawa"]);
   });
 
   it("sorts by seat count descending", () => {

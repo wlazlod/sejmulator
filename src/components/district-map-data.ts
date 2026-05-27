@@ -23,15 +23,15 @@ export const PATH_TO_DISTRICT: Record<string, number> = {
   path3626: 9, // Łódź
   path3557: 10, // Piotrków Trybunalski
   path3525: 11, // Sieradz
-  path3653: 12, // Chrzanów (Kraków II / okręg 12)
-  path3510: 13, // Kraków (I)
+  path3555: 12, // Chrzanów
+  path3510: 13, // Kraków
   path3608: 14, // Nowy Sącz
-  path3555: 15, // Tarnów
+  path3580: 15, // Tarnów
   path4350: 16, // Płock
   path3614: 17, // Radom
   path3479: 18, // Siedlce
-  path4250: 19, // Warszawa (I)
-  path4296: 20, // Warszawa (II)
+  path4250: 19, // Warszawa
+  path4296: 20, // Warszawa (obwarzanek)
   path3453: 21, // Opole
   path3407: 22, // Krosno
   path3444: 23, // Rzeszów
@@ -44,7 +44,7 @@ export const PATH_TO_DISTRICT: Record<string, number> = {
   path4429: 30, // Rybnik
   path3396: 31, // Sosnowiec
   path3436: 32, // Gliwice
-  path3580: 33, // Kielce
+  path3653: 33, // Kielce
   path3488: 34, // Elbląg
   path3532: 35, // Olsztyn
   path3487: 36, // Kalisz
