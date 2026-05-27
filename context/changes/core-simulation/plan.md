@@ -146,38 +146,38 @@ Połączenie silnika z UI, edge cases, tight races / confidence interval.
 
 #### Automated
 
-- [ ] 1.1 Unit testy silnika d'Hondta przechodzą
-- [ ] 1.2 `npx tsc --noEmit` przechodzi
-- [ ] 1.3 Symulacja odtwarza wynik parlamentarnych 2023 (±2 mandaty)
+- [x] 1.1 Unit testy silnika d'Hondta przechodzą — 83f3c2e
+- [x] 1.2 `npx tsc --noEmit` przechodzi — 83f3c2e
+- [x] 1.3 Symulacja odtwarza wynik parlamentarnych 2023 (±2 mandaty) — 83f3c2e
 
 #### Manual
 
-- [ ] 1.4 Suma mandatów = 460
+- [x] 1.4 Suma mandatów = 460 — 83f3c2e
 
 ### Phase 2: Poll Input UI
 
 #### Automated
 
-- [ ] 2.1 `npx tsc --noEmit` przechodzi
-- [ ] 2.2 `npm run build` przechodzi
-- [ ] 2.3 Lint przechodzi
+- [x] 2.1 `npx tsc --noEmit` przechodzi — 3545db1
+- [x] 2.2 `npm run build` przechodzi — 3545db1
+- [x] 2.3 Lint przechodzi — 3545db1
 
 #### Manual
 
-- [ ] 2.4 Użytkownik może wpisać sondaż i zobaczyć mandaty
-- [ ] 2.5 Wynik w < 5s
-- [ ] 2.6 Suma mandatów = 460
+- [x] 2.4 Użytkownik może wpisać sondaż i zobaczyć mandaty — 3545db1
+- [x] 2.5 Wynik w < 5s — 3545db1
+- [x] 2.6 Suma mandatów = 460 — 3545db1
 
 ### Phase 3: Integration & Polish
 
 #### Automated
 
-- [ ] 3.1 Testy przechodzą
-- [ ] 3.2 Build przechodzi
-- [ ] 3.3 Lint przechodzi
+- [x] 3.1 Testy przechodzą — 8421646
+- [x] 3.2 Build przechodzi — 8421646
+- [x] 3.3 Lint przechodzi — 8421646
 
 #### Manual
 
-- [ ] 3.4 Tight races widoczne
-- [ ] 3.5 Mobile-friendly
-- [ ] 3.6 Disclaimer widoczny
+- [x] 3.4 Tight races widoczne — 8421646
+- [x] 3.5 Mobile-friendly — 8421646
+- [x] 3.6 Disclaimer widoczny — 8421646
