@@ -1,8 +1,9 @@
 /**
  * Confidence interval calculation via perturbation.
  *
- * Simple heuristic: perturb each party's percentage by ±1% in each district,
+ * Heuristic: perturb each party's percentage by ±perturbationPct,
  * re-run d'Hondt, report range of seat outcomes.
+ * FR-013: if perturbation drops a party below threshold → that run gives 0 seats → min=0.
  */
 
 import type { ElectionData } from "../data/types";
@@ -26,6 +27,9 @@ export interface SimulationWithCI {
 /**
  * Run simulation with confidence intervals.
  * Perturbs each party ±perturbationPct and reports seat ranges.
+ *
+ * FR-013: If a party's real percentage minus perturbation < threshold,
+ * the min is forced to 0 (party might not enter Sejm at all).
  */
 export function simulateWithConfidence(
   nationalPoll: PartyPollInput[],
@@ -43,6 +47,14 @@ export function simulateWithConfidence(
   for (const [partyId, seats] of Object.entries(result.seats)) {
     mins[partyId] = seats;
     maxs[partyId] = seats;
+  }
+
+  // FR-013: Check if any party's lower CI bound falls below threshold
+  // If so, their min seats should be 0 (they might not enter Sejm)
+  for (const party of nationalPoll) {
+    if (party.percentage - perturbationPct < threshold) {
+      mins[party.partyId] = 0;
+    }
   }
 
   // Perturb each party up and down
