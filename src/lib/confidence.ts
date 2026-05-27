@@ -84,5 +84,18 @@ export function simulateWithConfidence(
     };
   }
 
+  // Case 3: parties below threshold but within CI range (could pass with +perturbation)
+  // Include them with base=0 if they got seats in any perturbation run
+  for (const party of nationalPoll) {
+    if (confidence[party.partyId]) continue; // already in results
+    if (party.percentage < threshold && party.percentage + perturbationPct >= threshold) {
+      confidence[party.partyId] = {
+        base: 0,
+        min: 0,
+        max: maxs[party.partyId] ?? 0,
+      };
+    }
+  }
+
   return { result, confidence };
 }

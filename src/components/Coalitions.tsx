@@ -15,12 +15,15 @@ interface Coalition {
 
 const COALITIONS: Coalition[] = [
   { name: "KO + Lewica", parties: ["ko", "lewica"] },
+  { name: "KO + PL2050", parties: ["ko", "polska2050"] },
+  { name: "KO + Lewica + PL2050", parties: ["ko", "lewica", "polska2050"] },
   { name: "KO + Lewica + PSL", parties: ["ko", "lewica", "psl"] },
   { name: "KO + Lewica + PSL + PL2050", parties: ["ko", "lewica", "psl", "polska2050"] },
   { name: "KO + PSL", parties: ["ko", "psl"] },
   { name: "KO + Lewica + PSL + PL2050 + Razem", parties: ["ko", "lewica", "psl", "polska2050", "razem"] },
   { name: "KO + Lewica + Razem", parties: ["ko", "lewica", "razem"] },
   { name: "KO + Konf", parties: ["ko", "konfederacja"] },
+  { name: "PiS + Konf", parties: ["pis", "konfederacja"] },
   { name: "PiS + PSL", parties: ["pis", "psl"] },
   { name: "PiS + Konf + PSL", parties: ["pis", "konfederacja", "psl"] },
   { name: "PiS + Konf + KKP", parties: ["pis", "konfederacja", "kkp"] },
@@ -35,10 +38,12 @@ export default function Coalitions({ seats }: CoalitionsProps) {
   const results = COALITIONS.map((coalition) => {
     const totalSeats = coalition.parties.reduce((sum, partyId) => sum + (seats[partyId] ?? 0), 0);
     const hasMajority = totalSeats >= MAJORITY;
-    // Only show coalitions where at least one party has seats
-    const hasAnySeats = coalition.parties.some((p) => (seats[p] ?? 0) > 0);
-    return { ...coalition, totalSeats, hasMajority, hasAnySeats };
-  }).filter((c) => c.hasAnySeats);
+    // Only show coalitions where ALL parties have seats (passed threshold)
+    const allPartiesPresent = coalition.parties.every((p) => (seats[p] ?? 0) > 0);
+    return { ...coalition, totalSeats, hasMajority, allPartiesPresent };
+  })
+    .filter((c) => c.allPartiesPresent)
+    .sort((a, b) => b.totalSeats - a.totalSeats);
 
   if (results.length === 0) return null;
 

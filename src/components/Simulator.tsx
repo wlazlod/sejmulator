@@ -78,9 +78,11 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
   const [result, setResult] = useState<SimulationWithCI | null>(null);
   const [shareUrl, setShareUrl] = useState<string | null>(null);
   const [sharing, setSharing] = useState(false);
-  const [undecided, setUndecided] = useState(0);
   const [otherParties, setOtherParties] = useState(0);
   const [perturbationPct, setPerturbationPct] = useState(1.5);
+
+  const totalPercentage = parties.reduce((s, p) => s + p.percentage, 0);
+  const undecided = Math.max(0, 100 - totalPercentage - otherParties);
 
   const electionDatasets = useMemo(() => {
     return elections as unknown as Record<string, ElectionData>;
@@ -192,8 +194,6 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
 
   const availableToAdd = Object.keys(partyDefaults).filter((id) => !parties.some((p) => p.id === id));
 
-  const totalPercentage = parties.reduce((s, p) => s + p.percentage, 0);
-
   return (
     <div className="mx-auto max-w-4xl p-4 sm:p-6">
       <h1 className="mb-2 text-2xl font-bold sm:text-3xl">Sejmulator</h1>
@@ -236,19 +236,7 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
 
         {/* Advanced parameters */}
         <div className="mt-3 grid grid-cols-1 gap-2 border-t border-gray-100 pt-3 sm:grid-cols-3">
-          <label className="flex items-center gap-2 text-sm text-gray-600">
-            Niezdecydowani
-            <input
-              type="number"
-              min={0}
-              max={100}
-              step={0.1}
-              value={undecided}
-              onChange={(e) => setUndecided(parseFloat(e.target.value) || 0)}
-              className="w-16 rounded border px-2 py-1 text-right text-sm"
-            />
-            <span className="text-gray-400">%</span>
-          </label>
+          <span className="flex items-center gap-2 text-sm text-gray-500">Niezdecydowani: {undecided.toFixed(1)}%</span>
           <label className="flex items-center gap-2 text-sm text-gray-600">
             Inne partie
             <input
@@ -432,10 +420,15 @@ function SimulationResults({
   otherParties: number;
 }) {
   const { result: sim, confidence } = result;
-  const sortedSeats = Object.entries(sim.seats)
+
+  // Build display list from confidence data (includes case-3 parties with base=0)
+  // Filter out __inne__ and parties not in confidence (case 4: completely below threshold)
+  const displayParties = Object.entries(confidence)
     .filter(([id]) => id !== "__inne__")
-    .sort((a, b) => b[1] - a[1]);
-  const maxSeats = sortedSeats[0]?.[1] ?? 1;
+    .map(([partyId, ci]) => ({ partyId, seats: ci.base, ci }))
+    .sort((a, b) => b.seats - a.seats || b.ci.max - a.ci.max);
+
+  const maxSeats = displayParties[0]?.seats ?? 1;
 
   // Compute real percentages for display
   const showReal = undecided > 0 || otherParties > 0;
@@ -457,16 +450,16 @@ function SimulationResults({
       )}
 
       <div className="space-y-2">
-        {sortedSeats.map(([partyId, seats]) => {
+        {displayParties.map(({ partyId, seats, ci }) => {
           const party = parties.find((p) => p.id === partyId);
           const color = PARTY_COLORS[partyId] ?? "#6b7280";
-          const barWidth = (seats / maxSeats) * 100;
-          const ci = confidence[partyId];
-          const hasRange = ci && ci.min !== ci.max;
+          const barWidth = maxSeats > 0 ? (seats / maxSeats) * 100 : 0;
+          const hasRange = ci.min !== ci.max;
           const realEntry = normResult?.realPercentages.find((r) => r.partyId === partyId);
+          const isBelowThreshold = seats === 0 && ci.max > 0;
 
           return (
-            <div key={partyId} className="flex items-center gap-2">
+            <div key={partyId} className={`flex items-center gap-2 ${isBelowThreshold ? "opacity-60" : ""}`}>
               <span className="w-16 flex-shrink-0 text-right text-sm font-medium sm:w-20">
                 {party?.shortName ?? partyId}
               </span>
@@ -476,7 +469,9 @@ function SimulationResults({
                 </span>
               )}
               <div className="relative h-6 flex-1 overflow-hidden rounded bg-gray-100">
-                <div className="h-full rounded" style={{ width: `${barWidth}%`, backgroundColor: color }} />
+                {barWidth > 0 && (
+                  <div className="h-full rounded" style={{ width: `${barWidth}%`, backgroundColor: color }} />
+                )}
                 <span className="absolute inset-y-0 right-2 flex items-center text-xs font-bold">
                   {seats}
                   {hasRange && (
@@ -486,6 +481,7 @@ function SimulationResults({
                   )}
                 </span>
               </div>
+              {isBelowThreshold && <span className="flex-shrink-0 text-xs text-amber-600">poniżej progu</span>}
             </div>
           );
         })}
@@ -495,8 +491,8 @@ function SimulationResults({
       <div className="mt-3 border-t pt-3 text-sm text-gray-600">
         <p>
           Większość bezwzględna: 231 mandatów.{" "}
-          {sortedSeats[0] && sortedSeats[0][1] >= 231
-            ? `${parties.find((p) => p.id === sortedSeats[0][0])?.shortName ?? sortedSeats[0][0]} ma samodzielną większość.`
+          {displayParties[0] && displayParties[0].seats >= 231
+            ? `${parties.find((p) => p.id === displayParties[0].partyId)?.shortName ?? displayParties[0].partyId} ma samodzielną większość.`
             : "Żadna partia nie ma samodzielnej większości."}
         </p>
       </div>
