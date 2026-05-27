@@ -1,0 +1,3619 @@
+{
+  "election": {
+    "id": "prezydenckie-2025",
+    "name": "Prezydenckie 2025 (I tura)",
+    "type": "prezydenckie",
+    "year": 2025,
+    "date": "2025-05-18"
+  },
+  "districts": [
+    {
+      "district": {
+        "number": 1,
+        "name": "Legnica",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 152799,
+          "percentage": 35.05
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 127385,
+          "percentage": 29.22
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 62088,
+          "percentage": 14.24
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 26758,
+          "percentage": 6.14
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 18492,
+          "percentage": 4.24
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 16745,
+          "percentage": 3.84
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 16697,
+          "percentage": 3.83
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 4825,
+          "percentage": 1.11
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 4141,
+          "percentage": 0.95
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2819,
+          "percentage": 0.65
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2002,
+          "percentage": 0.46
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 875,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 346,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 435972
+    },
+    {
+      "district": {
+        "number": 2,
+        "name": "Wałbrzych",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 106124,
+          "percentage": 38.12
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 77024,
+          "percentage": 27.67
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 36507,
+          "percentage": 13.11
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 17001,
+          "percentage": 6.11
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 11886,
+          "percentage": 4.27
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 10626,
+          "percentage": 3.82
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 9817,
+          "percentage": 3.53
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 2962,
+          "percentage": 1.06
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 2628,
+          "percentage": 0.94
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 1706,
+          "percentage": 0.61
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1352,
+          "percentage": 0.49
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 535,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 238,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 278406
+    },
+    {
+      "district": {
+        "number": 3,
+        "name": "Wrocław",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 260396,
+          "percentage": 36.81
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 158370,
+          "percentage": 22.39
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 94154,
+          "percentage": 13.31
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 54462,
+          "percentage": 7.7
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 38949,
+          "percentage": 5.51
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 36265,
+          "percentage": 5.13
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 34162,
+          "percentage": 4.83
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 10573,
+          "percentage": 1.49
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 9643,
+          "percentage": 1.36
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 5137,
+          "percentage": 0.73
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 3373,
+          "percentage": 0.48
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 1307,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 665,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 707456
+    },
+    {
+      "district": {
+        "number": 4,
+        "name": "Bydgoszcz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 176317,
+          "percentage": 37.16
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 117649,
+          "percentage": 24.8
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 67297,
+          "percentage": 14.18
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 26019,
+          "percentage": 5.48
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 25127,
+          "percentage": 5.3
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 22411,
+          "percentage": 4.72
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 20450,
+          "percentage": 4.31
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 6818,
+          "percentage": 1.44
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 5407,
+          "percentage": 1.14
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3291,
+          "percentage": 0.69
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2312,
+          "percentage": 0.49
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 934,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 453,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 474485
+    },
+    {
+      "district": {
+        "number": 5,
+        "name": "Toruń",
+        "districtSize": 13
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 163125,
+          "percentage": 34.11
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 133674,
+          "percentage": 27.95
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 74416,
+          "percentage": 15.56
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 24572,
+          "percentage": 5.14
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 23476,
+          "percentage": 4.91
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 21666,
+          "percentage": 4.53
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 20602,
+          "percentage": 4.31
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 5221,
+          "percentage": 1.09
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 4897,
+          "percentage": 1.02
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3087,
+          "percentage": 0.65
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1984,
+          "percentage": 0.41
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 1153,
+          "percentage": 0.24
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 426,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 478299
+    },
+    {
+      "district": {
+        "number": 6,
+        "name": "Lublin",
+        "districtSize": 15
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 230662,
+          "percentage": 37.94
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 132566,
+          "percentage": 21.8
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 98919,
+          "percentage": 16.27
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 51163,
+          "percentage": 8.41
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 27822,
+          "percentage": 4.58
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 24850,
+          "percentage": 4.09
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 17965,
+          "percentage": 2.95
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 7114,
+          "percentage": 1.17
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 5903,
+          "percentage": 0.97
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 5743,
+          "percentage": 0.94
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 3289,
+          "percentage": 0.54
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 1188,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 824,
+          "percentage": 0.14
+        }
+      ],
+      "totalValidVotes": 608008
+    },
+    {
+      "district": {
+        "number": 7,
+        "name": "Chełm",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 172244,
+          "percentage": 40.56
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 80703,
+          "percentage": 19
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 71967,
+          "percentage": 16.95
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 45699,
+          "percentage": 10.76
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 16840,
+          "percentage": 3.97
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 11621,
+          "percentage": 2.74
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 10660,
+          "percentage": 2.51
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3731,
+          "percentage": 0.88
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 3714,
+          "percentage": 0.87
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3266,
+          "percentage": 0.77
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2262,
+          "percentage": 0.53
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 987,
+          "percentage": 0.23
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 955,
+          "percentage": 0.22
+        }
+      ],
+      "totalValidVotes": 424649
+    },
+    {
+      "district": {
+        "number": 8,
+        "name": "Zielona Góra",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 183321,
+          "percentage": 40.49
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 105266,
+          "percentage": 23.25
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 64453,
+          "percentage": 14.23
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 25954,
+          "percentage": 5.73
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 22352,
+          "percentage": 4.94
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 18325,
+          "percentage": 4.05
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 17529,
+          "percentage": 3.87
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 5159,
+          "percentage": 1.14
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 4520,
+          "percentage": 1
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2605,
+          "percentage": 0.58
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2133,
+          "percentage": 0.47
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 779,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 383,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 452779
+    },
+    {
+      "district": {
+        "number": 9,
+        "name": "Łódź",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 167461,
+          "percentage": 41.35
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 88808,
+          "percentage": 21.93
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 42070,
+          "percentage": 10.39
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 25415,
+          "percentage": 6.28
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 24732,
+          "percentage": 6.11
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 20113,
+          "percentage": 4.97
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 19159,
+          "percentage": 4.73
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 5707,
+          "percentage": 1.41
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 5546,
+          "percentage": 1.37
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2917,
+          "percentage": 0.72
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1961,
+          "percentage": 0.48
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 692,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 381,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 404962
+    },
+    {
+      "district": {
+        "number": 10,
+        "name": "Piotrków Trybunalski",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 144728,
+          "percentage": 39.96
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 79388,
+          "percentage": 21.92
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 58505,
+          "percentage": 16.15
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 26112,
+          "percentage": 7.21
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 15057,
+          "percentage": 4.16
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 12726,
+          "percentage": 3.51
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 12268,
+          "percentage": 3.39
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 4063,
+          "percentage": 1.12
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3347,
+          "percentage": 0.92
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3197,
+          "percentage": 0.88
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1826,
+          "percentage": 0.5
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 704,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 281,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 362202
+    },
+    {
+      "district": {
+        "number": 11,
+        "name": "Sieradz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 167281,
+          "percentage": 34.93
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 130343,
+          "percentage": 27.22
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 71474,
+          "percentage": 14.92
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 30370,
+          "percentage": 6.34
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 22910,
+          "percentage": 4.78
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 19981,
+          "percentage": 4.17
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 18561,
+          "percentage": 3.88
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 5639,
+          "percentage": 1.18
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 4725,
+          "percentage": 0.99
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3917,
+          "percentage": 0.82
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2346,
+          "percentage": 0.49
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 995,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 381,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 478923
+    },
+    {
+      "district": {
+        "number": 12,
+        "name": "Kraków (I)",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 119979,
+          "percentage": 35.84
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 82159,
+          "percentage": 24.54
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 58809,
+          "percentage": 17.57
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 22224,
+          "percentage": 6.64
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 15998,
+          "percentage": 4.78
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 13277,
+          "percentage": 3.97
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 10120,
+          "percentage": 3.02
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 3984,
+          "percentage": 1.19
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 2962,
+          "percentage": 0.88
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2739,
+          "percentage": 0.82
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1610,
+          "percentage": 0.48
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 566,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 326,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 334753
+    },
+    {
+      "district": {
+        "number": 13,
+        "name": "Kraków (II)",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 225316,
+          "percentage": 31.86
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 179792,
+          "percentage": 25.42
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 96200,
+          "percentage": 13.6
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 60593,
+          "percentage": 8.57
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 41400,
+          "percentage": 5.85
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 36939,
+          "percentage": 5.22
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 34921,
+          "percentage": 4.94
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 10524,
+          "percentage": 1.49
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 10449,
+          "percentage": 1.48
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 6067,
+          "percentage": 0.86
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 3228,
+          "percentage": 0.46
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 1049,
+          "percentage": 0.15
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 669,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 707147
+    },
+    {
+      "district": {
+        "number": 14,
+        "name": "Nowy Sącz",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 187790,
+          "percentage": 46.68
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 73577,
+          "percentage": 18.29
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 63986,
+          "percentage": 15.9
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 34263,
+          "percentage": 8.52
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 13464,
+          "percentage": 3.35
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 11248,
+          "percentage": 2.8
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 6663,
+          "percentage": 1.66
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 3671,
+          "percentage": 0.91
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2772,
+          "percentage": 0.69
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 2417,
+          "percentage": 0.6
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1549,
+          "percentage": 0.39
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 627,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 290,
+          "percentage": 0.07
+        }
+      ],
+      "totalValidVotes": 402317
+    },
+    {
+      "district": {
+        "number": 15,
+        "name": "Tarnów",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 154953,
+          "percentage": 40.66
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 74267,
+          "percentage": 19.49
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 67074,
+          "percentage": 17.6
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 28947,
+          "percentage": 7.6
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 18751,
+          "percentage": 4.92
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 14413,
+          "percentage": 3.78
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 9322,
+          "percentage": 2.45
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 4335,
+          "percentage": 1.14
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3334,
+          "percentage": 0.87
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3116,
+          "percentage": 0.82
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1699,
+          "percentage": 0.45
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 602,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 307,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 381120
+    },
+    {
+      "district": {
+        "number": 16,
+        "name": "Płock",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 151799,
+          "percentage": 38.24
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 96992,
+          "percentage": 24.43
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 61973,
+          "percentage": 15.61
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 27452,
+          "percentage": 6.92
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 17357,
+          "percentage": 4.37
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 13640,
+          "percentage": 3.44
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 13366,
+          "percentage": 3.37
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 4549,
+          "percentage": 1.15
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3605,
+          "percentage": 0.91
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3352,
+          "percentage": 0.84
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1832,
+          "percentage": 0.46
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 738,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 287,
+          "percentage": 0.07
+        }
+      ],
+      "totalValidVotes": 396942
+    },
+    {
+      "district": {
+        "number": 17,
+        "name": "Radom",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 149764,
+          "percentage": 41.92
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 73596,
+          "percentage": 20.6
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 59426,
+          "percentage": 16.63
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 26171,
+          "percentage": 7.33
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 13848,
+          "percentage": 3.88
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 11658,
+          "percentage": 3.26
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 10669,
+          "percentage": 2.99
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 3711,
+          "percentage": 1.04
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3071,
+          "percentage": 0.86
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 2690,
+          "percentage": 0.75
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1779,
+          "percentage": 0.5
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 629,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 236,
+          "percentage": 0.07
+        }
+      ],
+      "totalValidVotes": 357248
+    },
+    {
+      "district": {
+        "number": 18,
+        "name": "Siedlce",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 208586,
+          "percentage": 41.64
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 93724,
+          "percentage": 18.71
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 87166,
+          "percentage": 17.4
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 41267,
+          "percentage": 8.24
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 22088,
+          "percentage": 4.41
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 16191,
+          "percentage": 3.23
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 13526,
+          "percentage": 2.7
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 5436,
+          "percentage": 1.09
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 4929,
+          "percentage": 0.98
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3816,
+          "percentage": 0.76
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2664,
+          "percentage": 0.53
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 1029,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 474,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 500896
+    },
+    {
+      "district": {
+        "number": 19,
+        "name": "Warszawa (I)",
+        "districtSize": 20
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 460616,
+          "percentage": 42.27
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 199119,
+          "percentage": 18.27
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 103910,
+          "percentage": 9.54
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 92369,
+          "percentage": 8.48
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 81291,
+          "percentage": 7.46
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 58602,
+          "percentage": 5.38
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 38470,
+          "percentage": 3.53
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 19616,
+          "percentage": 1.8
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 17880,
+          "percentage": 1.64
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 9781,
+          "percentage": 0.9
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 5538,
+          "percentage": 0.51
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 1472,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 1016,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 1089680
+    },
+    {
+      "district": {
+        "number": 20,
+        "name": "Warszawa (II)",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 232401,
+          "percentage": 33.55
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 187865,
+          "percentage": 27.12
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 96589,
+          "percentage": 13.94
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 38641,
+          "percentage": 5.58
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 37018,
+          "percentage": 5.34
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 35352,
+          "percentage": 5.1
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 32189,
+          "percentage": 4.65
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 11155,
+          "percentage": 1.61
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 8699,
+          "percentage": 1.26
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 7060,
+          "percentage": 1.02
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 4017,
+          "percentage": 0.58
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 1076,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 723,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 692785
+    },
+    {
+      "district": {
+        "number": 21,
+        "name": "Opole",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 148253,
+          "percentage": 35.59
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 107179,
+          "percentage": 25.73
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 63664,
+          "percentage": 15.28
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 26750,
+          "percentage": 6.42
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 23534,
+          "percentage": 5.65
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 16984,
+          "percentage": 4.08
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 14838,
+          "percentage": 3.56
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 5116,
+          "percentage": 1.23
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3976,
+          "percentage": 0.95
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2821,
+          "percentage": 0.68
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2107,
+          "percentage": 0.51
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 936,
+          "percentage": 0.22
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 408,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 416566
+    },
+    {
+      "district": {
+        "number": 22,
+        "name": "Krosno",
+        "districtSize": 11
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 182005,
+          "percentage": 44
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 75220,
+          "percentage": 18.19
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 70981,
+          "percentage": 17.16
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 38355,
+          "percentage": 9.27
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 14957,
+          "percentage": 3.62
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 10754,
+          "percentage": 2.6
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 8759,
+          "percentage": 2.12
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 3570,
+          "percentage": 0.86
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3252,
+          "percentage": 0.79
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 2726,
+          "percentage": 0.66
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1784,
+          "percentage": 0.43
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 905,
+          "percentage": 0.22
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 342,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 413610
+    },
+    {
+      "district": {
+        "number": 23,
+        "name": "Rzeszów",
+        "districtSize": 15
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 267866,
+          "percentage": 41.97
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 114040,
+          "percentage": 17.87
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 113079,
+          "percentage": 17.72
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 58604,
+          "percentage": 9.18
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 26014,
+          "percentage": 4.08
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 21581,
+          "percentage": 3.38
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 14636,
+          "percentage": 2.29
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 7125,
+          "percentage": 1.12
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 5593,
+          "percentage": 0.88
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 4965,
+          "percentage": 0.78
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 3040,
+          "percentage": 0.48
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 1127,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 544,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 638214
+    },
+    {
+      "district": {
+        "number": 24,
+        "name": "Białystok",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 198051,
+          "percentage": 35.82
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 128378,
+          "percentage": 23.22
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 94297,
+          "percentage": 17.05
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 42623,
+          "percentage": 7.71
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 31770,
+          "percentage": 5.75
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 19996,
+          "percentage": 3.62
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 16190,
+          "percentage": 2.93
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 6446,
+          "percentage": 1.17
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 4884,
+          "percentage": 0.88
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 4439,
+          "percentage": 0.8
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 3752,
+          "percentage": 0.68
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 1724,
+          "percentage": 0.31
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 393,
+          "percentage": 0.07
+        }
+      ],
+      "totalValidVotes": 552943
+    },
+    {
+      "district": {
+        "number": 25,
+        "name": "Gdańsk",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 228441,
+          "percentage": 39.66
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 118826,
+          "percentage": 20.63
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 74918,
+          "percentage": 13.01
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 40381,
+          "percentage": 7.01
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 32990,
+          "percentage": 5.73
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 30821,
+          "percentage": 5.35
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 25458,
+          "percentage": 4.42
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 8245,
+          "percentage": 1.43
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 8102,
+          "percentage": 1.41
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3719,
+          "percentage": 0.65
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2674,
+          "percentage": 0.46
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 932,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 525,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 576032
+    },
+    {
+      "district": {
+        "number": 26,
+        "name": "Gdynia",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 231982,
+          "percentage": 36.59
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 149615,
+          "percentage": 23.6
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 96218,
+          "percentage": 15.18
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 36932,
+          "percentage": 5.83
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 35956,
+          "percentage": 5.67
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 30462,
+          "percentage": 4.81
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 27299,
+          "percentage": 4.31
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 8438,
+          "percentage": 1.33
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 7754,
+          "percentage": 1.22
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 4379,
+          "percentage": 0.69
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 3131,
+          "percentage": 0.49
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 1120,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 640,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 633926
+    },
+    {
+      "district": {
+        "number": 27,
+        "name": "Bielsko-Biała",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 124528,
+          "percentage": 30.65
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 121212,
+          "percentage": 29.84
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 66948,
+          "percentage": 16.48
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 24940,
+          "percentage": 6.14
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 22649,
+          "percentage": 5.58
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 17087,
+          "percentage": 4.21
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 13652,
+          "percentage": 3.36
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 5022,
+          "percentage": 1.24
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3805,
+          "percentage": 0.94
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3168,
+          "percentage": 0.78
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2078,
+          "percentage": 0.51
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 767,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 372,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 406228
+    },
+    {
+      "district": {
+        "number": 28,
+        "name": "Częstochowa",
+        "districtSize": 7
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 88909,
+          "percentage": 31.11
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 88899,
+          "percentage": 31.11
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 41551,
+          "percentage": 14.54
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 18663,
+          "percentage": 6.53
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 13803,
+          "percentage": 4.83
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 11907,
+          "percentage": 4.17
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 11095,
+          "percentage": 3.88
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 3716,
+          "percentage": 1.3
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 2884,
+          "percentage": 1.01
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2066,
+          "percentage": 0.72
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1486,
+          "percentage": 0.52
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 545,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 273,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 285797
+    },
+    {
+      "district": {
+        "number": 29,
+        "name": "Katowice",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 122632,
+          "percentage": 35.99
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 83600,
+          "percentage": 24.54
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 49704,
+          "percentage": 14.59
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 19577,
+          "percentage": 5.75
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 18399,
+          "percentage": 5.4
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 17810,
+          "percentage": 5.23
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 15183,
+          "percentage": 4.46
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 4794,
+          "percentage": 1.41
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 4116,
+          "percentage": 1.21
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2362,
+          "percentage": 0.69
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1590,
+          "percentage": 0.47
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 586,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 351,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 340704
+    },
+    {
+      "district": {
+        "number": 30,
+        "name": "Bieruń",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 106298,
+          "percentage": 30.87
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 99522,
+          "percentage": 28.9
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 60849,
+          "percentage": 17.67
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 20598,
+          "percentage": 5.98
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 17790,
+          "percentage": 5.17
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 14287,
+          "percentage": 4.15
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 12413,
+          "percentage": 3.61
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 4329,
+          "percentage": 1.26
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3013,
+          "percentage": 0.88
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2507,
+          "percentage": 0.73
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1723,
+          "percentage": 0.5
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 640,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 346,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 344315
+    },
+    {
+      "district": {
+        "number": 31,
+        "name": "Sosnowiec",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 167046,
+          "percentage": 36.25
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 113835,
+          "percentage": 24.7
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 62184,
+          "percentage": 13.49
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 27371,
+          "percentage": 5.94
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 26252,
+          "percentage": 5.7
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 22772,
+          "percentage": 4.94
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 22062,
+          "percentage": 4.79
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 6886,
+          "percentage": 1.49
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 5970,
+          "percentage": 1.3
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3050,
+          "percentage": 0.66
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2154,
+          "percentage": 0.47
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 774,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 463,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 460819
+    },
+    {
+      "district": {
+        "number": 32,
+        "name": "Gliwice",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 123148,
+          "percentage": 37.63
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 82740,
+          "percentage": 25.28
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 41126,
+          "percentage": 12.57
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 18028,
+          "percentage": 5.51
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 17942,
+          "percentage": 5.48
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 16077,
+          "percentage": 4.91
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 15483,
+          "percentage": 4.73
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 4315,
+          "percentage": 1.32
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3884,
+          "percentage": 1.19
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2095,
+          "percentage": 0.64
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1520,
+          "percentage": 0.46
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 636,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 285,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 327279
+    },
+    {
+      "district": {
+        "number": 33,
+        "name": "Kielce",
+        "districtSize": 16
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 236151,
+          "percentage": 39.94
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 140322,
+          "percentage": 23.73
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 85188,
+          "percentage": 14.41
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 46923,
+          "percentage": 7.94
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 24745,
+          "percentage": 4.18
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 19749,
+          "percentage": 3.34
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 18283,
+          "percentage": 3.09
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 6035,
+          "percentage": 1.02
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 4996,
+          "percentage": 0.84
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 4702,
+          "percentage": 0.8
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2626,
+          "percentage": 0.44
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 1121,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 496,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 591337
+    },
+    {
+      "district": {
+        "number": 34,
+        "name": "Elbląg",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 90525,
+          "percentage": 34.02
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 75209,
+          "percentage": 28.27
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 41621,
+          "percentage": 15.64
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 15593,
+          "percentage": 5.86
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 13402,
+          "percentage": 5.04
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 10938,
+          "percentage": 4.11
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 9597,
+          "percentage": 3.61
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 2924,
+          "percentage": 1.1
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 2468,
+          "percentage": 0.93
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 1863,
+          "percentage": 0.7
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1190,
+          "percentage": 0.45
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 499,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 227,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 266056
+    },
+    {
+      "district": {
+        "number": 35,
+        "name": "Olsztyn",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 124704,
+          "percentage": 34.95
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 92949,
+          "percentage": 26.05
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 54725,
+          "percentage": 15.34
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 21551,
+          "percentage": 6.04
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 18108,
+          "percentage": 5.08
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 15639,
+          "percentage": 4.38
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 15514,
+          "percentage": 4.35
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 4263,
+          "percentage": 1.19
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3515,
+          "percentage": 0.99
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2734,
+          "percentage": 0.77
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1998,
+          "percentage": 0.56
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 751,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 335,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 356786
+    },
+    {
+      "district": {
+        "number": 36,
+        "name": "Kalisz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 145608,
+          "percentage": 30.31
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 139080,
+          "percentage": 28.95
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 80842,
+          "percentage": 16.83
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 30993,
+          "percentage": 6.45
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 26816,
+          "percentage": 5.58
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 19867,
+          "percentage": 4.14
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 19519,
+          "percentage": 4.06
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 5632,
+          "percentage": 1.17
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 4866,
+          "percentage": 1.01
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3602,
+          "percentage": 0.75
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2247,
+          "percentage": 0.47
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 892,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 412,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 480376
+    },
+    {
+      "district": {
+        "number": 37,
+        "name": "Konin",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 122757,
+          "percentage": 32.84
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 103768,
+          "percentage": 27.76
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 59478,
+          "percentage": 15.91
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 23134,
+          "percentage": 6.19
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 19897,
+          "percentage": 5.32
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 16217,
+          "percentage": 4.34
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 15092,
+          "percentage": 4.04
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 4366,
+          "percentage": 1.17
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3545,
+          "percentage": 0.95
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2672,
+          "percentage": 0.71
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1802,
+          "percentage": 0.48
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 742,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 368,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 373838
+    },
+    {
+      "district": {
+        "number": 38,
+        "name": "Piła",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 130227,
+          "percentage": 35.43
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 87425,
+          "percentage": 23.78
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 58603,
+          "percentage": 15.94
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 23107,
+          "percentage": 6.29
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 22653,
+          "percentage": 6.16
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 16500,
+          "percentage": 4.49
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 15388,
+          "percentage": 4.19
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 4374,
+          "percentage": 1.19
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 3957,
+          "percentage": 1.08
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 2425,
+          "percentage": 0.66
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1840,
+          "percentage": 0.5
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 668,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 406,
+          "percentage": 0.11
+        }
+      ],
+      "totalValidVotes": 367573
+    },
+    {
+      "district": {
+        "number": 39,
+        "name": "Poznań",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 239582,
+          "percentage": 43.93
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 83997,
+          "percentage": 15.4
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 59863,
+          "percentage": 10.98
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 47236,
+          "percentage": 8.66
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 35422,
+          "percentage": 6.49
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 34624,
+          "percentage": 6.35
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 20179,
+          "percentage": 3.7
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 8806,
+          "percentage": 1.61
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 8288,
+          "percentage": 1.52
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3608,
+          "percentage": 0.66
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2464,
+          "percentage": 0.45
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 758,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 547,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 545374
+    },
+    {
+      "district": {
+        "number": 40,
+        "name": "Koszalin",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 115899,
+          "percentage": 39.84
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 72816,
+          "percentage": 25.03
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 39349,
+          "percentage": 13.53
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 16535,
+          "percentage": 5.68
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 14172,
+          "percentage": 4.87
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 12948,
+          "percentage": 4.45
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 9623,
+          "percentage": 3.31
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 3023,
+          "percentage": 1.04
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 2734,
+          "percentage": 0.94
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 1748,
+          "percentage": 0.6
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 1281,
+          "percentage": 0.44
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 536,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 262,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 290926
+    },
+    {
+      "district": {
+        "number": 41,
+        "name": "Szczecin",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "TRZASKOWSKI Rafał Kazimierz",
+          "votes": 200079,
+          "percentage": 40.59
+        },
+        {
+          "partyId": "nawrocki",
+          "partyName": "NAWROCKI Karol Tadeusz",
+          "votes": 117582,
+          "percentage": 23.85
+        },
+        {
+          "partyId": "mentzen",
+          "partyName": "MENTZEN Sławomir Jerzy",
+          "votes": 61119,
+          "percentage": 12.4
+        },
+        {
+          "partyId": "braun",
+          "partyName": "BRAUN Grzegorz Michał",
+          "votes": 25684,
+          "percentage": 5.21
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "HOŁOWNIA Szymon Franciszek",
+          "votes": 23995,
+          "percentage": 4.87
+        },
+        {
+          "partyId": "zandberg",
+          "partyName": "ZANDBERG Adrian Tadeusz",
+          "votes": 23975,
+          "percentage": 4.86
+        },
+        {
+          "partyId": "biejat",
+          "partyName": "BIEJAT Magdalena Agnieszka",
+          "votes": 22109,
+          "percentage": 4.49
+        },
+        {
+          "partyId": "stanowski",
+          "partyName": "STANOWSKI Krzysztof Jakub",
+          "votes": 6333,
+          "percentage": 1.28
+        },
+        {
+          "partyId": "senyszyn",
+          "partyName": "SENYSZYN Joanna",
+          "votes": 5421,
+          "percentage": 1.1
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "JAKUBIAK Marek",
+          "votes": 3086,
+          "percentage": 0.63
+        },
+        {
+          "partyId": "bartoszewicz",
+          "partyName": "BARTOSZEWICZ Artur",
+          "votes": 2281,
+          "percentage": 0.46
+        },
+        {
+          "partyId": "maciak",
+          "partyName": "MACIAK Maciej",
+          "votes": 832,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "woch",
+          "partyName": "WOCH Marek Marian",
+          "votes": 409,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 492905
+    }
+  ]
+}

@@ -6,5 +6,2234 @@
     "year": 2023,
     "date": "2023-10-15"
   },
-  "districts": []
+  "districts": [
+    {
+      "district": {
+        "number": 1,
+        "name": "Legnica",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 16748,
+          "percentage": 3.34
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 53958,
+          "percentage": 10.75
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 47715,
+          "percentage": 9.51
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 174643,
+          "percentage": 34.8
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 31770,
+          "percentage": 6.33
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 169540,
+          "percentage": 33.78
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 7496,
+          "percentage": 1.49
+        }
+      ],
+      "totalValidVotes": 501870
+    },
+    {
+      "district": {
+        "number": 2,
+        "name": "Wałbrzych",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 5808,
+          "percentage": 1.8
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 39215,
+          "percentage": 12.13
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 25806,
+          "percentage": 7.98
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 107797,
+          "percentage": 33.34
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 19478,
+          "percentage": 6.02
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 120188,
+          "percentage": 37.17
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 5068,
+          "percentage": 1.57
+        }
+      ],
+      "totalValidVotes": 323360
+    },
+    {
+      "district": {
+        "number": 3,
+        "name": "Wrocław",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 22412,
+          "percentage": 2.89
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 106624,
+          "percentage": 13.74
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 88089,
+          "percentage": 11.35
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 206899,
+          "percentage": 26.66
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 54132,
+          "percentage": 6.98
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 286713,
+          "percentage": 36.94
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 11185,
+          "percentage": 1.44
+        }
+      ],
+      "totalValidVotes": 776054
+    },
+    {
+      "district": {
+        "number": 4,
+        "name": "Bydgoszcz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 8905,
+          "percentage": 1.67
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 80426,
+          "percentage": 15.06
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 52959,
+          "percentage": 9.92
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 162603,
+          "percentage": 30.45
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 34266,
+          "percentage": 6.42
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 186914,
+          "percentage": 35.01
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 7846,
+          "percentage": 1.47
+        }
+      ],
+      "totalValidVotes": 533919
+    },
+    {
+      "district": {
+        "number": 5,
+        "name": "Toruń",
+        "districtSize": 13
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 7758,
+          "percentage": 1.44
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 84308,
+          "percentage": 15.68
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 60473,
+          "percentage": 11.25
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 183131,
+          "percentage": 34.06
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 34232,
+          "percentage": 6.37
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 158719,
+          "percentage": 29.52
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 6710,
+          "percentage": 1.25
+        },
+        {
+          "partyId": "wyborcow-ruchu-dobrobytu-i-pokoju",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW RUCHU DOBROBYTU I POKOJU",
+          "votes": 2266,
+          "percentage": 0.42
+        }
+      ],
+      "totalValidVotes": 537597
+    },
+    {
+      "district": {
+        "number": 6,
+        "name": "Lublin",
+        "districtSize": 15
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 10344,
+          "percentage": 1.6
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 102894,
+          "percentage": 15.87
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 37083,
+          "percentage": 5.72
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 294847,
+          "percentage": 45.48
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 54325,
+          "percentage": 8.38
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 131712,
+          "percentage": 20.32
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 14892,
+          "percentage": 2.3
+        },
+        {
+          "partyId": "wyborcow-ruchu-dobrobytu-i-pokoju",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW RUCHU DOBROBYTU I POKOJU",
+          "votes": 2250,
+          "percentage": 0.35
+        }
+      ],
+      "totalValidVotes": 648347
+    },
+    {
+      "district": {
+        "number": 7,
+        "name": "Chełm",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 9522,
+          "percentage": 2.08
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 59577,
+          "percentage": 13.04
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 25691,
+          "percentage": 5.62
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 231882,
+          "percentage": 50.75
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 35594,
+          "percentage": 7.79
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 79501,
+          "percentage": 17.4
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 12930,
+          "percentage": 2.83
+        },
+        {
+          "partyId": "wyborcow-ruchu-dobrobytu-i-pokoju",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW RUCHU DOBROBYTU I POKOJU",
+          "votes": 2175,
+          "percentage": 0.48
+        }
+      ],
+      "totalValidVotes": 456872
+    },
+    {
+      "district": {
+        "number": 8,
+        "name": "Zielona Góra",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 11954,
+          "percentage": 2.31
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 77933,
+          "percentage": 15.07
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 47911,
+          "percentage": 9.27
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 143530,
+          "percentage": 27.76
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 33672,
+          "percentage": 6.51
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 195091,
+          "percentage": 37.73
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 5794,
+          "percentage": 1.12
+        },
+        {
+          "partyId": "antypartia",
+          "partyName": "KOMITET WYBORCZY ANTYPARTIA",
+          "votes": 1156,
+          "percentage": 0.22
+        }
+      ],
+      "totalValidVotes": 517041
+    },
+    {
+      "district": {
+        "number": 9,
+        "name": "Łódź",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 5624,
+          "percentage": 1.23
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 54283,
+          "percentage": 11.89
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 55770,
+          "percentage": 12.22
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 122433,
+          "percentage": 26.82
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 25428,
+          "percentage": 5.57
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 187527,
+          "percentage": 41.07
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 5487,
+          "percentage": 1.2
+        }
+      ],
+      "totalValidVotes": 456552
+    },
+    {
+      "district": {
+        "number": 10,
+        "name": "Piotrków Trybunalski",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 8597,
+          "percentage": 2.17
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 54479,
+          "percentage": 13.73
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 25340,
+          "percentage": 6.39
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 184929,
+          "percentage": 46.6
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 30247,
+          "percentage": 7.62
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 86083,
+          "percentage": 21.69
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 5457,
+          "percentage": 1.38
+        },
+        {
+          "partyId": "wyborcow-ruchu-dobrobytu-i-pokoju",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW RUCHU DOBROBYTU I POKOJU",
+          "votes": 1687,
+          "percentage": 0.43
+        }
+      ],
+      "totalValidVotes": 396819
+    },
+    {
+      "district": {
+        "number": 11,
+        "name": "Sieradz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 8653,
+          "percentage": 1.62
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 77313,
+          "percentage": 14.5
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 41188,
+          "percentage": 7.73
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 221031,
+          "percentage": 41.46
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 36383,
+          "percentage": 6.82
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 138038,
+          "percentage": 25.89
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 7747,
+          "percentage": 1.45
+        },
+        {
+          "partyId": "wyborcow-ruchu-dobrobytu-i-pokoju",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW RUCHU DOBROBYTU I POKOJU",
+          "votes": 2775,
+          "percentage": 0.52
+        }
+      ],
+      "totalValidVotes": 533128
+    },
+    {
+      "district": {
+        "number": 12,
+        "name": "Kraków (I)",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 6487,
+          "percentage": 1.78
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 54585,
+          "percentage": 14.97
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 22036,
+          "percentage": 6.04
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 156308,
+          "percentage": 42.86
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 28754,
+          "percentage": 7.88
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 88408,
+          "percentage": 24.24
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 8093,
+          "percentage": 2.22
+        }
+      ],
+      "totalValidVotes": 364671
+    },
+    {
+      "district": {
+        "number": 13,
+        "name": "Kraków (II)",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 11416,
+          "percentage": 1.51
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 127693,
+          "percentage": 16.86
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 83633,
+          "percentage": 11.04
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 232430,
+          "percentage": 30.68
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 58435,
+          "percentage": 7.71
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 232799,
+          "percentage": 30.73
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 11116,
+          "percentage": 1.47
+        }
+      ],
+      "totalValidVotes": 757522
+    },
+    {
+      "district": {
+        "number": 14,
+        "name": "Nowy Sącz",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 10643,
+          "percentage": 2.49
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 49487,
+          "percentage": 11.58
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 13594,
+          "percentage": 3.18
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 229587,
+          "percentage": 53.73
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 37301,
+          "percentage": 8.73
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 68804,
+          "percentage": 16.1
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 17876,
+          "percentage": 4.18
+        }
+      ],
+      "totalValidVotes": 427292
+    },
+    {
+      "district": {
+        "number": 15,
+        "name": "Tarnów",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 5566,
+          "percentage": 1.38
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 75229,
+          "percentage": 18.64
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 16152,
+          "percentage": 4
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 196433,
+          "percentage": 48.67
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 32241,
+          "percentage": 7.99
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 68690,
+          "percentage": 17.02
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 9280,
+          "percentage": 2.3
+        }
+      ],
+      "totalValidVotes": 403591
+    },
+    {
+      "district": {
+        "number": 16,
+        "name": "Płock",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 8984,
+          "percentage": 2.03
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 75526,
+          "percentage": 17.07
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 28848,
+          "percentage": 6.52
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 195218,
+          "percentage": 44.11
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 28877,
+          "percentage": 6.52
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 99146,
+          "percentage": 22.4
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 5968,
+          "percentage": 1.35
+        }
+      ],
+      "totalValidVotes": 442567
+    },
+    {
+      "district": {
+        "number": 17,
+        "name": "Radom",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 6673,
+          "percentage": 1.71
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 54690,
+          "percentage": 13.98
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 20874,
+          "percentage": 5.34
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 190418,
+          "percentage": 48.68
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 28593,
+          "percentage": 7.31
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 82003,
+          "percentage": 20.96
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 5983,
+          "percentage": 1.53
+        },
+        {
+          "partyId": "wyborcow-ruchu-dobrobytu-i-pokoju",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW RUCHU DOBROBYTU I POKOJU",
+          "votes": 1968,
+          "percentage": 0.5
+        }
+      ],
+      "totalValidVotes": 391202
+    },
+    {
+      "district": {
+        "number": 18,
+        "name": "Siedlce",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 10045,
+          "percentage": 1.86
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 83681,
+          "percentage": 15.51
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 26149,
+          "percentage": 4.85
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 262236,
+          "percentage": 48.62
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 44299,
+          "percentage": 8.21
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 100902,
+          "percentage": 18.71
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 10229,
+          "percentage": 1.9
+        },
+        {
+          "partyId": "normalny-kraj",
+          "partyName": "KOMITET WYBORCZY NORMALNY KRAJ",
+          "votes": 1044,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "ruch-naprawy-polski",
+          "partyName": "KOMITET WYBORCZY RUCH NAPRAWY POLSKI",
+          "votes": 823,
+          "percentage": 0.15
+        }
+      ],
+      "totalValidVotes": 539408
+    },
+    {
+      "district": {
+        "number": 19,
+        "name": "Warszawa (I)",
+        "districtSize": 20
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 23450,
+          "percentage": 1.37
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 227127,
+          "percentage": 13.25
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 230648,
+          "percentage": 13.45
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 345380,
+          "percentage": 20.14
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 124220,
+          "percentage": 7.24
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 741286,
+          "percentage": 43.23
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 22608,
+          "percentage": 1.32
+        }
+      ],
+      "totalValidVotes": 1714719
+    },
+    {
+      "district": {
+        "number": 20,
+        "name": "Warszawa (II)",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 16571,
+          "percentage": 2.27
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 110086,
+          "percentage": 15.06
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 51556,
+          "percentage": 7.06
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 231905,
+          "percentage": 31.74
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 51573,
+          "percentage": 7.06
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 257470,
+          "percentage": 35.23
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 11583,
+          "percentage": 1.59
+        }
+      ],
+      "totalValidVotes": 730744
+    },
+    {
+      "district": {
+        "number": 21,
+        "name": "Opole",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 7521,
+          "percentage": 1.57
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 61155,
+          "percentage": 12.74
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 34763,
+          "percentage": 7.24
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 150022,
+          "percentage": 31.26
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 31150,
+          "percentage": 6.49
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 161241,
+          "percentage": 33.59
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 8338,
+          "percentage": 1.74
+        },
+        {
+          "partyId": "wyborcow-mniejszosc-niemiecka",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW MNIEJSZOŚĆ NIEMIECKA",
+          "votes": 25778,
+          "percentage": 5.37
+        }
+      ],
+      "totalValidVotes": 479968
+    },
+    {
+      "district": {
+        "number": 22,
+        "name": "Krosno",
+        "districtSize": 11
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 9165,
+          "percentage": 2.07
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 60938,
+          "percentage": 13.79
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 19750,
+          "percentage": 4.47
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 241790,
+          "percentage": 54.7
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 38080,
+          "percentage": 8.62
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 70054,
+          "percentage": 15.85
+        },
+        {
+          "partyId": "wyborcow-ruchu-dobrobytu-i-pokoju",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW RUCHU DOBROBYTU I POKOJU",
+          "votes": 2219,
+          "percentage": 0.5
+        }
+      ],
+      "totalValidVotes": 441996
+    },
+    {
+      "district": {
+        "number": 23,
+        "name": "Rzeszów",
+        "districtSize": 15
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 10302,
+          "percentage": 1.53
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 83676,
+          "percentage": 12.42
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 32828,
+          "percentage": 4.87
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 347688,
+          "percentage": 51.6
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 63854,
+          "percentage": 9.48
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 119259,
+          "percentage": 17.7
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 16169,
+          "percentage": 2.4
+        }
+      ],
+      "totalValidVotes": 673776
+    },
+    {
+      "district": {
+        "number": 24,
+        "name": "Białystok",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 7081,
+          "percentage": 1.16
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 114898,
+          "percentage": 18.86
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 29478,
+          "percentage": 4.84
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 258277,
+          "percentage": 42.39
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 59648,
+          "percentage": 9.79
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 126971,
+          "percentage": 20.84
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 9998,
+          "percentage": 1.64
+        },
+        {
+          "partyId": "wyborcow-ruchu-dobrobytu-i-pokoju",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW RUCHU DOBROBYTU I POKOJU",
+          "votes": 2893,
+          "percentage": 0.47
+        }
+      ],
+      "totalValidVotes": 609244
+    },
+    {
+      "district": {
+        "number": 25,
+        "name": "Gdańsk",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 8871,
+          "percentage": 1.44
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 90599,
+          "percentage": 14.7
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 57967,
+          "percentage": 9.41
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 155318,
+          "percentage": 25.2
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 38406,
+          "percentage": 6.23
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 257009,
+          "percentage": 41.7
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 8117,
+          "percentage": 1.32
+        }
+      ],
+      "totalValidVotes": 616287
+    },
+    {
+      "district": {
+        "number": 26,
+        "name": "Gdynia",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 11084,
+          "percentage": 1.62
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 92793,
+          "percentage": 13.59
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 56887,
+          "percentage": 8.33
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 199709,
+          "percentage": 29.24
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 49203,
+          "percentage": 7.21
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 258909,
+          "percentage": 37.91
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 14314,
+          "percentage": 2.1
+        }
+      ],
+      "totalValidVotes": 682899
+    },
+    {
+      "district": {
+        "number": 27,
+        "name": "Bielsko-Biała",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 7683,
+          "percentage": 1.73
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 64778,
+          "percentage": 14.55
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 34601,
+          "percentage": 7.77
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 163506,
+          "percentage": 36.71
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 34909,
+          "percentage": 7.84
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 127677,
+          "percentage": 28.67
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 10950,
+          "percentage": 2.46
+        },
+        {
+          "partyId": "normalny-kraj",
+          "partyName": "KOMITET WYBORCZY NORMALNY KRAJ",
+          "votes": 1242,
+          "percentage": 0.28
+        }
+      ],
+      "totalValidVotes": 445346
+    },
+    {
+      "district": {
+        "number": 28,
+        "name": "Częstochowa",
+        "districtSize": 7
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 6775,
+          "percentage": 2.09
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 47698,
+          "percentage": 14.72
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 30497,
+          "percentage": 9.41
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 117756,
+          "percentage": 36.35
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 21256,
+          "percentage": 6.56
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 94313,
+          "percentage": 29.11
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 5646,
+          "percentage": 1.74
+        }
+      ],
+      "totalValidVotes": 323941
+    },
+    {
+      "district": {
+        "number": 29,
+        "name": "Katowice",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 7378,
+          "percentage": 1.9
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 51681,
+          "percentage": 13.34
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 35673,
+          "percentage": 9.21
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 116827,
+          "percentage": 30.16
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 26934,
+          "percentage": 6.95
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 139711,
+          "percentage": 36.06
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 9204,
+          "percentage": 2.38
+        }
+      ],
+      "totalValidVotes": 387408
+    },
+    {
+      "district": {
+        "number": 30,
+        "name": "Bieruń",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 8647,
+          "percentage": 2.27
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 47525,
+          "percentage": 12.45
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 26117,
+          "percentage": 6.84
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 145230,
+          "percentage": 38.06
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 30527,
+          "percentage": 8
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 114404,
+          "percentage": 29.98
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 9148,
+          "percentage": 2.4
+        }
+      ],
+      "totalValidVotes": 381598
+    },
+    {
+      "district": {
+        "number": 31,
+        "name": "Sosnowiec",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 9488,
+          "percentage": 1.8
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 69825,
+          "percentage": 13.27
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 44509,
+          "percentage": 8.46
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 162458,
+          "percentage": 30.88
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 35240,
+          "percentage": 6.7
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 193596,
+          "percentage": 36.79
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 11051,
+          "percentage": 2.1
+        }
+      ],
+      "totalValidVotes": 526167
+    },
+    {
+      "district": {
+        "number": 32,
+        "name": "Gliwice",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 5499,
+          "percentage": 1.45
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 37221,
+          "percentage": 9.85
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 81646,
+          "percentage": 21.6
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 112389,
+          "percentage": 29.74
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 21512,
+          "percentage": 5.69
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 114519,
+          "percentage": 30.3
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 5173,
+          "percentage": 1.37
+        }
+      ],
+      "totalValidVotes": 377959
+    },
+    {
+      "district": {
+        "number": 33,
+        "name": "Kielce",
+        "districtSize": 16
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 18961,
+          "percentage": 2.88
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 90975,
+          "percentage": 13.8
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 45048,
+          "percentage": 6.83
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 310266,
+          "percentage": 47.07
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 43197,
+          "percentage": 6.55
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 137941,
+          "percentage": 20.93
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 9090,
+          "percentage": 1.38
+        },
+        {
+          "partyId": "wyborcow-ruchu-dobrobytu-i-pokoju",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW RUCHU DOBROBYTU I POKOJU",
+          "votes": 2310,
+          "percentage": 0.35
+        },
+        {
+          "partyId": "normalny-kraj",
+          "partyName": "KOMITET WYBORCZY NORMALNY KRAJ",
+          "votes": 1344,
+          "percentage": 0.2
+        }
+      ],
+      "totalValidVotes": 659132
+    },
+    {
+      "district": {
+        "number": 34,
+        "name": "Elbląg",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 4322,
+          "percentage": 1.44
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 46101,
+          "percentage": 15.4
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 24269,
+          "percentage": 8.11
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 105373,
+          "percentage": 35.2
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 19590,
+          "percentage": 6.54
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 95410,
+          "percentage": 31.87
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 3339,
+          "percentage": 1.12
+        },
+        {
+          "partyId": "normalny-kraj",
+          "partyName": "KOMITET WYBORCZY NORMALNY KRAJ",
+          "votes": 976,
+          "percentage": 0.33
+        }
+      ],
+      "totalValidVotes": 299380
+    },
+    {
+      "district": {
+        "number": 35,
+        "name": "Olsztyn",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 7728,
+          "percentage": 1.98
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 63007,
+          "percentage": 16.11
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 31631,
+          "percentage": 8.09
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 126432,
+          "percentage": 32.33
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 27119,
+          "percentage": 6.93
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 129339,
+          "percentage": 33.07
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 5802,
+          "percentage": 1.48
+        }
+      ],
+      "totalValidVotes": 391058
+    },
+    {
+      "district": {
+        "number": 36,
+        "name": "Kalisz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 12934,
+          "percentage": 2.39
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 87628,
+          "percentage": 16.16
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 46222,
+          "percentage": 8.52
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 194416,
+          "percentage": 35.85
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 37838,
+          "percentage": 6.98
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 154990,
+          "percentage": 28.58
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 8239,
+          "percentage": 1.52
+        }
+      ],
+      "totalValidVotes": 542267
+    },
+    {
+      "district": {
+        "number": 37,
+        "name": "Konin",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 9851,
+          "percentage": 2.35
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 69740,
+          "percentage": 16.63
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 39761,
+          "percentage": 9.48
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 162192,
+          "percentage": 38.69
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 29208,
+          "percentage": 6.97
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 100580,
+          "percentage": 23.99
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 5776,
+          "percentage": 1.38
+        },
+        {
+          "partyId": "wyborcow-ruchu-dobrobytu-i-pokoju",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW RUCHU DOBROBYTU I POKOJU",
+          "votes": 2135,
+          "percentage": 0.51
+        }
+      ],
+      "totalValidVotes": 419243
+    },
+    {
+      "district": {
+        "number": 38,
+        "name": "Piła",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 7878,
+          "percentage": 1.91
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 72996,
+          "percentage": 17.66
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 32378,
+          "percentage": 7.84
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 120301,
+          "percentage": 29.11
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 28370,
+          "percentage": 6.87
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 144114,
+          "percentage": 34.87
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 7198,
+          "percentage": 1.74
+        }
+      ],
+      "totalValidVotes": 413235
+    },
+    {
+      "district": {
+        "number": 39,
+        "name": "Poznań",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 9477,
+          "percentage": 1.59
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 98589,
+          "percentage": 16.54
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 73345,
+          "percentage": 12.31
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 116666,
+          "percentage": 19.57
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 35182,
+          "percentage": 5.9
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 262779,
+          "percentage": 44.09
+        }
+      ],
+      "totalValidVotes": 596038
+    },
+    {
+      "district": {
+        "number": 40,
+        "name": "Koszalin",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 5264,
+          "percentage": 1.63
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 39776,
+          "percentage": 12.35
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 28101,
+          "percentage": 8.72
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 101023,
+          "percentage": 31.36
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 19379,
+          "percentage": 6.02
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 124625,
+          "percentage": 38.69
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 3981,
+          "percentage": 1.24
+        }
+      ],
+      "totalValidVotes": 322149
+    },
+    {
+      "district": {
+        "number": 41,
+        "name": "Szczecin",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "bezpartyjni-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY BEZPARTYJNI SAMORZĄDOWCY",
+          "votes": 8985,
+          "percentage": 1.62
+        },
+        {
+          "partyId": "trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY TRZECIA DROGA POLSKA 2050 SZYMONA HOŁOWNI - POLSKIE STRONNICTWO LUDOWE",
+          "votes": 69957,
+          "percentage": 12.62
+        },
+        {
+          "partyId": "nowa-lewica",
+          "partyName": "KOMITET WYBORCZY NOWA LEWICA",
+          "votes": 52032,
+          "percentage": 9.39
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 159575,
+          "percentage": 28.79
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 32942,
+          "percentage": 5.94
+        },
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 222427,
+          "percentage": 40.13
+        },
+        {
+          "partyId": "polska-jest-jedna",
+          "partyName": "KOMITET WYBORCZY POLSKA JEST JEDNA",
+          "votes": 6218,
+          "percentage": 1.12
+        },
+        {
+          "partyId": "wyborcow-ruchu-dobrobytu-i-pokoju",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW RUCHU DOBROBYTU I POKOJU",
+          "votes": 2172,
+          "percentage": 0.39
+        }
+      ],
+      "totalValidVotes": 554308
+    }
+  ]
 }

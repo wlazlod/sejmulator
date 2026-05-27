@@ -1,0 +1,3127 @@
+{
+  "election": {
+    "id": "prezydenckie-2020",
+    "name": "Prezydenckie 2020 (I tura)",
+    "type": "prezydenckie",
+    "year": 2020,
+    "date": "2020-06-28"
+  },
+  "districts": [
+    {
+      "district": {
+        "number": 1,
+        "name": "Legnica",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 191859,
+          "percentage": 42.1
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 149821,
+          "percentage": 32.88
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 64470,
+          "percentage": 14.15
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 27697,
+          "percentage": 6.08
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 10155,
+          "percentage": 2.23
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 8448,
+          "percentage": 1.85
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 912,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 698,
+          "percentage": 0.15
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 663,
+          "percentage": 0.15
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 500,
+          "percentage": 0.11
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 449,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 455672
+    },
+    {
+      "district": {
+        "number": 2,
+        "name": "Wałbrzych",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 120466,
+          "percentage": 40.47
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 104905,
+          "percentage": 35.24
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 41081,
+          "percentage": 13.8
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 17014,
+          "percentage": 5.72
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 6566,
+          "percentage": 2.21
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 5622,
+          "percentage": 1.89
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 591,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 462,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 394,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 330,
+          "percentage": 0.11
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 266,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 297697
+    },
+    {
+      "district": {
+        "number": 3,
+        "name": "Wrocław",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 257631,
+          "percentage": 38.28
+        },
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 232676,
+          "percentage": 34.57
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 95499,
+          "percentage": 14.19
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 47082,
+          "percentage": 7
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 20524,
+          "percentage": 3.05
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 13140,
+          "percentage": 1.95
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 2039,
+          "percentage": 0.3
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 1333,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 1231,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 1231,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 638,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 673024
+    },
+    {
+      "district": {
+        "number": 4,
+        "name": "Bydgoszcz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 179620,
+          "percentage": 37.47
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 165962,
+          "percentage": 34.62
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 79948,
+          "percentage": 16.68
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 27860,
+          "percentage": 5.81
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 11310,
+          "percentage": 2.36
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 11256,
+          "percentage": 2.35
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1068,
+          "percentage": 0.22
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 670,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 657,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 564,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 455,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 479370
+    },
+    {
+      "district": {
+        "number": 5,
+        "name": "Toruń",
+        "districtSize": 13
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 200570,
+          "percentage": 41.6
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 156999,
+          "percentage": 32.57
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 68649,
+          "percentage": 14.24
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 28672,
+          "percentage": 5.95
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 12924,
+          "percentage": 2.68
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 10994,
+          "percentage": 2.28
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1015,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 653,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 639,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 518,
+          "percentage": 0.11
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 457,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 482090
+    },
+    {
+      "district": {
+        "number": 6,
+        "name": "Lublin",
+        "districtSize": 15
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 331268,
+          "percentage": 54.8
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 126251,
+          "percentage": 20.88
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 64009,
+          "percentage": 10.59
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 49519,
+          "percentage": 8.19
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 17280,
+          "percentage": 2.86
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 10592,
+          "percentage": 1.75
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1512,
+          "percentage": 0.25
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 1389,
+          "percentage": 0.23
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 1219,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 838,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 666,
+          "percentage": 0.11
+        }
+      ],
+      "totalValidVotes": 604543
+    },
+    {
+      "district": {
+        "number": 7,
+        "name": "Chełm",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 259966,
+          "percentage": 59.24
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 75320,
+          "percentage": 17.17
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 44978,
+          "percentage": 10.25
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 33884,
+          "percentage": 7.72
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 14476,
+          "percentage": 3.3
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 6418,
+          "percentage": 1.46
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1049,
+          "percentage": 0.24
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 879,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 876,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 592,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 361,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 438799
+    },
+    {
+      "district": {
+        "number": 8,
+        "name": "Zielona Góra",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 174894,
+          "percentage": 36.94
+        },
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 161894,
+          "percentage": 34.19
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 84590,
+          "percentage": 17.87
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 28743,
+          "percentage": 6.07
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 10413,
+          "percentage": 2.2
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 9583,
+          "percentage": 2.02
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 913,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 756,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 686,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 572,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 405,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 473449
+    },
+    {
+      "district": {
+        "number": 9,
+        "name": "Łódź",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 167436,
+          "percentage": 41.12
+        },
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 134235,
+          "percentage": 32.97
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 58675,
+          "percentage": 14.41
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 23672,
+          "percentage": 5.81
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 12385,
+          "percentage": 3.04
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 7369,
+          "percentage": 1.81
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 995,
+          "percentage": 0.24
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 714,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 696,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 648,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 376,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 407201
+    },
+    {
+      "district": {
+        "number": 10,
+        "name": "Piotrków Trybunalski",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 207609,
+          "percentage": 56.2
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 74447,
+          "percentage": 20.15
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 43226,
+          "percentage": 11.7
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 24707,
+          "percentage": 6.69
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 9892,
+          "percentage": 2.68
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 6627,
+          "percentage": 1.79
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 827,
+          "percentage": 0.22
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 700,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 482,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 446,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 423,
+          "percentage": 0.11
+        }
+      ],
+      "totalValidVotes": 369386
+    },
+    {
+      "district": {
+        "number": 11,
+        "name": "Sieradz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 247341,
+          "percentage": 50.79
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 121326,
+          "percentage": 24.91
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 61393,
+          "percentage": 12.61
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 29380,
+          "percentage": 6.03
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 13984,
+          "percentage": 2.87
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 10010,
+          "percentage": 2.06
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1079,
+          "percentage": 0.22
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 795,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 646,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 566,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 500,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 487020
+    },
+    {
+      "district": {
+        "number": 12,
+        "name": "Kraków (I)",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 177279,
+          "percentage": 52.23
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 78884,
+          "percentage": 23.24
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 40584,
+          "percentage": 11.96
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 26431,
+          "percentage": 7.79
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 8446,
+          "percentage": 2.49
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 5314,
+          "percentage": 1.57
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 836,
+          "percentage": 0.25
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 557,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 434,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 351,
+          "percentage": 0.1
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 323,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 339439
+    },
+    {
+      "district": {
+        "number": 13,
+        "name": "Kraków (II)",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 256829,
+          "percentage": 38.48
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 220398,
+          "percentage": 33.02
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 94721,
+          "percentage": 14.19
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 49840,
+          "percentage": 7.47
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 19580,
+          "percentage": 2.93
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 19259,
+          "percentage": 2.89
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 2503,
+          "percentage": 0.37
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 1399,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 1391,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 940,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 624,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 667484
+    },
+    {
+      "district": {
+        "number": 14,
+        "name": "Nowy Sącz",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 261686,
+          "percentage": 64.67
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 60889,
+          "percentage": 15.05
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 33717,
+          "percentage": 8.33
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 32533,
+          "percentage": 8.04
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 8885,
+          "percentage": 2.2
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 4367,
+          "percentage": 1.08
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 839,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 640,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 431,
+          "percentage": 0.11
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 357,
+          "percentage": 0.09
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 291,
+          "percentage": 0.07
+        }
+      ],
+      "totalValidVotes": 404635
+    },
+    {
+      "district": {
+        "number": 15,
+        "name": "Tarnów",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 216658,
+          "percentage": 57.98
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 66779,
+          "percentage": 17.87
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 37012,
+          "percentage": 9.9
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 29799,
+          "percentage": 7.97
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 15893,
+          "percentage": 4.25
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 4969,
+          "percentage": 1.33
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 837,
+          "percentage": 0.22
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 629,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 385,
+          "percentage": 0.1
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 385,
+          "percentage": 0.1
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 330,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 373676
+    },
+    {
+      "district": {
+        "number": 16,
+        "name": "Płock",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 214121,
+          "percentage": 53.64
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 93863,
+          "percentage": 23.51
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 43943,
+          "percentage": 11.01
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 24263,
+          "percentage": 6.08
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 13363,
+          "percentage": 3.35
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 6616,
+          "percentage": 1.66
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 910,
+          "percentage": 0.23
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 827,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 478,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 402,
+          "percentage": 0.1
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 378,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 399164
+    },
+    {
+      "district": {
+        "number": 17,
+        "name": "Radom",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 209644,
+          "percentage": 58.64
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 69904,
+          "percentage": 19.55
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 35011,
+          "percentage": 9.79
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 24808,
+          "percentage": 6.94
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 10433,
+          "percentage": 2.92
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 5222,
+          "percentage": 1.46
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 683,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 682,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 438,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 363,
+          "percentage": 0.1
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 336,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 357524
+    },
+    {
+      "district": {
+        "number": 18,
+        "name": "Siedlce",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 291956,
+          "percentage": 59.35
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 86853,
+          "percentage": 17.66
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 52104,
+          "percentage": 10.59
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 36098,
+          "percentage": 7.34
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 14457,
+          "percentage": 2.94
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 6639,
+          "percentage": 1.35
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1151,
+          "percentage": 0.23
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 1017,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 639,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 595,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 436,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 491945
+    },
+    {
+      "district": {
+        "number": 19,
+        "name": "Warszawa (I)",
+        "districtSize": 20
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 486876,
+          "percentage": 47.58
+        },
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 275418,
+          "percentage": 26.91
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 138496,
+          "percentage": 13.53
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 57180,
+          "percentage": 5.59
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 35930,
+          "percentage": 3.51
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 18195,
+          "percentage": 1.78
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 2973,
+          "percentage": 0.29
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 2961,
+          "percentage": 0.29
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 2441,
+          "percentage": 0.24
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 1757,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 1154,
+          "percentage": 0.11
+        }
+      ],
+      "totalValidVotes": 1023381
+    },
+    {
+      "district": {
+        "number": 20,
+        "name": "Warszawa (II)",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 249556,
+          "percentage": 40.03
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 212585,
+          "percentage": 34.1
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 90108,
+          "percentage": 14.45
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 39300,
+          "percentage": 6.3
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 13059,
+          "percentage": 2.09
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 12924,
+          "percentage": 2.07
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1607,
+          "percentage": 0.26
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 1449,
+          "percentage": 0.23
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 1017,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 1011,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 782,
+          "percentage": 0.13
+        }
+      ],
+      "totalValidVotes": 623398
+    },
+    {
+      "district": {
+        "number": 21,
+        "name": "Opole",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 176552,
+          "percentage": 40.46
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 139125,
+          "percentage": 31.88
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 72609,
+          "percentage": 16.64
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 26661,
+          "percentage": 6.11
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 10146,
+          "percentage": 2.33
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 8039,
+          "percentage": 1.84
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 919,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 702,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 622,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 536,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 440,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 436351
+    },
+    {
+      "district": {
+        "number": 22,
+        "name": "Krosno",
+        "districtSize": 11
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 264060,
+          "percentage": 61.97
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 68783,
+          "percentage": 16.14
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 38007,
+          "percentage": 8.92
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 34910,
+          "percentage": 8.19
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 11562,
+          "percentage": 2.71
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 6170,
+          "percentage": 1.45
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 804,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 700,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 424,
+          "percentage": 0.1
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 382,
+          "percentage": 0.09
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 336,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 426138
+    },
+    {
+      "district": {
+        "number": 23,
+        "name": "Rzeszów",
+        "districtSize": 15
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 382043,
+          "percentage": 59.84
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 104006,
+          "percentage": 16.29
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 62735,
+          "percentage": 9.83
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 60440,
+          "percentage": 9.47
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 15725,
+          "percentage": 2.46
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 8632,
+          "percentage": 1.35
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1537,
+          "percentage": 0.24
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 1247,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 777,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 740,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 539,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 638421
+    },
+    {
+      "district": {
+        "number": 24,
+        "name": "Białystok",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 280113,
+          "percentage": 50.59
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 114076,
+          "percentage": 20.6
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 92088,
+          "percentage": 16.63
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 42823,
+          "percentage": 7.73
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 11681,
+          "percentage": 2.11
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 8746,
+          "percentage": 1.58
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1299,
+          "percentage": 0.23
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 1024,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 747,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 602,
+          "percentage": 0.11
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 518,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 553717
+    },
+    {
+      "district": {
+        "number": 25,
+        "name": "Gdańsk",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 223373,
+          "percentage": 40.87
+        },
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 172382,
+          "percentage": 31.54
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 87815,
+          "percentage": 16.07
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 33812,
+          "percentage": 6.19
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 14366,
+          "percentage": 2.63
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 10241,
+          "percentage": 1.87
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1421,
+          "percentage": 0.26
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 886,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 886,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 819,
+          "percentage": 0.15
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 568,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 546569
+    },
+    {
+      "district": {
+        "number": 26,
+        "name": "Gdynia",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 229633,
+          "percentage": 36.59
+        },
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 224787,
+          "percentage": 35.82
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 101575,
+          "percentage": 16.18
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 39166,
+          "percentage": 6.24
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 15789,
+          "percentage": 2.52
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 12159,
+          "percentage": 1.94
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1295,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 909,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 883,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 785,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 642,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 627623
+    },
+    {
+      "district": {
+        "number": 27,
+        "name": "Bielsko-Biała",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 181930,
+          "percentage": 44.52
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 113872,
+          "percentage": 27.87
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 63603,
+          "percentage": 15.57
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 30480,
+          "percentage": 7.46
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 7852,
+          "percentage": 1.92
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 7698,
+          "percentage": 1.88
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 910,
+          "percentage": 0.22
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 726,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 589,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 506,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 457,
+          "percentage": 0.11
+        }
+      ],
+      "totalValidVotes": 408623
+    },
+    {
+      "district": {
+        "number": 28,
+        "name": "Częstochowa",
+        "districtSize": 7
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 134581,
+          "percentage": 45.01
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 86185,
+          "percentage": 28.83
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 43517,
+          "percentage": 14.56
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 18592,
+          "percentage": 6.22
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 7349,
+          "percentage": 2.46
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 6444,
+          "percentage": 2.16
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 700,
+          "percentage": 0.23
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 466,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 464,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 356,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 316,
+          "percentage": 0.11
+        }
+      ],
+      "totalValidVotes": 298970
+    },
+    {
+      "district": {
+        "number": 29,
+        "name": "Katowice",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 130629,
+          "percentage": 37.5
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 117254,
+          "percentage": 33.66
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 57717,
+          "percentage": 16.57
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 24986,
+          "percentage": 7.17
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 8241,
+          "percentage": 2.37
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 6548,
+          "percentage": 1.88
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 864,
+          "percentage": 0.25
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 591,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 558,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 528,
+          "percentage": 0.15
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 405,
+          "percentage": 0.12
+        }
+      ],
+      "totalValidVotes": 348321
+    },
+    {
+      "district": {
+        "number": 30,
+        "name": "Bieruń",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 159097,
+          "percentage": 45.72
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 92699,
+          "percentage": 26.64
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 52948,
+          "percentage": 15.22
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 28669,
+          "percentage": 8.24
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 5948,
+          "percentage": 1.71
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 5844,
+          "percentage": 1.68
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 818,
+          "percentage": 0.24
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 584,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 582,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 402,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 398,
+          "percentage": 0.11
+        }
+      ],
+      "totalValidVotes": 347989
+    },
+    {
+      "district": {
+        "number": 31,
+        "name": "Sosnowiec",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 178256,
+          "percentage": 37.76
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 162191,
+          "percentage": 34.36
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 74189,
+          "percentage": 15.72
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 32518,
+          "percentage": 6.89
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 12476,
+          "percentage": 2.64
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 8329,
+          "percentage": 1.76
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1284,
+          "percentage": 0.27
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 825,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 759,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 742,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 518,
+          "percentage": 0.11
+        }
+      ],
+      "totalValidVotes": 472087
+    },
+    {
+      "district": {
+        "number": 32,
+        "name": "Gliwice",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 128928,
+          "percentage": 37.9
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 120992,
+          "percentage": 35.56
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 49195,
+          "percentage": 14.46
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 21765,
+          "percentage": 6.4
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 9844,
+          "percentage": 2.89
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 6857,
+          "percentage": 2.02
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 823,
+          "percentage": 0.24
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 549,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 491,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 482,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 282,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 340208
+    },
+    {
+      "district": {
+        "number": 33,
+        "name": "Kielce",
+        "districtSize": 16
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 343752,
+          "percentage": 56.02
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 130670,
+          "percentage": 21.29
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 62383,
+          "percentage": 10.17
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 42544,
+          "percentage": 6.93
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 19494,
+          "percentage": 3.18
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 10728,
+          "percentage": 1.75
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1214,
+          "percentage": 0.2
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 1018,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 668,
+          "percentage": 0.11
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 614,
+          "percentage": 0.1
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 555,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 613640
+    },
+    {
+      "district": {
+        "number": 34,
+        "name": "Elbląg",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 115590,
+          "percentage": 42.7
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 84223,
+          "percentage": 31.12
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 39935,
+          "percentage": 14.75
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 16603,
+          "percentage": 6.13
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 6912,
+          "percentage": 2.55
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 5547,
+          "percentage": 2.05
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 510,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 415,
+          "percentage": 0.15
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 363,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 325,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 248,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 270671
+    },
+    {
+      "district": {
+        "number": 35,
+        "name": "Olsztyn",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 138341,
+          "percentage": 38.16
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 124699,
+          "percentage": 34.4
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 53663,
+          "percentage": 14.8
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 25762,
+          "percentage": 7.11
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 8777,
+          "percentage": 2.42
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 8478,
+          "percentage": 2.34
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 751,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 647,
+          "percentage": 0.18
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 596,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 430,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 377,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 362521
+    },
+    {
+      "district": {
+        "number": 36,
+        "name": "Kalisz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 216218,
+          "percentage": 44.2
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 139541,
+          "percentage": 28.53
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 73293,
+          "percentage": 14.98
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 32569,
+          "percentage": 6.66
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 14263,
+          "percentage": 2.92
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 9597,
+          "percentage": 1.96
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1051,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 778,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 696,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 661,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 479,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 489146
+    },
+    {
+      "district": {
+        "number": 37,
+        "name": "Konin",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 185116,
+          "percentage": 48.73
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 97291,
+          "percentage": 25.61
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 56036,
+          "percentage": 14.75
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 22074,
+          "percentage": 5.81
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 9359,
+          "percentage": 2.46
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 7395,
+          "percentage": 1.95
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 798,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 544,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 476,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 450,
+          "percentage": 0.12
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 333,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 379872
+    },
+    {
+      "district": {
+        "number": 38,
+        "name": "Piła",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 138670,
+          "percentage": 37.08
+        },
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 122705,
+          "percentage": 32.81
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 69141,
+          "percentage": 18.49
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 22159,
+          "percentage": 5.93
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 10829,
+          "percentage": 2.9
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 7676,
+          "percentage": 2.05
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 712,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 631,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 521,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 500,
+          "percentage": 0.13
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 390,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 373934
+    },
+    {
+      "district": {
+        "number": 39,
+        "name": "Poznań",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 236266,
+          "percentage": 45.6
+        },
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 126535,
+          "percentage": 24.42
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 94637,
+          "percentage": 18.27
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 29565,
+          "percentage": 5.71
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 16532,
+          "percentage": 3.19
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 9683,
+          "percentage": 1.87
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 1504,
+          "percentage": 0.29
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1371,
+          "percentage": 0.26
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 826,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 700,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 496,
+          "percentage": 0.1
+        }
+      ],
+      "totalValidVotes": 518115
+    },
+    {
+      "district": {
+        "number": 40,
+        "name": "Koszalin",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 112641,
+          "percentage": 37.05
+        },
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 110820,
+          "percentage": 36.45
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 47761,
+          "percentage": 15.71
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 15917,
+          "percentage": 5.24
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 7989,
+          "percentage": 2.63
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 6856,
+          "percentage": 2.26
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 563,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 447,
+          "percentage": 0.15
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 433,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 322,
+          "percentage": 0.11
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 258,
+          "percentage": 0.08
+        }
+      ],
+      "totalValidVotes": 304007
+    },
+    {
+      "district": {
+        "number": 41,
+        "name": "Szczecin",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "trzaskowski",
+          "partyName": "Rafał Kazimierz TRZASKOWSKI",
+          "votes": 195217,
+          "percentage": 38.42
+        },
+        {
+          "partyId": "duda",
+          "partyName": "Andrzej Sebastian DUDA",
+          "votes": 176508,
+          "percentage": 34.74
+        },
+        {
+          "partyId": "holownia",
+          "partyName": "Szymon Franciszek HOŁOWNIA",
+          "votes": 79496,
+          "percentage": 15.64
+        },
+        {
+          "partyId": "bosak",
+          "partyName": "Krzysztof BOSAK",
+          "votes": 29495,
+          "percentage": 5.8
+        },
+        {
+          "partyId": "biedron",
+          "partyName": "Robert BIEDROŃ",
+          "votes": 13673,
+          "percentage": 2.69
+        },
+        {
+          "partyId": "kosiniak-kamysz",
+          "partyName": "Władysław Marcin KOSINIAK-KAMYSZ",
+          "votes": 9879,
+          "percentage": 1.94
+        },
+        {
+          "partyId": "zoltek",
+          "partyName": "Stanisław Józef ŻÓŁTEK",
+          "votes": 1054,
+          "percentage": 0.21
+        },
+        {
+          "partyId": "tanajno",
+          "partyName": "Paweł Jan TANAJNO",
+          "votes": 875,
+          "percentage": 0.17
+        },
+        {
+          "partyId": "jakubiak",
+          "partyName": "Marek JAKUBIAK",
+          "votes": 778,
+          "percentage": 0.15
+        },
+        {
+          "partyId": "witkowski",
+          "partyName": "Waldemar Włodzimierz WITKOWSKI",
+          "votes": 719,
+          "percentage": 0.14
+        },
+        {
+          "partyId": "piotrowski",
+          "partyName": "Mirosław Mariusz PIOTROWSKI",
+          "votes": 452,
+          "percentage": 0.09
+        }
+      ],
+      "totalValidVotes": 508146
+    }
+  ]
+}

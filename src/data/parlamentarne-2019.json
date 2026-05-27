@@ -1,0 +1,1825 @@
+{
+  "election": {
+    "id": "parlamentarne-2019",
+    "name": "Parlamentarne 2019",
+    "type": "parlamentarne",
+    "year": 2019,
+    "date": "2019-10-13"
+  },
+  "districts": [
+    {
+      "district": {
+        "number": 1,
+        "name": "Legnica",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 108191,
+          "percentage": 25.02
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 25319,
+          "percentage": 5.85
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 31006,
+          "percentage": 7.17
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 183364,
+          "percentage": 42.4
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 71061,
+          "percentage": 16.43
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 13495,
+          "percentage": 3.12
+        }
+      ],
+      "totalValidVotes": 432436
+    },
+    {
+      "district": {
+        "number": 2,
+        "name": "Wałbrzych",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 90812,
+          "percentage": 32.09
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 15346,
+          "percentage": 5.42
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 20528,
+          "percentage": 7.25
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 114728,
+          "percentage": 40.54
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 34957,
+          "percentage": 12.35
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 6631,
+          "percentage": 2.34
+        }
+      ],
+      "totalValidVotes": 283002
+    },
+    {
+      "district": {
+        "number": 3,
+        "name": "Wrocław",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 214629,
+          "percentage": 32.8
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 48775,
+          "percentage": 7.45
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 42269,
+          "percentage": 6.46
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 226915,
+          "percentage": 34.67
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 100843,
+          "percentage": 15.41
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 21024,
+          "percentage": 3.21
+        }
+      ],
+      "totalValidVotes": 654455
+    },
+    {
+      "district": {
+        "number": 4,
+        "name": "Bydgoszcz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 142844,
+          "percentage": 31.05
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 32406,
+          "percentage": 7.05
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 41497,
+          "percentage": 9.02
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 167550,
+          "percentage": 36.43
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 69763,
+          "percentage": 15.17
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 5922,
+          "percentage": 1.29
+        }
+      ],
+      "totalValidVotes": 459982
+    },
+    {
+      "district": {
+        "number": 5,
+        "name": "Toruń",
+        "districtSize": 13
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 119526,
+          "percentage": 26.42
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 28625,
+          "percentage": 6.33
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 49225,
+          "percentage": 10.88
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 182648,
+          "percentage": 40.38
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 67076,
+          "percentage": 14.83
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 5230,
+          "percentage": 1.16
+        }
+      ],
+      "totalValidVotes": 452330
+    },
+    {
+      "district": {
+        "number": 6,
+        "name": "Lublin",
+        "districtSize": 15
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 109185,
+          "percentage": 19.3
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 40012,
+          "percentage": 7.07
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 51474,
+          "percentage": 9.1
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 313284,
+          "percentage": 55.39
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 44152,
+          "percentage": 7.81
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 7490,
+          "percentage": 1.32
+        }
+      ],
+      "totalValidVotes": 565597
+    },
+    {
+      "district": {
+        "number": 7,
+        "name": "Chełm",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 59401,
+          "percentage": 14.8
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 23439,
+          "percentage": 5.84
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 47604,
+          "percentage": 11.86
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 238802,
+          "percentage": 59.5
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 27404,
+          "percentage": 6.83
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 4668,
+          "percentage": 1.16
+        }
+      ],
+      "totalValidVotes": 401318
+    },
+    {
+      "district": {
+        "number": 8,
+        "name": "Zielona Góra",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 136955,
+          "percentage": 31.27
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 31490,
+          "percentage": 7.19
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 50943,
+          "percentage": 11.63
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 150188,
+          "percentage": 34.3
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 68341,
+          "percentage": 15.61
+        }
+      ],
+      "totalValidVotes": 437917
+    },
+    {
+      "district": {
+        "number": 9,
+        "name": "Łódź",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 148830,
+          "percentage": 35.82
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 27627,
+          "percentage": 6.65
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 18828,
+          "percentage": 4.53
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 136731,
+          "percentage": 32.9
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 83524,
+          "percentage": 20.1
+        }
+      ],
+      "totalValidVotes": 415540
+    },
+    {
+      "district": {
+        "number": 10,
+        "name": "Piotrków Trybunalski",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 54160,
+          "percentage": 15.64
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 23427,
+          "percentage": 6.76
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 36151,
+          "percentage": 10.44
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 194658,
+          "percentage": 56.21
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 37930,
+          "percentage": 10.95
+        }
+      ],
+      "totalValidVotes": 346326
+    },
+    {
+      "district": {
+        "number": 11,
+        "name": "Sieradz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 94268,
+          "percentage": 20.48
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 27054,
+          "percentage": 5.88
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 47373,
+          "percentage": 10.29
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 229245,
+          "percentage": 49.81
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 55116,
+          "percentage": 11.98
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 7183,
+          "percentage": 1.56
+        }
+      ],
+      "totalValidVotes": 460239
+    },
+    {
+      "district": {
+        "number": 12,
+        "name": "Kraków (I)",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 72869,
+          "percentage": 23.04
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 22334,
+          "percentage": 7.06
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 24996,
+          "percentage": 7.9
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 169106,
+          "percentage": 53.48
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 26909,
+          "percentage": 8.51
+        }
+      ],
+      "totalValidVotes": 316214
+    },
+    {
+      "district": {
+        "number": 13,
+        "name": "Kraków (II)",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 197930,
+          "percentage": 30.48
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 51855,
+          "percentage": 7.99
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 47219,
+          "percentage": 7.27
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "KOMITET WYBORCZY PRAWICA",
+          "votes": 1765,
+          "percentage": 0.27
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 256847,
+          "percentage": 39.56
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 84457,
+          "percentage": 13.01
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 9214,
+          "percentage": 1.42
+        }
+      ],
+      "totalValidVotes": 649287
+    },
+    {
+      "district": {
+        "number": 14,
+        "name": "Nowy Sącz",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 51183,
+          "percentage": 13.83
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 25747,
+          "percentage": 6.95
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 27203,
+          "percentage": 7.35
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 243583,
+          "percentage": 65.8
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 22483,
+          "percentage": 6.07
+        }
+      ],
+      "totalValidVotes": 370199
+    },
+    {
+      "district": {
+        "number": 15,
+        "name": "Tarnów",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 48597,
+          "percentage": 14
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 24695,
+          "percentage": 7.11
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 46333,
+          "percentage": 13.35
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 206845,
+          "percentage": 59.59
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 20618,
+          "percentage": 5.94
+        }
+      ],
+      "totalValidVotes": 347088
+    },
+    {
+      "district": {
+        "number": 16,
+        "name": "Płock",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 62429,
+          "percentage": 16.85
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 19405,
+          "percentage": 5.24
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 56227,
+          "percentage": 15.17
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 194371,
+          "percentage": 52.45
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 32448,
+          "percentage": 8.76
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 5681,
+          "percentage": 1.53
+        }
+      ],
+      "totalValidVotes": 370561
+    },
+    {
+      "district": {
+        "number": 17,
+        "name": "Radom",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 57449,
+          "percentage": 17.15
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 19724,
+          "percentage": 5.89
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 34185,
+          "percentage": 10.2
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 193709,
+          "percentage": 57.82
+        },
+        {
+          "partyId": "skuteczni-piotra-liroya-marca",
+          "partyName": "KOMITET WYBORCZY SKUTECZNI PIOTRA LIROYA-MARCA",
+          "votes": 2503,
+          "percentage": 0.75
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 24884,
+          "percentage": 7.43
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 2555,
+          "percentage": 0.76
+        }
+      ],
+      "totalValidVotes": 335009
+    },
+    {
+      "district": {
+        "number": 18,
+        "name": "Siedlce",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 63124,
+          "percentage": 13.94
+        },
+        {
+          "partyId": "akcja-zawiedzionych-emerytow-rencistow",
+          "partyName": "KOMITET WYBORCZY AKCJA ZAWIEDZIONYCH EMERYTÓW RENCISTÓW",
+          "votes": 1412,
+          "percentage": 0.31
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 29390,
+          "percentage": 6.49
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 54085,
+          "percentage": 11.94
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 270641,
+          "percentage": 59.76
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 29235,
+          "percentage": 6.45
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 5019,
+          "percentage": 1.11
+        }
+      ],
+      "totalValidVotes": 452906
+    },
+    {
+      "district": {
+        "number": 19,
+        "name": "Warszawa (I)",
+        "districtSize": 20
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 581077,
+          "percentage": 42.05
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 103843,
+          "percentage": 7.51
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 65683,
+          "percentage": 4.75
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 379880,
+          "percentage": 27.49
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 251434,
+          "percentage": 18.19
+        }
+      ],
+      "totalValidVotes": 1381917
+    },
+    {
+      "district": {
+        "number": 20,
+        "name": "Warszawa (II)",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 171286,
+          "percentage": 28.61
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 39675,
+          "percentage": 6.63
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 51484,
+          "percentage": 8.6
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 244823,
+          "percentage": 40.89
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 78348,
+          "percentage": 13.09
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 13111,
+          "percentage": 2.19
+        }
+      ],
+      "totalValidVotes": 598727
+    },
+    {
+      "district": {
+        "number": 21,
+        "name": "Opole",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 108570,
+          "percentage": 26.71
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 23176,
+          "percentage": 5.7
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 41901,
+          "percentage": 10.31
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 152999,
+          "percentage": 37.64
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 47699,
+          "percentage": 11.74
+        },
+        {
+          "partyId": "wyborcow-mniejszosc-niemiecka",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW MNIEJSZOŚĆ NIEMIECKA",
+          "votes": 32094,
+          "percentage": 7.9
+        }
+      ],
+      "totalValidVotes": 406439
+    },
+    {
+      "district": {
+        "number": 22,
+        "name": "Krosno",
+        "districtSize": 11
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 62246,
+          "percentage": 15.94
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 26615,
+          "percentage": 6.81
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 30655,
+          "percentage": 7.85
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 247488,
+          "percentage": 63.36
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 23577,
+          "percentage": 6.04
+        }
+      ],
+      "totalValidVotes": 390581
+    },
+    {
+      "district": {
+        "number": 23,
+        "name": "Rzeszów",
+        "districtSize": 15
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 84703,
+          "percentage": 14.39
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 48600,
+          "percentage": 8.25
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 45868,
+          "percentage": 7.79
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 367268,
+          "percentage": 62.38
+        },
+        {
+          "partyId": "skuteczni-piotra-liroya-marca",
+          "partyName": "KOMITET WYBORCZY SKUTECZNI PIOTRA LIROYA-MARCA",
+          "votes": 3530,
+          "percentage": 0.6
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 38817,
+          "percentage": 6.59
+        }
+      ],
+      "totalValidVotes": 588786
+    },
+    {
+      "district": {
+        "number": 24,
+        "name": "Białystok",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 109527,
+          "percentage": 21.04
+        },
+        {
+          "partyId": "akcja-zawiedzionych-emerytow-rencistow",
+          "partyName": "KOMITET WYBORCZY AKCJA ZAWIEDZIONYCH EMERYTÓW RENCISTÓW",
+          "votes": 1775,
+          "percentage": 0.34
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 36207,
+          "percentage": 6.96
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 48566,
+          "percentage": 9.33
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 270888,
+          "percentage": 52.04
+        },
+        {
+          "partyId": "skuteczni-piotra-liroya-marca",
+          "partyName": "KOMITET WYBORCZY SKUTECZNI PIOTRA LIROYA-MARCA",
+          "votes": 2272,
+          "percentage": 0.44
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 47342,
+          "percentage": 9.09
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 4001,
+          "percentage": 0.77
+        }
+      ],
+      "totalValidVotes": 520578
+    },
+    {
+      "district": {
+        "number": 25,
+        "name": "Gdańsk",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 218484,
+          "percentage": 41.31
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 38153,
+          "percentage": 7.21
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 31203,
+          "percentage": 5.9
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 169753,
+          "percentage": 32.1
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 71236,
+          "percentage": 13.47
+        }
+      ],
+      "totalValidVotes": 528829
+    },
+    {
+      "district": {
+        "number": 26,
+        "name": "Gdynia",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 208208,
+          "percentage": 35.85
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 42364,
+          "percentage": 7.3
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 46132,
+          "percentage": 7.94
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 211582,
+          "percentage": 36.43
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 72436,
+          "percentage": 12.47
+        }
+      ],
+      "totalValidVotes": 580722
+    },
+    {
+      "district": {
+        "number": 27,
+        "name": "Bielsko-Biała",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 105876,
+          "percentage": 27.2
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 28900,
+          "percentage": 7.42
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 27752,
+          "percentage": 7.13
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 182027,
+          "percentage": 46.76
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 44701,
+          "percentage": 11.48
+        }
+      ],
+      "totalValidVotes": 389256
+    },
+    {
+      "district": {
+        "number": 28,
+        "name": "Częstochowa",
+        "districtSize": 7
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 64374,
+          "percentage": 22.63
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 17278,
+          "percentage": 6.07
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 24704,
+          "percentage": 8.68
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 125990,
+          "percentage": 44.28
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 44354,
+          "percentage": 15.59
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 7817,
+          "percentage": 2.75
+        }
+      ],
+      "totalValidVotes": 284517
+    },
+    {
+      "district": {
+        "number": 29,
+        "name": "Katowice",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 111078,
+          "percentage": 32.61
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 26114,
+          "percentage": 7.67
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 20408,
+          "percentage": 5.99
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 128579,
+          "percentage": 37.75
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 45583,
+          "percentage": 13.38
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 8885,
+          "percentage": 2.61
+        }
+      ],
+      "totalValidVotes": 340647
+    },
+    {
+      "district": {
+        "number": 30,
+        "name": "Bieruń",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 92493,
+          "percentage": 27.71
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 23939,
+          "percentage": 7.17
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 18816,
+          "percentage": 5.64
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 161160,
+          "percentage": 48.28
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 32300,
+          "percentage": 9.68
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 5128,
+          "percentage": 1.54
+        }
+      ],
+      "totalValidVotes": 333836
+    },
+    {
+      "district": {
+        "number": 31,
+        "name": "Sosnowiec",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 174683,
+          "percentage": 37.2
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 34416,
+          "percentage": 7.33
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 20512,
+          "percentage": 4.37
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 184030,
+          "percentage": 39.19
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 55992,
+          "percentage": 11.92
+        }
+      ],
+      "totalValidVotes": 469633
+    },
+    {
+      "district": {
+        "number": 32,
+        "name": "Gliwice",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 99499,
+          "percentage": 29.66
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 21650,
+          "percentage": 6.45
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 16263,
+          "percentage": 4.85
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 124553,
+          "percentage": 37.13
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 73466,
+          "percentage": 21.9
+        }
+      ],
+      "totalValidVotes": 335431
+    },
+    {
+      "district": {
+        "number": 33,
+        "name": "Kielce",
+        "districtSize": 16
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 94880,
+          "percentage": 16.65
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 33895,
+          "percentage": 5.95
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 56289,
+          "percentage": 9.88
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 314455,
+          "percentage": 55.18
+        },
+        {
+          "partyId": "skuteczni-piotra-liroya-marca",
+          "partyName": "KOMITET WYBORCZY SKUTECZNI PIOTRA LIROYA-MARCA",
+          "votes": 8273,
+          "percentage": 1.45
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 56699,
+          "percentage": 9.95
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 5400,
+          "percentage": 0.95
+        }
+      ],
+      "totalValidVotes": 569891
+    },
+    {
+      "district": {
+        "number": 34,
+        "name": "Elbląg",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 71320,
+          "percentage": 28.43
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 14187,
+          "percentage": 5.66
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 27319,
+          "percentage": 10.89
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 102478,
+          "percentage": 40.86
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 29196,
+          "percentage": 11.64
+        },
+        {
+          "partyId": "wyborcow-koalicja-bezpartyjni-i-samorzadowcy",
+          "partyName": "KOMITET WYBORCZY WYBORCÓW KOALICJA BEZPARTYJNI I SAMORZĄDOWCY",
+          "votes": 6319,
+          "percentage": 2.52
+        }
+      ],
+      "totalValidVotes": 250819
+    },
+    {
+      "district": {
+        "number": 35,
+        "name": "Olsztyn",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 87780,
+          "percentage": 26.46
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 23134,
+          "percentage": 6.97
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 43758,
+          "percentage": 13.19
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 128760,
+          "percentage": 38.82
+        },
+        {
+          "partyId": "skuteczni-piotra-liroya-marca",
+          "partyName": "KOMITET WYBORCZY SKUTECZNI PIOTRA LIROYA-MARCA",
+          "votes": 2340,
+          "percentage": 0.71
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 45912,
+          "percentage": 13.84
+        }
+      ],
+      "totalValidVotes": 331684
+    },
+    {
+      "district": {
+        "number": 36,
+        "name": "Kalisz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 113489,
+          "percentage": 24.72
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 30177,
+          "percentage": 6.57
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 58759,
+          "percentage": 12.8
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 195053,
+          "percentage": 42.48
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 61674,
+          "percentage": 13.43
+        }
+      ],
+      "totalValidVotes": 459152
+    },
+    {
+      "district": {
+        "number": 37,
+        "name": "Konin",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 72295,
+          "percentage": 20.48
+        },
+        {
+          "partyId": "akcja-zawiedzionych-emerytow-rencistow",
+          "partyName": "KOMITET WYBORCZY AKCJA ZAWIEDZIONYCH EMERYTÓW RENCISTÓW",
+          "votes": 2261,
+          "percentage": 0.64
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 23810,
+          "percentage": 6.74
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 34620,
+          "percentage": 9.81
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 166965,
+          "percentage": 47.29
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 53090,
+          "percentage": 15.04
+        }
+      ],
+      "totalValidVotes": 353041
+    },
+    {
+      "district": {
+        "number": 38,
+        "name": "Piła",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 106810,
+          "percentage": 30.6
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 23123,
+          "percentage": 6.62
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 48371,
+          "percentage": 13.86
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 124392,
+          "percentage": 35.64
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 46355,
+          "percentage": 13.28
+        }
+      ],
+      "totalValidVotes": 349051
+    },
+    {
+      "district": {
+        "number": 39,
+        "name": "Poznań",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 233474,
+          "percentage": 45.38
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 34024,
+          "percentage": 6.61
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 31875,
+          "percentage": 6.2
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 130319,
+          "percentage": 25.33
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 84835,
+          "percentage": 16.49
+        }
+      ],
+      "totalValidVotes": 514527
+    },
+    {
+      "district": {
+        "number": 40,
+        "name": "Koszalin",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 87799,
+          "percentage": 32.31
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 16259,
+          "percentage": 5.98
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 25632,
+          "percentage": 9.43
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 100078,
+          "percentage": 36.83
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 41943,
+          "percentage": 15.44
+        }
+      ],
+      "totalValidVotes": 271711
+    },
+    {
+      "district": {
+        "number": 41,
+        "name": "Szczecin",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "koalicja-obywatelska-po-n-ipl-zieloni",
+          "partyName": "KOALICYJNY KOMITET WYBORCZY KOALICJA OBYWATELSKA PO .N IPL ZIELONI",
+          "votes": 168022,
+          "percentage": 35.71
+        },
+        {
+          "partyId": "konfederacja-wolnosc-i-niepodleglosc",
+          "partyName": "KOMITET WYBORCZY KONFEDERACJA WOLNOŚĆ I NIEPODLEGŁOŚĆ",
+          "votes": 30744,
+          "percentage": 6.53
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "KOMITET WYBORCZY POLSKIE STRONNICTWO LUDOWE",
+          "votes": 34807,
+          "percentage": 7.4
+        },
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "KOMITET WYBORCZY PRAWO I SPRAWIEDLIWOŚĆ",
+          "votes": 165200,
+          "percentage": 35.11
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "KOMITET WYBORCZY SOJUSZ LEWICY DEMOKRATYCZNEJ",
+          "votes": 71756,
+          "percentage": 15.25
+        }
+      ],
+      "totalValidVotes": 470529
+    }
+  ]
+}
