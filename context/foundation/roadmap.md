@@ -25,13 +25,14 @@ Sondaże w Polsce podają globalny wynik procentowy, ale ordynacja d'Hondta w 41
 
 ## At a glance
 
-| ID   | Change ID           | Outcome (user can …)                                                            | Prerequisites | PRD refs                                      | Status |
-| ---- | ------------------- | ------------------------------------------------------------------------------- | ------------- | --------------------------------------------- | ------ |
-| F-01 | pkw-historical-data | (foundation) dane historyczne PKW per okręg przygotowane i dostępne w aplikacji | —             | FR-003, FR-004                                | done   |
-| F-02 | deploy-skeleton     | (foundation) aplikacja deployowalna na Cloudflare Pages z CI                    | —             | NFR-02                                        | done   |
-| S-01 | core-simulation     | użytkownik wpisuje sondaż, wybiera model geograficzny i widzi mandaty z CI      | F-01, F-02    | US-01, FR-001, FR-002, FR-003, FR-004, FR-005 | done   |
-| S-02 | district-drilldown  | użytkownik przechodzi do widoku per okręg z tight races                         | S-01          | FR-006                                        | done   |
-| S-03 | share-link          | użytkownik zapisuje symulację i udostępnia link z TTL                           | S-01          | FR-007                                        | done   |
+| ID   | Change ID            | Outcome (user can …)                                                            | Prerequisites | PRD refs                                      | Status   |
+| ---- | -------------------- | ------------------------------------------------------------------------------- | ------------- | --------------------------------------------- | -------- |
+| F-01 | pkw-historical-data  | (foundation) dane historyczne PKW per okręg przygotowane i dostępne w aplikacji | —             | FR-003, FR-004                                | done     |
+| F-02 | deploy-skeleton      | (foundation) aplikacja deployowalna na Cloudflare Pages z CI                    | —             | NFR-02                                        | done     |
+| S-01 | core-simulation      | użytkownik wpisuje sondaż, wybiera model geograficzny i widzi mandaty z CI      | F-01, F-02    | US-01, FR-001, FR-002, FR-003, FR-004, FR-005 | done     |
+| S-02 | district-drilldown   | użytkownik przechodzi do widoku per okręg z tight races                         | S-01          | FR-006                                        | done     |
+| S-03 | share-link           | użytkownik zapisuje symulację i udostępnia link z TTL                           | S-01          | FR-007                                        | done     |
+| S-04 | interpretation-layer | warstwa interpretacyjna: hemicycle, koalicje, próg, CI, niezdecydowani          | S-01          | FR-008–FR-014                                 | proposed |
 
 ## Streams
 
@@ -123,15 +124,29 @@ What's already in place in the codebase as of 2026-05-27 (auto-researched + user
 - **Risk:** Niskie — Supabase client już skonfigurowany; wymaga schematu tabeli + insert/select. Guardrail z PRD: link nie może ujawniać danych innych użytkowników (ale brak auth = brak "innych użytkowników" w tradycyjnym sensie).
 - **Status:** proposed
 
+### S-04: Warstwa interpretacyjna
+
+- **Outcome:** użytkownik widzi hemicycle sejmowy, koalicje z info o większości, realne% po uwzględnieniu niezdecydowanych, dolną granicę 0 dla partii bliskich progu, konfigurowalny CI.
+- **Change ID:** interpretation-layer
+- **PRD refs:** FR-008, FR-009, FR-010, FR-011, FR-012, FR-013, FR-014
+- **Prerequisites:** S-01 (wymaga działającej symulacji)
+- **Parallel with:** —
+- **Blockers:** —
+- **Unknowns:**
+  - Geometria hemicycle (460 kropek w promieniście rozchodzących się półkolach) — wymaga algorytmu rozkładu punktów. Owner: developer. Block: no.
+- **Risk:** Hemicycle to najtrudniejsza wizualizacja; reszta to proste zmiany w silniku + UI. Tygodniowy timeline agresywny.
+- **Status:** proposed
+
 ## Backlog Handoff
 
-| Roadmap ID | Change ID           | Suggested issue title                         | Ready for `/10x-plan` | Notes                               |
-| ---------- | ------------------- | --------------------------------------------- | --------------------- | ----------------------------------- |
-| F-01       | pkw-historical-data | Przygotuj dane historyczne PKW per 41 okręgów | yes                   | Run `/10x-plan pkw-historical-data` |
-| F-02       | deploy-skeleton     | Skonfiguruj deploy na Cloudflare Pages        | yes                   | Run `/10x-plan deploy-skeleton`     |
-| S-01       | core-simulation     | Zbuduj pełną symulację sondaż → mandaty       | no                    | Czeka na F-01 i F-02                |
-| S-02       | district-drilldown  | Dodaj drill-down per okręg z tight races      | no                    | Czeka na S-01                       |
-| S-03       | share-link          | Dodaj share link z TTL                        | no                    | Czeka na S-01                       |
+| Roadmap ID | Change ID            | Suggested issue title                         | Ready for `/10x-plan` | Notes                                |
+| ---------- | -------------------- | --------------------------------------------- | --------------------- | ------------------------------------ |
+| F-01       | pkw-historical-data  | Przygotuj dane historyczne PKW per 41 okręgów | yes                   | Run `/10x-plan pkw-historical-data`  |
+| F-02       | deploy-skeleton      | Skonfiguruj deploy na Cloudflare Pages        | yes                   | Run `/10x-plan deploy-skeleton`      |
+| S-01       | core-simulation      | Zbuduj pełną symulację sondaż → mandaty       | no                    | Czeka na F-01 i F-02                 |
+| S-02       | district-drilldown   | Dodaj drill-down per okręg z tight races      | no                    | Czeka na S-01                        |
+| S-03       | share-link           | Dodaj share link z TTL                        | no                    | Czeka na S-01                        |
+| S-04       | interpretation-layer | Warstwa interpretacyjna (hemicycle, koalicje) | yes                   | Run `/10x-plan interpretation-layer` |
 
 ## Open Roadmap Questions
 

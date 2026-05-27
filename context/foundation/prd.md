@@ -1,9 +1,9 @@
 ---
 project: "Sejmulator"
-version: 1
+version: 2
 status: draft
 created: 2026-05-26
-context_type: greenfield
+context_type: brownfield
 product_type: web-app
 target_scale:
   users: medium
@@ -11,6 +11,7 @@ target_scale:
   data_volume: small
 timeline_budget:
   mvp_weeks: 3
+  v2_weeks: 1
   hard_deadline: 2026-07-05
   after_hours_only: true
 ---
@@ -84,6 +85,35 @@ To niszowe rozwiązanie — mało kogo interesuje na tyle, żeby zbudować porz�
 - FR-007: Użytkownik może zapisać symulację i otrzymać link do udostępnienia (z TTL). Priority: must-have
   > Socrates: Nikt nie będzie share'ować. Rozwiązanie: zachowane — koszt niski (generowanie linka), a feature umożliwia dyskusję nad wynikiem; nawet jeśli usage niskie, nie szkodzi produktowi.
 
+### v2: Warstwa interpretacyjna
+
+- FR-008: System wyświetla "bardzo bliski rezultat" per okręg z marginem (iloraz d'Hondta) dla ostatniego zdobytego i pierwszego niezdobytego mandatu. Priority: must-have
+
+  > Socrates: Counter-argument: "information overload at 460 mandatów". Resolution: zredukowano do margin per-okręg (last won + first lost) zamiast per-mandat.
+
+- FR-009: System wyświetla wizualizację mandatów jako hemicycle (półkole sejmowe) z kropkami per mandat, w stałej kolejności L→P: Razem → Lewica → KO → PL2050 → PSL → PiS → Konf → KKP. Partie bez mandatów ukryte. Priority: must-have
+
+  > Socrates: Counter-argument: "nietrywialna geometria, ryzyko czasowe". Resolution: zostaje — kluczowa wizualizacja, warta inwestycji.
+
+- FR-010: System wyświetla listę możliwych koalicji z predefiniowanego zbioru (11 kombinacji) z liczbą mandatów i informacją czy mają większość (231+). Priority: must-have
+
+  > Socrates: Counter-argument: "predefiniowane koalicje się dezaktualizują". Resolution: zostaje — custom koalicje to non-goal.
+
+- FR-011: Użytkownik może dodać "inne partie" (pole procentowe) — partie startujące w wyborach ale poniżej progu. Ich głosy wchodzą do głosów ważnych ale nie do podziału mandatów (pomniejszają tort). Priority: must-have
+
+  > Socrates: Counter-argument: "podobne do niezdecydowanych". Resolution: zostaje — inne partie to głosy ważne poniżej progu, niezdecydowani to brak głosu. Sondaże rozróżniają.
+
+- FR-012: System przelicza sondażowe procenty na "realne" (normalizacja do 100% bez niezdecydowanych) i pokazuje obie wartości — sondażową i realną. Priority: must-have
+
+  > Socrates: Counter-argument: "trywialne matematycznie". Resolution: zostaje — wartość w UX.
+
+- FR-013: Dla partii bliskich progu (dolna granica CI < 5% lub 8% dla koalicji wyborczej), dolna granica mandatów wynosi 0. Priority: must-have
+
+  > Socrates: Brak kontrargumentu — logicznie poprawne.
+
+- FR-014: Użytkownik może ustawić parametr przedziału ufności (perturbacja %) w polu numerycznym z domyślną wartością (1.5%). Priority: must-have
+  > Socrates: Counter-argument: "95% userów nie ruszy". Resolution: pole z domyślną wartością — nie przeszkadza, koszt niski.
+
 ## Non-Functional Requirements
 
 - Obliczenie mandatów: odpowiedź widoczna dla użytkownika w < 5 sekund od kliknięcia „Oblicz".
@@ -109,6 +139,10 @@ Model: open access — brak autentykacji, brak kont użytkowników. Każdy otwie
 - **Model predykcyjny / ML** — to kalkulator „co by było gdyby", nie prognoza. Brak własnego modelu predykcyjnego.
 - **Historia symulacji per user** — brak kont użytkowników, brak persystentnej historii. Share link z TTL wystarcza.
 - **Edycja danych historycznych PKW przez użytkownika** — dane są preloadowane i niemodyfikowalne z poziomu UI.
+- **Animacje / transitions** — wyniki wyświetlane statycznie.
+- **Custom koalicje** — tylko predefiniowany zbiór 11 kombinacji.
+- **Historia sondaży / porównania w czasie** — brak porównywania wyników symulacji.
+- **Zmienny próg wyborczy** — zawsze 5% (partia) / 8% (koalicja wyborcza).
 
 ## Open Questions
 

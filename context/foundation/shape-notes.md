@@ -1,128 +1,121 @@
 ---
 project: "Sejmulator"
-context_type: greenfield
-created: 2026-05-26
-updated: 2026-05-26
+context_type: brownfield
+created: 2026-05-27
+updated: 2026-05-27
 product_type: web-app
 target_scale:
   users: medium
   qps: low
   data_volume: small
 timeline_budget:
-  mvp_weeks: 3
+  delivery_weeks: 1
   hard_deadline: 2026-07-05
   after_hours_only: true
 checkpoint:
   current_phase: 8
   phases_completed: [1, 2, 3, 4, 5, 6, 7]
-  gray_areas_resolved:
-    - topic: "model dostępu"
-      decision: "open access, brak autentykacji + share link z TTL"
-    - topic: "nowe partie bez danych historycznych"
-      decision: "użytkownik wybiera dystrybucję geograficzną najbardziej podobnej istniejącej partii jako proxy"
-    - topic: "dezaktualizacja danych historycznych"
-      decision: "model jest przybliżeniem; disclaimer w UI + otwarta kwestia aktualizacji"
-    - topic: "szerokość przedziału ufności"
-      decision: "jeśli CI bezwartościowo szeroki — komunikować wprost (np. 'wynik niepewny w N okręgach')"
   frs_drafted: 7
   quality_check_status: accepted
 ---
 
-## Wizja i problem
+# Shape Notes v2: Warstwa interpretacyjna + UX improvements
 
-Sondaże w Polsce podają globalny wynik procentowy, ale ordynacja d'Hondta w 41 małych okręgach wyborczych zniekształca przekładanie tego na mandaty. Nie istnieje publicznie dostępne narzędzie, które rzetelnie przelicza sondaż na mandaty z uwzględnieniem geografii poparcia. Dane historyczne z PKW istnieją, ale są zamknięte w surowych plikach. Bez symulacji nie wiadomo, czy 1% różnicy w sondażu zmienia 5 czy 30 mandatów.
+> Brownfield change to existing Sejmulator MVP (all v1 slices done: F-01, F-02, S-01, S-02, S-03).
 
-To niszowe rozwiązanie — mało kogo interesuje na tyle, żeby zbudować porządne narzędzie. Historyczne rozkłady głosów per okręg + d'Hondt per okręg dają lepszy model niż naiwne przeliczenie globalne, ale wymagają sporej pracy przy przygotowaniu danych i implementacji.
+## Current System
 
-## Użytkownik i persona
+Sejmulator — web app (Astro + React + TS + Supabase + Cloudflare Pages) symulująca podział 460 mandatów w Sejmie metodą d'Hondta w 41 okręgach. Obecny flow: input sondażu → wybór dystrybucji geograficznej → oblicz mandaty z przedziałem ufności → drilldown per okręg (lista + mapa SVG) → share link z TTL.
 
-**Persona główna**: Analityk / dziennikarz polityczny — osoba, która regularnie czyta sondaże i potrzebuje mandatowego przełożenia, nie procentowego. Pojawia się nowy sondaż i chce wiedzieć: „ile mandatów to daje każdej partii?". Dziś albo ręcznie liczy w arkuszu (nikt tego nie robi regularnie), albo przyjmuje naiwne przeliczenie globalne (które kłamie), albo nie ma odpowiedzi.
+Stack: Astro 6, React 19, Tailwind v4, Vitest, Cloudflare Pages, Supabase (share links only).
 
-## Kontrola dostępu
+## Vision & Problem Statement
 
-Model: open access — brak autentykacji, brak kont użytkowników. Każdy otwiera stronę, wpisuje dane sondażu, dostaje wynik. Udostępnianie: unikalny URL per wynik symulacji, ważny przez ograniczony czas (TTL). Role: brak — wszyscy użytkownicy są równi, anonimowi.
+Surowe wyniki symulacji (mandaty per partia + CI) nie dają pełnego kontekstu politycznego. Użytkownik musi sam liczyć koalicje, nie widzi jak niezdecydowani i drobne partie wpływają na próg, a "tight races" nie jest intuicyjne po polsku. Brak wizualizacji sejmowej (hemicycle) sprawia że wynik jest tabelką, nie doświadczeniem.
 
-## Kryteria sukcesu
+**Cel:** Dodać warstwę interpretacyjną — wizualizacja sejmowa, koalicje, wpływ niezdecydowanych/drobnych partii na próg, konfigurowalny CI — żeby wynik był czytelny politycznie.
 
-### Główne
+## User & Persona
 
-- Użytkownik wpisuje wyniki sondażu, wybiera model dystrybucji geograficznej i w < 5 sekund dostaje rozkład mandatów per partia z przedziałem ufności — wynik odpowiada temu, co dałby ręczny d'Hondt per okręg.
+Bez zmian — ten sam użytkownik (polityczny geek, dziennikarz, komentator) korzysta z tych samych flows. Open access.
 
-### Drugorzędne
+## Access Control
 
-- Użytkownik może drill-down do wyniku per okręg i zobaczyć, które mandaty są tight races (w przedział ufności).
+Bez zmian — open access, brak autentykacji.
+
+## Success Criteria
+
+### Primary
+
+Użytkownik przeprowadza symulację i widzi: (1) hemicycle z 460 kropkami w kolejności L→P, (2) listę koalicji z informacją o większości, (3) realne% po uwzględnieniu niezdecydowanych, (4) dolną granicę 0 mandatów dla partii bliskich progu.
+
+### Secondary
+
+Konfigurowalny parametr CI pozwala zaawansowanym użytkownikom eksperymentować z precyzją.
 
 ### Guardrails
 
-- Wyniki d'Hondta muszą być matematycznie poprawne (weryfikowalne vs. historyczne dane PKW).
-- Share link nie może ujawniać danych innych użytkowników.
+- Istniejący flow (input → oblicz → wyniki → drilldown → share) działa bez regresji.
+- Share links z v1 nadal się ładują i działają poprawnie.
+- Performance: symulacja nadal < 5s.
 
-## Wymagania funkcjonalne
+## Functional Requirements
 
-- FR-001: Użytkownik może stworzyć nową symulację sondażu z listą partii i ich wynikami procentowymi. Priorytet: must-have
+- FR-008: System wyświetla "bardzo bliski rezultat" per okręg z marginem (iloraz d'Hondta) dla ostatniego zdobytego i pierwszego niezdobytego mandatu. Priority: must-have. Change: modified
 
-  > Socrates: Ryzyko interpretacji jako prognoza. Rozwiązanie: dodać disclaimer „wyniki poglądowe, nie prognoza" w UI.
+  > Socrates: Counter-argument: "information overload at 460 mandatów". Resolution: zredukowano do margin per-okręg (last won + first lost) zamiast per-mandat.
 
-- FR-002: Użytkownik może dodawać i usuwać partie z predefiniowanej listy. Priorytet: must-have
+- FR-009: System wyświetla wizualizację mandatów jako hemicycle (półkole sejmowe) z kropkami per mandat, w stałej kolejności L→P: Razem → Lewica → KO → PL2050 → PSL → PiS → Konf → KKP. Partie bez mandatów ukryte. Priority: must-have. Change: new
 
-  > Socrates: Nowa partia nie ma danych historycznych. Rozwiązanie: użytkownik wybiera dystrybucję geograficzną „najbardziej podobnej" istniejącej partii jako proxy.
+  > Socrates: Counter-argument: "nietrywialna geometria, ryzyko czasowe". Resolution: zostaje — kluczowa wizualizacja, warta inwestycji.
 
-- FR-003: Użytkownik może wybrać model dystrybucji geograficznej (na podstawie historycznych wyborów). Priorytet: must-have
+- FR-010: System wyświetla listę możliwych koalicji z predefiniowanego zbioru (11 kombinacji) z liczbą mandatów i informacją czy mają większość (231+). Priority: must-have. Change: new
 
-  > Socrates: Historyczne dane się dezaktualizują. Rozwiązanie: model jest przybliżeniem; disclaimer + otwarta kwestia aktualizacji danych.
+  > Socrates: Counter-argument: "predefiniowane koalicje się dezaktualizują". Resolution: zostaje — custom koalicje to non-goal, predefiniowane wystarczą na MVP.
 
-- FR-004: System oblicza podział mandatów per okręg metodą d'Hondta. Priorytet: must-have
+- FR-011: Użytkownik może dodać "inne partie" (pole procentowe) — partie które startują w wyborach ale nie przekraczają progu. Ich głosy wchodzą do głosów ważnych ale nie do podziału mandatów (pomniejszają tort). Priority: must-have. Change: new
 
-  > Socrates: Brak kontrargumentu; FR stoi jak jest.
+  > Socrates: Counter-argument: "podobne do niezdecydowanych". Resolution: zostaje — inne partie to głosy ważne (poniżej progu), niezdecydowani to brak głosu. Sondaże rozróżniają te kategorie.
 
-- FR-005: Użytkownik może zobaczyć zagregowany wynik mandatów z przedziałem ufności. Priorytet: must-have
+- FR-012: System przelicza sondażowe procenty na "realne" (normalizacja do 100% bez niezdecydowanych) i pokazuje obie wartości. Priority: must-have. Change: new
 
-  > Socrates: CI może być za szeroki i bezwartościowy. Rozwiązanie: jeśli CI bezwartościowo szeroki, komunikować wprost (np. „wynik niepewny w N okręgach").
+  > Socrates: Counter-argument: "matematycznie trywialne". Resolution: zostaje — wartość jest w UX (użytkownik widzi wpływ niezdecydowanych na realny wynik).
 
-- FR-006: Użytkownik może przejść do szczegółowego widoku podziału mandatów per okręg. Priorytet: must-have
+- FR-013: Dla partii bliskich progu (dolna granica CI < 5% lub 8% dla koalicji wyborczej), dolna granica mandatów wynosi 0. Priority: must-have. Change: modified
 
-  > Socrates: 41 okręgów = information overload. Rozwiązanie: wymaga przemyślanego UX — sortowanie/filtrowanie tight races, nie surowa lista.
+  > Socrates: Counter-argument: brak — logicznie poprawne, jeśli CI sięga poniżej progu to partia może nie wejść do Sejmu.
 
-- FR-007: Użytkownik może zapisać symulację i otrzymać link do udostępnienia (z TTL). Priorytet: must-have
-  > Socrates: Nikt nie będzie share'ować. Rozwiązanie: zachowane — koszt niski (generowanie linka), a feature umożliwia dyskusję nad wynikiem; nawet jeśli usage niskie, nie szkodzi produktowi.
+- FR-014: Użytkownik może ustawić parametr przedziału ufności (perturbacja %) w polu numerycznym z domyślną wartością (np. 1.5%). Priority: must-have. Change: modified
+  > Socrates: Counter-argument: "95% userów nigdy nie ruszy". Resolution: pole z domyślną wartością — nie przeszkadza, nie kosztuje dużo.
 
-## User Stories
+## Business Logic
 
-### US-01: Użytkownik przeprowadza symulację sondażu
+Reguła domeny (d'Hondt × 41 okręgów) bez zmian. Nowa logika:
 
-- **Given** użytkownik otworzył stronę i wybrał „Nowy sondaż"
-- **When** wpisze wyniki procentowe dla partii, wybierze model dystrybucji geograficznej i kliknie „Oblicz"
-- **Then** zobaczy wizualizację podziału mandatów per partia z przedziałem ufności
+1. **Normalizacja:** sondaż% → realne% = sondaż% / (100% - niezdecydowani%). "Inne partie" pozostają w torcie ale poniżej progu — nie wchodzą do d'Hondta.
+2. **Próg z CI:** jeśli (realne% - CI) < próg (5% partia / 8% koalicja wyborcza) → mandaty_min = 0.
+3. **Koalicje:** prosta suma mandatów partii z predefiniowanego zbioru 11 kombinacji. Wynik: łączne mandaty, czy ≥ 231.
+4. **Margin per okręg:** po alokacji d'Hondta, dla każdego okręgu oblicz iloraz d'Hondta ostatniego zdobytego mandatu vs pierwszy niezdobyty.
 
-#### Kryteria akceptacji
+## Constraints & Preserved Behavior
 
-- Wynik pojawia się w < 5 sekund od kliknięcia
-- Suma mandatów = 460 (rozmiar Sejmu)
-- Wynik zawiera przedział ufności sygnalizujący tight races
-- Widoczny disclaimer „wyniki poglądowe"
+- Istniejący flow (input → oblicz → drilldown → share) bez regresji.
+- Share links z v1 (format JSON w Supabase) nadal muszą się ładować.
+- Silnik d'Hondt per okręg — algorytm bez zmian, tylko dodane obliczenia wokół niego.
+- Mapa SVG, DistrictDrilldown — bez zmian (oprócz rename tight races → bliski rezultat).
 
-## Logika biznesowa
+## Non-Functional Requirements
 
-Aplikacja przekłada globalny wynik sondażowy na mandaty w Sejmie przez nałożenie wybranej historycznej dystrybucji geograficznej poparcia na wyniki sondażu i uruchomienie metody d'Hondta per okręg — wartość dodana to łatwość podpięcia różnych historycznych dystrybucji jako modeli rozkładu.
-
-**Wejście**: wyniki procentowe per partia (globalnie) + wybór modelu dystrybucji geograficznej (np. „PO — parlamentarne 2023", „Trzaskowski — prezydenckie 2025").
-
-**Reguła**: rozkład globalny → przeskalowanie na rozkład per okręg (proporcjonalnie do wybranego wzorca historycznego) → metoda d'Hondta per okręg → agregacja mandatów + obliczenie przedziału ufności z tight races.
-
-**Wyjście**: mandaty per partia (zagregowane) + przedział ufności + drill-down per okręg ze wskazaniem tight races.
-
-## Wymagania niefunkcjonalne
-
-- Obliczenie mandatów: odpowiedź widoczna dla użytkownika w < 5 sekund od kliknięcia „Oblicz".
-- Mobile-friendly: aplikacja działa w przeglądarce mobilnej i desktopowej bez instalacji.
+- Performance: symulacja (w tym CI z nowym parametrem) < 5s.
+- Responsywność: hemicycle czytelne na mobile (min 320px viewport).
 
 ## Non-Goals
 
-- **Automatyczny import sondaży z mediów** — użytkownik wpisuje dane ręcznie. Automatyzacja to osobny projekt wymagający scrapingu/API.
-- **Model predykcyjny / ML** — to kalkulator „co by było gdyby", nie prognoza. Brak własnego modelu predykcyjnego.
-- **Historia symulacji per user** — brak kont użytkowników, brak persystentnej historii. Share link z TTL wystarcza.
-- **Edycja danych historycznych PKW przez użytkownika** — dane są preloadowane i niemodyfikowalne z poziomu UI.
+- Bez animacji/transitions — statyczne wyświetlenie.
+- Bez custom koalicji — tylko predefiniowane 11.
+- Bez historii sondaży — nie porównujemy wyników w czasie.
+- Bez zmiennego progu wyborczego — zawsze 5%/8%.
 
 ## Quality cross-check
 
-Wszystkie elementy present — brak luk.
+All 6 elements present. Status: accepted.
