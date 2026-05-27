@@ -183,10 +183,13 @@ export function simulateElection(
   electionDatasets: Record<string, ElectionData>,
   threshold = 5,
 ): SimulationResult {
-  // Step 1: Scale to districts
-  const districtVotes = scaleToDistricts(nationalPoll, electionDatasets);
+  // Step 0: Apply national threshold — exclude parties below threshold nationally
+  const eligiblePoll = nationalPoll.filter((p) => p.percentage >= threshold);
 
-  // Step 2: Run d'Hondt per district
+  // Step 1: Scale to districts (only eligible parties)
+  const districtVotes = scaleToDistricts(eligiblePoll, electionDatasets);
+
+  // Step 2: Run d'Hondt per district (no per-district threshold — already filtered nationally)
   const districtResults: DistrictSimulationResult[] = [];
   const aggregatedSeats: Record<string, number> = {};
   const allTightRaces: TightRace[] = [];
@@ -200,7 +203,7 @@ export function simulateElection(
       votesObj[party] = votes;
     }
 
-    const seats = allocateSeats(votesObj, dv.districtSize, threshold);
+    const seats = allocateSeats(votesObj, dv.districtSize);
     const tightRaces = detectTightRaces(votesObj, dv.districtSize, seats);
 
     // Find district name
