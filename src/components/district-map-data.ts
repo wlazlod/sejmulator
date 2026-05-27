@@ -15,8 +15,8 @@ export const PATH_TO_DISTRICT: Record<string, number> = {
   path3408: 1, // Legnica
   path3725: 2, // Wałbrzych
   path3393: 3, // Wrocław
-  path3712: 4, // Bydgoszcz
-  path3617: 5, // Toruń
+  path3712: 5, // Toruń
+  path3617: 4, // Bydgoszcz
   path3428: 6, // Lublin
   path3507: 7, // Chełm
   path3465: 8, // Zielona Góra
