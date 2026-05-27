@@ -46,6 +46,6 @@ create index idx_shared_simulations_expires on shared_simulations(expires_at);
 
 ## Progress
 
-- Phase 1: done
-- Phase 2: done
-- Phase 3: done
+- Phase 1: done (commit `803217b`)
+- Phase 2: done (commit `803217b`)
+- Phase 3: done (commit `803217b`)
