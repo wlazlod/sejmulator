@@ -334,9 +334,7 @@ function SimulationResults({ result, parties }: { result: SimulationWithCI; part
     <div className="rounded-lg border border-gray-200 bg-white p-4">
       <h2 className="mb-1 font-semibold">Wynik: {sim.totalSeats} mandatów</h2>
       {sim.tightRaces.length > 0 && (
-        <p className="mb-3 text-xs text-amber-600">
-          {sim.tightRaces.length} mandat(ów) na granicy przejścia (tight race)
-        </p>
+        <p className="mb-3 text-xs text-amber-600">{sim.tightRaces.length} mandat(ów) z bardzo bliskim rezultatem</p>
       )}
 
       <div className="space-y-2">

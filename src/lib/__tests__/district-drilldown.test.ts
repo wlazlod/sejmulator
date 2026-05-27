@@ -41,7 +41,9 @@ describe("district sort/filter logic", () => {
       districtName: "Legnica",
       districtSize: 12,
       seats: { pis: 5, ko: 4, polska2050: 2, lewica: 1 },
-      tightRaces: [{ currentHolder: "pis", challenger: "ko", margin: 0.023 }],
+      tightRaces: [
+        { currentHolder: "pis", challenger: "ko", margin: 0.023, lastWonQuotient: 5000, firstLostQuotient: 4888 },
+      ],
     },
     {
       districtNumber: 24,
@@ -49,8 +51,14 @@ describe("district sort/filter logic", () => {
       districtSize: 14,
       seats: { pis: 8, ko: 4, konfederacja: 2 },
       tightRaces: [
-        { currentHolder: "pis", challenger: "ko", margin: 0.015 },
-        { currentHolder: "konfederacja", challenger: "polska2050", margin: 0.031 },
+        { currentHolder: "pis", challenger: "ko", margin: 0.015, lastWonQuotient: 3200, firstLostQuotient: 3152 },
+        {
+          currentHolder: "konfederacja",
+          challenger: "polska2050",
+          margin: 0.031,
+          lastWonQuotient: 2100,
+          firstLostQuotient: 2037,
+        },
       ],
     },
   ];

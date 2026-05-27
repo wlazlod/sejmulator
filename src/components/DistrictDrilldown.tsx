@@ -69,7 +69,7 @@ export default function DistrictDrilldown({ districts, parties }: DistrictDrilld
           className="w-full rounded-lg border border-gray-200 bg-white px-4 py-3 text-left text-sm font-medium text-gray-700 hover:bg-gray-50"
         >
           Pokaż okręgi ({districts.length} okręgów
-          {totalTightRaces > 0 && `, ${totalTightRaces} tight races`})
+          {totalTightRaces > 0 && `, ${totalTightRaces} bardzo bliskich rezultatów`})
         </button>
       </div>
     );
@@ -131,7 +131,7 @@ export default function DistrictDrilldown({ districts, parties }: DistrictDrilld
                 <option value="number">Nr okręgu</option>
                 <option value="name">Nazwa</option>
                 <option value="seats">Liczba mandatów</option>
-                <option value="tightRaces">Tight races</option>
+                <option value="tightRaces">Bliski rezultat</option>
               </select>
             </div>
 
@@ -144,7 +144,7 @@ export default function DistrictDrilldown({ districts, parties }: DistrictDrilld
                 }}
                 className="rounded"
               />
-              Tylko tight races
+              Tylko bliskie rezultaty
             </label>
           </div>
 
@@ -199,7 +199,7 @@ function DistrictCard({
         </div>
         {district.tightRaces.length > 0 && (
           <span className="rounded bg-amber-50 px-1.5 py-0.5 text-xs text-amber-600">
-            {district.tightRaces.length} tight
+            {district.tightRaces.length} bliski
           </span>
         )}
       </div>
@@ -235,13 +235,17 @@ function DistrictCard({
         ))}
       </div>
 
-      {/* Tight race details */}
+      {/* Bardzo bliski rezultat */}
       {district.tightRaces.length > 0 && (
         <div className="mt-1.5 space-y-0.5">
           {district.tightRaces.map((tr, i) => (
             <div key={i} className="text-xs text-amber-600">
-              {partyNameMap[tr.currentHolder] ?? tr.currentHolder} / {partyNameMap[tr.challenger] ?? tr.challenger}
-              <span className="ml-1 text-amber-400">({(tr.margin * 100).toFixed(1)}%)</span>
+              <span className="font-medium">{partyNameMap[tr.currentHolder] ?? tr.currentHolder}</span> zdobywa ostatni
+              mandat przed <span className="font-medium">{partyNameMap[tr.challenger] ?? tr.challenger}</span>
+              <span className="ml-1 text-amber-400">
+                (iloraz: {tr.lastWonQuotient.toFixed(0)} vs {tr.firstLostQuotient.toFixed(0)}, margines{" "}
+                {((tr.margin - 1) * 100).toFixed(1)}%)
+              </span>
             </div>
           ))}
         </div>

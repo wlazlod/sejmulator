@@ -38,6 +38,10 @@ export interface TightRace {
   challenger: string;
   /** How close (ratio of quotients, 1.0 = tied) */
   margin: number;
+  /** D'Hondt quotient of the last won seat */
+  lastWonQuotient: number;
+  /** D'Hondt quotient of the first lost seat */
+  firstLostQuotient: number;
 }
 
 /** Full simulation result */

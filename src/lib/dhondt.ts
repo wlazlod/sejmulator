@@ -165,6 +165,8 @@ function detectTightRaces(
           currentHolder: lastWinner.party,
           challenger: firstLoser.party,
           margin,
+          lastWonQuotient: lastWinner.quotient,
+          firstLostQuotient: firstLoser.quotient,
         });
       }
     }
