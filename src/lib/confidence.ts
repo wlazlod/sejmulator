@@ -37,8 +37,11 @@ export function simulateWithConfidence(
   threshold = 5,
   perturbationPct = 1.5,
 ): SimulationWithCI {
-  // Base simulation
-  const result = simulateElection(nationalPoll, electionDatasets, threshold);
+  // Case 4: filter out parties clearly below threshold (no chance of passing)
+  const eligiblePoll = nationalPoll.filter((p) => p.percentage + perturbationPct >= threshold);
+
+  // Base simulation (with eligible parties only)
+  const result = simulateElection(eligiblePoll, electionDatasets, threshold);
 
   // Track min/max per party
   const mins: Record<string, number> = {};
@@ -51,16 +54,16 @@ export function simulateWithConfidence(
 
   // FR-013: Check if any party's lower CI bound falls below threshold
   // If so, their min seats should be 0 (they might not enter Sejm)
-  for (const party of nationalPoll) {
+  for (const party of eligiblePoll) {
     if (party.percentage - perturbationPct < threshold) {
       mins[party.partyId] = 0;
     }
   }
 
   // Perturb each party up and down
-  for (let i = 0; i < nationalPoll.length; i++) {
+  for (let i = 0; i < eligiblePoll.length; i++) {
     for (const delta of [-perturbationPct, perturbationPct]) {
-      const perturbed = nationalPoll.map((p, j) => ({
+      const perturbed = eligiblePoll.map((p, j) => ({
         ...p,
         percentage: j === i ? Math.max(0, p.percentage + delta) : p.percentage,
       }));
@@ -86,7 +89,7 @@ export function simulateWithConfidence(
 
   // Case 3: parties below threshold but within CI range (could pass with +perturbation)
   // Include them with base=0 if they got seats in any perturbation run
-  for (const party of nationalPoll) {
+  for (const party of eligiblePoll) {
     if (confidence[party.partyId]) continue; // already in results
     if (party.percentage < threshold && party.percentage + perturbationPct >= threshold) {
       confidence[party.partyId] = {
