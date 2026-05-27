@@ -1,8 +1,8 @@
 ---
-import Welcome from "@/components/Welcome.astro";
 import Layout from "@/layouts/Layout.astro";
+import Simulator from "@/components/Simulator";
 ---
 
-<Layout>
-  <Welcome />
+<Layout title="Sejmulator — Symulacja mandatów w Sejmie">
+  <Simulator client:load />
 </Layout>

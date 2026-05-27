@@ -45,15 +45,19 @@ export const partyDefaults: PartyDefaults = {
   pis: {
     displayName: "Prawo i Sprawiedliwość",
     shortName: "PiS",
-    defaultDistribution: "parlamentarne-2023:pis",
-    alternativeDistributions: ["parlamentarne-2019:pis", "prezydenckie-2025:nawrocki", "prezydenckie-2020:duda"],
+    defaultDistribution: "parlamentarne-2023:prawo-i-sprawiedliwosc",
+    alternativeDistributions: [
+      "parlamentarne-2019:prawo-i-sprawiedliwosc",
+      "prezydenckie-2025:nawrocki",
+      "prezydenckie-2020:duda",
+    ],
   },
   ko: {
     displayName: "Koalicja Obywatelska",
     shortName: "KO",
-    defaultDistribution: "parlamentarne-2023:ko",
+    defaultDistribution: "parlamentarne-2023:koalicja-obywatelska-po-n-ipl-zieloni",
     alternativeDistributions: [
-      "parlamentarne-2019:ko",
+      "parlamentarne-2019:koalicja-obywatelska-po-n-ipl-zieloni",
       "prezydenckie-2025:trzaskowski",
       "prezydenckie-2020:trzaskowski",
     ],
@@ -61,27 +65,36 @@ export const partyDefaults: PartyDefaults = {
   lewica: {
     displayName: "Lewica",
     shortName: "Lewica",
-    defaultDistribution: "prezydenckie-2025:biejat",
-    alternativeDistributions: ["parlamentarne-2023:lewica", "parlamentarne-2019:lewica", "prezydenckie-2020:biedron"],
+    defaultDistribution: "parlamentarne-2023:nowa-lewica",
+    alternativeDistributions: [
+      "parlamentarne-2019:sojusz-lewicy-demokratycznej",
+      "prezydenckie-2025:biejat",
+      "prezydenckie-2020:biedron",
+    ],
   },
   polska2050: {
     displayName: "Polska 2050",
     shortName: "PL2050",
-    defaultDistribution: "prezydenckie-2020:holownia",
-    alternativeDistributions: ["parlamentarne-2023:td"],
+    defaultDistribution: "prezydenckie-2025:holownia",
+    alternativeDistributions: [
+      "parlamentarne-2023:trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+      "prezydenckie-2020:holownia",
+    ],
   },
   psl: {
     displayName: "Polskie Stronnictwo Ludowe",
     shortName: "PSL",
-    defaultDistribution: "parlamentarne-2019:psl",
-    alternativeDistributions: ["parlamentarne-2023:td"],
+    defaultDistribution: "parlamentarne-2019:polskie-stronnictwo-ludowe",
+    alternativeDistributions: [
+      "parlamentarne-2023:trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+    ],
   },
   konfederacja: {
     displayName: "Konfederacja",
     shortName: "Konf",
-    defaultDistribution: "parlamentarne-2023:konfederacja",
+    defaultDistribution: "parlamentarne-2023:konfederacja-wolnosc-i-niepodleglosc",
     alternativeDistributions: [
-      "parlamentarne-2019:konfederacja",
+      "parlamentarne-2019:konfederacja-wolnosc-i-niepodleglosc",
       "prezydenckie-2025:mentzen",
       "prezydenckie-2020:bosak",
     ],
@@ -96,6 +109,6 @@ export const partyDefaults: PartyDefaults = {
     displayName: "Razem",
     shortName: "Razem",
     defaultDistribution: "prezydenckie-2025:zandberg",
-    alternativeDistributions: ["parlamentarne-2023:lewica"],
+    alternativeDistributions: ["parlamentarne-2023:nowa-lewica"],
   },
 };

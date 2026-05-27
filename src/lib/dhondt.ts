@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-condition */
 /**
  * D'Hondt method simulation engine.
  *
@@ -128,7 +129,7 @@ function detectTightRaces(
 
   // Calculate all quotients for the "last seat" scenario
   // The last allocated seat's quotient vs the highest non-winning quotient
-  const quotients: Array<{ party: string; quotient: number; seatIndex: number }> = [];
+  const quotients: { party: string; quotient: number; seatIndex: number }[] = [];
 
   for (const [party, v] of Object.entries(votes)) {
     const partySeatCount = seatAllocation[party] ?? 0;

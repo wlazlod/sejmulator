@@ -17,6 +17,7 @@ describe("allocateSeats", () => {
     expect(result.A).toBe(3);
     expect(result.B).toBe(3);
     expect(result.C).toBe(1);
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
     expect(result.D ?? 0).toBe(0);
   });
 
