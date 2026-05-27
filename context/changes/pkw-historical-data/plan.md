@@ -232,13 +232,13 @@ Testy spójności danych + eksport modułowy z `src/data/index.ts` gotowy do kon
 
 #### Automated
 
-- [x] 1.1 TypeScript kompiluje się bez błędów (`npx tsc --noEmit`)
-- [x] 1.2 Typy eksportowane poprawnie z `src/data/index.ts`
+- [x] 1.1 TypeScript kompiluje się bez błędów (`npx tsc --noEmit`) — 65185fb
+- [x] 1.2 Typy eksportowane poprawnie z `src/data/index.ts` — 65185fb
 
 #### Manual
 
-- [ ] 1.3 Typy pokrywają wszystkie pola potrzebne do d'Hondta
-- [ ] 1.4 Mapowanie partii pokrywa główne partie
+- [x] 1.3 Typy pokrywają wszystkie pola potrzebne do d'Hondta — 65185fb
+- [x] 1.4 Mapowanie partii pokrywa główne partie — 65185fb
 
 ### Phase 2: Processing Script
 
