@@ -5,13 +5,13 @@
  */
 
 import { useState, useCallback, useMemo } from "react";
-import { simulateElection } from "../lib/dhondt";
 import { partyDefaults } from "../data/party-mapping";
 import type { PartyDefault } from "../data/party-mapping";
 import { elections } from "../data/index";
 import type { PartyPollInput } from "../lib/types";
-import type { SimulationResult } from "../lib/types";
 import type { ElectionData } from "../data/types";
+import { simulateWithConfidence } from "../lib/confidence";
+import type { SimulationWithCI } from "../lib/confidence";
 
 interface PartyRow {
   id: string;
@@ -64,7 +64,7 @@ const PARTY_COLORS: Record<string, string> = {
 
 export default function Simulator() {
   const [parties, setParties] = useState<PartyRow[]>(getDefaultParties);
-  const [result, setResult] = useState<SimulationResult | null>(null);
+  const [result, setResult] = useState<SimulationWithCI | null>(null);
 
   const electionDatasets = useMemo(() => {
     return elections as unknown as Record<string, ElectionData>;
@@ -84,7 +84,7 @@ export default function Simulator() {
         };
       });
 
-    const simResult = simulateElection(poll, electionDatasets, 5);
+    const simResult = simulateWithConfidence(poll, electionDatasets, 5);
     setResult(simResult);
   }, [parties, electionDatasets]);
 
@@ -253,16 +253,17 @@ function formatDistributionLabel(dist: string): string {
   return `${partyLabel} (${electionLabel})`;
 }
 
-function SimulationResults({ result, parties }: { result: SimulationResult; parties: PartyRow[] }) {
-  const sortedSeats = Object.entries(result.seats).sort((a, b) => b[1] - a[1]);
+function SimulationResults({ result, parties }: { result: SimulationWithCI; parties: PartyRow[] }) {
+  const { result: sim, confidence } = result;
+  const sortedSeats = Object.entries(sim.seats).sort((a, b) => b[1] - a[1]);
   const maxSeats = sortedSeats[0]?.[1] ?? 1;
 
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-4">
-      <h2 className="mb-1 font-semibold">Wynik: {result.totalSeats} mandatów</h2>
-      {result.tightRaces.length > 0 && (
+      <h2 className="mb-1 font-semibold">Wynik: {sim.totalSeats} mandatów</h2>
+      {sim.tightRaces.length > 0 && (
         <p className="mb-3 text-xs text-amber-600">
-          ⚠ {result.tightRaces.length} mandat(ów) na granicy przejścia (tight race)
+          {sim.tightRaces.length} mandat(ów) na granicy przejścia (tight race)
         </p>
       )}
 
@@ -271,6 +272,8 @@ function SimulationResults({ result, parties }: { result: SimulationResult; part
           const party = parties.find((p) => p.id === partyId);
           const color = PARTY_COLORS[partyId] ?? "#6b7280";
           const barWidth = (seats / maxSeats) * 100;
+          const ci = confidence[partyId];
+          const hasRange = ci.min !== ci.max;
 
           return (
             <div key={partyId} className="flex items-center gap-2">
@@ -279,7 +282,14 @@ function SimulationResults({ result, parties }: { result: SimulationResult; part
               </span>
               <div className="relative h-6 flex-1 overflow-hidden rounded bg-gray-100">
                 <div className="h-full rounded" style={{ width: `${barWidth}%`, backgroundColor: color }} />
-                <span className="absolute inset-y-0 right-2 flex items-center text-xs font-bold">{seats}</span>
+                <span className="absolute inset-y-0 right-2 flex items-center text-xs font-bold">
+                  {seats}
+                  {hasRange && (
+                    <span className="ml-1 font-normal text-gray-500">
+                      ({ci.min}–{ci.max})
+                    </span>
+                  )}
+                </span>
               </div>
             </div>
           );
