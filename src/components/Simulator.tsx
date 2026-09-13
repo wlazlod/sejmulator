@@ -4,7 +4,7 @@
  * Handles: party input form, simulation execution, results display.
  */
 
-import { useState, useCallback, useMemo, useEffect } from "react";
+import { useState, useCallback } from "react";
 import { partyDefaults } from "../data/party-mapping";
 import type { PartyDefault } from "../data/party-mapping";
 import { elections } from "../data/index";
@@ -56,6 +56,58 @@ function getDefaultParties(): PartyRow[] {
   });
 }
 
+/** Runs the full simulation (normalisation + d'Hondt + CI) for the given inputs. Pure. */
+function runSimulation(
+  parties: PartyRow[],
+  otherParties: number,
+  perturbationPct: number,
+  electionDatasets: Record<string, ElectionData>,
+): SimulationWithCI {
+  const totalPercentage = parties.reduce((s, p) => s + p.percentage, 0);
+  const undecided = Math.max(0, 100 - totalPercentage - otherParties);
+
+  // Normalize polls (remove undecided, keep other parties in vote pool)
+  const normResult = normalizePolls({
+    partyPercentages: parties.filter((p) => p.percentage > 0).map((p) => ({ partyId: p.id, percentage: p.percentage })),
+    undecided,
+    otherParties,
+  });
+
+  const poll: PartyPollInput[] = parties
+    .filter((p) => p.percentage > 0)
+    .map((p) => {
+      const { electionId, partyId } = parseDistributionId(p.distributionId);
+      const realEntry = normResult.realPercentages.find((r) => r.partyId === p.id);
+      return {
+        partyId: p.id,
+        partyName: p.shortName,
+        percentage: realEntry?.realPct ?? p.percentage,
+        distributionElectionId: electionId,
+        distributionPartyId: partyId,
+      };
+    });
+
+  // Add "inne partie" as a virtual party (will be filtered by threshold)
+  if (otherParties > 0 && normResult.otherPartiesReal > 0) {
+    // Use first available distribution as proxy (doesn't matter — won't pass threshold)
+    const refParty = parties.at(0);
+    if (refParty) {
+      const { electionId, partyId } = parseDistributionId(refParty.distributionId);
+      poll.push({
+        partyId: "__inne__",
+        partyName: "Inne",
+        percentage: normResult.otherPartiesReal,
+        distributionElectionId: electionId,
+        distributionPartyId: partyId,
+      });
+    }
+  }
+
+  return simulateWithConfidence(poll, electionDatasets, 5, perturbationPct);
+}
+
+const ELECTION_DATASETS = elections as unknown as Record<string, ElectionData>;
+
 import { PARTY_COLORS } from "./party-colors";
 
 interface SimulatorProps {
@@ -75,7 +127,10 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
     }
     return getDefaultParties();
   });
-  const [result, setResult] = useState<SimulationWithCI | null>(null);
+  // Auto-simulate when loaded from a shared link (lazy initial state, no effect needed)
+  const [result, setResult] = useState<SimulationWithCI | null>(() =>
+    sharedParties && sharedParties.length > 0 ? runSimulation(parties, 0, 1.5, ELECTION_DATASETS) : null,
+  );
   const [shareUrl, setShareUrl] = useState<string | null>(null);
   const [sharing, setSharing] = useState(false);
   const [otherParties, setOtherParties] = useState(0);
@@ -84,53 +139,11 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
   const totalPercentage = parties.reduce((s, p) => s + p.percentage, 0);
   const undecided = Math.max(0, 100 - totalPercentage - otherParties);
 
-  const electionDatasets = useMemo(() => {
-    return elections as unknown as Record<string, ElectionData>;
-  }, []);
+  const electionDatasets = ELECTION_DATASETS;
 
   const handleSimulate = useCallback(() => {
-    // Normalize polls (remove undecided, keep other parties in vote pool)
-    const normResult = normalizePolls({
-      partyPercentages: parties
-        .filter((p) => p.percentage > 0)
-        .map((p) => ({ partyId: p.id, percentage: p.percentage })),
-      undecided,
-      otherParties,
-    });
-
-    const poll: PartyPollInput[] = parties
-      .filter((p) => p.percentage > 0)
-      .map((p) => {
-        const { electionId, partyId } = parseDistributionId(p.distributionId);
-        const realEntry = normResult.realPercentages.find((r) => r.partyId === p.id);
-        return {
-          partyId: p.id,
-          partyName: p.shortName,
-          percentage: realEntry?.realPct ?? p.percentage,
-          distributionElectionId: electionId,
-          distributionPartyId: partyId,
-        };
-      });
-
-    // Add "inne partie" as a virtual party (will be filtered by threshold)
-    if (otherParties > 0 && normResult.otherPartiesReal > 0) {
-      // Use first available distribution as proxy (doesn't matter — won't pass threshold)
-      const refParty = parties[0];
-      if (refParty) {
-        const { electionId, partyId } = parseDistributionId(refParty.distributionId);
-        poll.push({
-          partyId: "__inne__",
-          partyName: "Inne",
-          percentage: normResult.otherPartiesReal,
-          distributionElectionId: electionId,
-          distributionPartyId: partyId,
-        });
-      }
-    }
-
-    const simResult = simulateWithConfidence(poll, electionDatasets, 5, perturbationPct);
-    setResult(simResult);
-  }, [parties, electionDatasets, undecided, otherParties, perturbationPct]);
+    setResult(runSimulation(parties, otherParties, perturbationPct, electionDatasets));
+  }, [parties, electionDatasets, otherParties, perturbationPct]);
 
   const updatePercentage = useCallback((id: string, value: number) => {
     setParties((prev) => prev.map((p) => (p.id === id ? { ...p, percentage: value } : p)));
@@ -180,17 +193,11 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
 
   const copyShareUrl = useCallback(() => {
     if (shareUrl) {
-      navigator.clipboard.writeText(shareUrl).catch(() => {});
+      navigator.clipboard.writeText(shareUrl).catch(() => {
+        // clipboard unavailable — the URL is still visible on screen
+      });
     }
   }, [shareUrl]);
-
-  // Auto-simulate when loaded from a shared link
-  useEffect(() => {
-    if (sharedParties && sharedParties.length > 0) {
-      handleSimulate();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   const availableToAdd = Object.keys(partyDefaults).filter((id) => !parties.some((p) => p.id === id));
 
@@ -245,7 +252,9 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
               max={100}
               step={0.1}
               value={otherParties}
-              onChange={(e) => setOtherParties(parseFloat(e.target.value) || 0)}
+              onChange={(e) => {
+                setOtherParties(parseFloat(e.target.value) || 0);
+              }}
               className="w-16 rounded border px-2 py-1 text-right text-sm"
             />
             <span className="text-gray-400">%</span>
@@ -258,7 +267,9 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
               max={10}
               step={0.1}
               value={perturbationPct}
-              onChange={(e) => setPerturbationPct(parseFloat(e.target.value) || 1.5)}
+              onChange={(e) => {
+                setPerturbationPct(parseFloat(e.target.value) || 1.5);
+              }}
               className="w-16 rounded border px-2 py-1 text-right text-sm"
             />
             <span className="text-gray-400">pp</span>

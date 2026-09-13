@@ -68,6 +68,19 @@ const astroConfig = tseslint.config({
   },
 });
 
+// Simulation engine and visualisation files are frozen (verified against PKW results).
+// Lint-only findings there are suppressed per file instead of editing the code.
+const frozenFilesConfig = tseslint.config(
+  {
+    files: ["src/lib/confidence.ts", "src/components/DistrictMap.tsx"],
+    rules: { "@typescript-eslint/no-unnecessary-condition": "off" },
+  },
+  {
+    files: ["src/components/Hemicycle.tsx"],
+    rules: { "prefer-const": "off" },
+  },
+);
+
 export default tseslint.config(
   includeIgnoreFile(gitignorePath),
   baseConfig,
@@ -75,5 +88,6 @@ export default tseslint.config(
   eslintPluginAstro.configs["flat/recommended"],
   ...eslintPluginAstro.configs["flat/jsx-a11y-recommended"],
   astroConfig,
+  frozenFilesConfig,
   eslintPluginPrettier,
 );

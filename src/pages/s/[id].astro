@@ -17,30 +17,31 @@ if (!supabase) {
     .from("shared_simulations")
     .select("parties, expires_at")
     .eq("id", id)
-    .single();
+    .single<{ parties: SharedPartyInput[]; expires_at: string }>();
 
-  if (dbError || !data) {
+  const row = data;
+  if (dbError || !row) {
     error = "Nie znaleziono symulacji lub link wygasł.";
-  } else if (new Date(data.expires_at) < new Date()) {
+  } else if (new Date(row.expires_at) < new Date()) {
     error = "Link do tej symulacji wygasł.";
   } else {
-    sharedParties = data.parties as SharedPartyInput[];
+    sharedParties = row.parties;
   }
 }
 ---
 
 <Layout title={error ? "Sejmulator — Link nieaktywny" : "Sejmulator — Udostępniona symulacja"}>
-  {error ? (
-    <div class="mx-auto max-w-4xl p-6">
-      <h1 class="mb-4 text-2xl font-bold">Sejmulator</h1>
-      <div class="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700">
-        {error}
+  {
+    error ? (
+      <div class="mx-auto max-w-4xl p-6">
+        <h1 class="mb-4 text-2xl font-bold">Sejmulator</h1>
+        <div class="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700">{error}</div>
+        <a href="/" class="mt-4 inline-block text-sm text-blue-600 hover:underline">
+          ← Nowa symulacja
+        </a>
       </div>
-      <a href="/" class="mt-4 inline-block text-sm text-blue-600 hover:underline">
-        ← Nowa symulacja
-      </a>
-    </div>
-  ) : (
-    <Simulator client:load sharedParties={sharedParties} />
-  )}
+    ) : (
+      <Simulator client:load sharedParties={sharedParties} />
+    )
+  }
 </Layout>
