@@ -1,175 +1,118 @@
-# 10x Astro Starter
+# Sejmulator
 
-![](./public/template.png)
+[![CI](https://github.com/wlazlod/sejmulator/actions/workflows/ci.yml/badge.svg)](https://github.com/wlazlod/sejmulator/actions/workflows/ci.yml)
 
-A modern, opinionated starter template for building fast, accessible web applications.
+**Symulator podziału mandatów w Sejmie.** Wpisujesz wyniki sondażu, wybierasz historyczną dystrybucję geograficzną poparcia (PKW 2019/2020/2023/2025) i dostajesz podział 460 mandatów metodą d'Hondta liczoną osobno w każdym z 41 okręgów, z przedziałem ufności, hemicycle, listą koalicji i drill-downem po okręgach.
 
-## Tech Stack
+Sondaże w Polsce podają globalny wynik procentowy, ale ordynacja d'Hondta w 41 małych okręgach zniekształca przełożenie procentów na mandaty. Bez symulacji nie wiadomo, czy 1 punkt procentowy różnicy w sondażu zmienia 5 czy 30 mandatów. Sejmulator nakłada wybrany historyczny wzorzec rozkładu poparcia na wynik sondażu i uruchamia d'Hondta per okręg. Dla kogo: analityk lub dziennikarz polityczny, który czyta sondaże i potrzebuje mandatowego, nie procentowego, przełożenia.
 
-- [Astro](https://astro.build/) v6 - Modern web framework with server-first rendering
-- [React](https://react.dev/) v19 - UI library for interactive components
-- [TypeScript](https://www.typescriptlang.org/) v5 - Type-safe JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) v4 - Utility-first CSS framework
-- [Supabase](https://supabase.com/) - Authentication and backend-as-a-service
-- [Cloudflare Workers](https://workers.cloudflare.com/) - Edge deployment runtime
+Symulacja i share-link są otwarte dla każdego. Opcjonalne konto daje prywatną bibliotekę zapisanych symulacji („Moje symulacje").
 
-## Prerequisites
+**Wersja produkcyjna:** <https://sejmulator.daniel-wlazlo.workers.dev>
 
-- Node.js v22.14.0 (as specified in `.nvmrc`)
-- npm (comes with Node.js)
+<!-- Screenshoty (docs/screenshots/): 02-home-logged-in.png, 03-feature-1-save-form.png, 04-feature-2-results.png -->
 
-## Getting Started
+## Stack
 
-1. Clone the repository:
+- [Astro 6](https://astro.build/) w trybie SSR (`output: "server"`), adapter [`@astrojs/cloudflare`](https://docs.astro.build/en/guides/integrations-guide/cloudflare/)
+- [React 19](https://react.dev/) tylko dla interaktywnych wysp (`Simulator`, `SavedSimulationsList`, formularze)
+- [Tailwind CSS 4](https://tailwindcss.com/), komponenty [shadcn/ui](https://ui.shadcn.com/) (`src/components/ui/`)
+- [Supabase](https://supabase.com/): Auth (e-mail + hasło) i Postgres z RLS
+- [Cloudflare Workers](https://workers.cloudflare.com/): hosting, auto-deploy z `main`
+- Testy: [vitest](https://vitest.dev/) (logika) i [Playwright](https://playwright.dev/) (przepływy użytkownika)
 
-```bash
-git clone https://github.com/przeprogramowani/10x-astro-starter.git
-cd 10x-astro-starter
-```
+## Uruchomienie lokalne
 
-2. Install dependencies:
+Wymagania: Node.js 22.14 (`.nvmrc`), npm.
 
 ```bash
-npm install
+git clone https://github.com/wlazlod/sejmulator.git
+cd sejmulator
+nvm use          # 22.14.0
+npm ci
 ```
 
-3. Set up Supabase and configure environment variables — see [Supabase Configuration](#supabase-configuration) below.
+Zmienne środowiskowe (nazwy, nie wartości, są w `.env.example`):
 
-4. Create a `.dev.vars` file for local Cloudflare dev secrets:
+| Zmienna        | Do czego                                                |
+| -------------- | ------------------------------------------------------- |
+| `SUPABASE_URL` | URL projektu Supabase (Settings → API)                  |
+| `SUPABASE_KEY` | klucz publikowalny / `anon` projektu Supabase           |
+| `E2E_EMAIL`    | (tylko testy E2E) e-mail potwierdzonego konta testowego |
+| `E2E_PASSWORD` | (tylko testy E2E) hasło konta testowego                 |
+
+Node (`astro dev`, vitest, Playwright) czyta `.env`; Cloudflare local dev czyta `.dev.vars`. Oba pliki są gitignorowane; najprościej trzymać w nich te same cztery linie.
+
+Baza: użyj projektu Supabase w chmurze albo lokalnego (`npx supabase start`, wymaga Dockera). Schemat jest w `supabase/migrations/`; zastosuj go przez `npx supabase db push` (po `npx supabase link`) albo wklej pliki SQL w Supabase SQL Editor. Obie tabele (`shared_simulations`, `saved_simulations`) mają włączone RLS.
 
 ```bash
-cp .env.example .dev.vars
+npm run dev      # http://localhost:4321
 ```
 
-5. Run the development server:
+## Skrypty
 
-```bash
-npm run dev
-```
+| Skrypt                 | Co robi                                                               |
+| ---------------------- | --------------------------------------------------------------------- |
+| `npm run dev`          | dev server Astro                                                      |
+| `npm run build`        | build produkcyjny (SSR, Cloudflare)                                   |
+| `npm run preview`      | podgląd builda                                                        |
+| `npm run lint`         | ESLint z regułami type-checked + prettier                             |
+| `npm run lint:fix`     | jak wyżej, z auto-naprawą                                             |
+| `npm run format`       | Prettier                                                              |
+| `npm test`             | testy jednostkowe (vitest, `src/**/__tests__/*.test.ts`)              |
+| `npm run test:watch`   | vitest w trybie watch                                                 |
+| `npm run test:e2e`     | testy Playwright (`e2e/*.spec.ts`), sam startuje dev server           |
+| `npm run test:e2e:ui`  | Playwright w trybie UI                                                |
+| `npm run prepare-data` | regeneruje `src/data/*.json` z surowych CSV PKW (`scripts/raw-data/`) |
 
-## Available Scripts
+## Testy
 
-- `npm run dev` - Start development server (Cloudflare workerd runtime)
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint with type-checked rules
-- `npm run lint:fix` - Auto-fix ESLint issues
-- `npm run format` - Run Prettier
+- **Jednostkowe** (`npm test`): silnik d'Hondta i próg (weryfikacja vs wyniki PKW 2023), przedziały ufności, normalizacja niezdecydowanych, integralność danych PKW, walidacja payloadów API, logika drill-downu. Vitest zbiera tylko `src/**/*.test.ts` (`vitest.config.ts`).
+- **E2E** (`npm run test:e2e`): Playwright, tylko chromium (`npx playwright install chromium` przy pierwszym uruchomieniu). Trzy specyfikacje:
+  - `e2e/simulation.spec.ts`: główny przepływ sondaż → mandaty → hemicycle → koalicje → okręgi (bez Supabase),
+  - `e2e/access-control.spec.ts`: anonim nie ma dostępu do biblioteki (redirect, 401),
+  - `e2e/saved-simulations.spec.ts`: właściciel zapisuje, listuje, zmienia nazwę, otwiera i usuwa własną symulację; **skipuje się bez `E2E_EMAIL` / `E2E_PASSWORD`**. Konto testowe musi istnieć i być potwierdzone (Supabase → Authentication → Users → Add user, „Auto Confirm User").
+- Który test adresuje które ryzyko: `context/foundation/test-plan.md` (rejestr ryzyk R-01…R-08). Każdy plik testowy zaczyna się od komentarza `// test-plan: R-0X`.
 
-## Project Structure
+## Deploy
 
-```md
-.
-├── src/
-│ ├── layouts/ # Astro layouts
-│ ├── pages/ # Astro pages
-│ │ └── api/ # API endpoints
-│ ├── components/ # UI components (Astro & React)
-│ └── assets/ # Static assets
-├── public/ # Public assets
-├── wrangler.jsonc # Cloudflare Workers config
-```
+Produkcja to Cloudflare Worker `sejmulator` (`wrangler.jsonc`) podpięty do repozytorium przez integrację Git: każdy push na `main` buduje (`npm run build`) i deployuje (`npx wrangler deploy`). Sekrety `SUPABASE_URL` i `SUPABASE_KEY` żyją w Cloudflare → Workers → Settings → Variables and Secrets. Rollback = `git revert` + push. Szczegóły: `context/foundation/infrastructure.md`.
 
-## Supabase Configuration
+CI (GitHub Actions, `.github/workflows/ci.yml`) uruchamia na każdym pushu i PR do `main` dwa joby: `ci` (lint, vitest, build) i `e2e` (Playwright). Sekrety repo: `SUPABASE_URL`, `SUPABASE_KEY`, `E2E_EMAIL`, `E2E_PASSWORD`. CI nie deployuje.
 
-This project uses [Supabase](https://supabase.com/) for authentication. Environment variables are declared via Astro's `astro:env` schema and are treated as **server-only secrets** — they are never exposed to the client.
-
-### First-time setup (local, no cloud project needed)
-
-Requires [Docker](https://www.docker.com/) and ~7 GB RAM.
-
-1. Create your `.env` file:
-
-```bash
-cp .env.example .env
-```
-
-2. Initialize the local Supabase project (creates a `supabase/` config folder):
-
-```bash
-npx supabase init
-```
-
-3. Start the local stack (downloads Docker images on first run):
-
-```bash
-npx supabase start
-```
-
-4. Copy the credentials printed by the CLI into your `.env` and `.dev.vars`:
+## Struktura repozytorium
 
 ```
-SUPABASE_URL=http://127.0.0.1:54321
-SUPABASE_KEY=<anon key from CLI output>
+context/
+├── foundation/        # prd.md (v3), roadmap.md, tech-stack.md, test-plan.md, infrastructure.md
+└── changes/<id>/      # change.md + plan.md per zmiana (S-01…S-05), z SHA commitów
+e2e/                   # Playwright (*.spec.ts)
+scripts/               # prepare-pkw-data.ts + raw-data/ (surowe CSV PKW)
+src/
+├── components/        # Simulator.tsx, Hemicycle.tsx, Coalitions.tsx, DistrictDrilldown.tsx, SaveControls.tsx, …
+├── data/              # parlamentarne-2019/2023.json, prezydenckie-2020/2025.json, party-mapping.ts
+├── lib/               # dhondt.ts, confidence.ts, normalization.ts, share-types.ts, saved-simulation-types.ts
+│   ├── services/      # saved-simulations.ts (dostęp do danych)
+│   └── __tests__/     # vitest
+├── pages/             # index, s/[id], simulations/, auth/, api/{share,simulations,auth}
+└── middleware.ts      # sesja Supabase + ochrona tras
+supabase/migrations/   # schemat + RLS
 ```
 
-5. To stop the stack when done:
+Projekt powstał w workflow kursu 10xDevs: `/10x-shape` → `/10x-plan` → `/10x-implement` (skille w `.ai/skills/` i `.opencode/skills/`), a dokumenty w `context/` są wejściem i wyjściem tych skilli. `AGENTS.md` i `CLAUDE.md` to instrukcje dla agentów kodujących.
 
-```bash
-npx supabase stop
-```
+## Certyfikacja 10xDevs: mapowanie wymogów
 
-The local Studio UI is available at `http://localhost:54323`.
+| Wymóg 10xBuilder                     | Gdzie w repo                                                                                                                                                                                                                                                                                                           |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Autentykacja i kontrola dostępu      | Supabase Auth (`src/pages/auth/*`, `src/pages/api/auth/*`); `src/middleware.ts` chroni `/simulations` (redirect) i `/api/simulations` (401 JSON); RLS `auth.uid() = user_id` w `supabase/migrations/20260914120000_create_saved_simulations.sql`; zalogowany widzi wyłącznie własne symulacje (PRD v3 §Access Control) |
+| CRUD                                 | zasób `saved_simulations`: `src/pages/api/simulations/index.ts` (GET lista, POST), `src/pages/api/simulations/[id].ts` (GET, PATCH rename/aktualizacja wejść, DELETE); UI `src/pages/simulations/index.astro` + `SavedSimulationsList.tsx`, `src/pages/simulations/[id].astro` + `SaveControls.tsx`                    |
+| Logika biznesowa                     | `src/lib/dhondt.ts` (d'Hondt per okręg, próg 5%/8% ogólnokrajowo), `src/lib/confidence.ts` (CI przez perturbację, FR-013), `src/lib/normalization.ts` (niezdecydowani, inne partie), `Coalitions.tsx`, `Hemicycle.tsx`, `DistrictDrilldown.tsx`                                                                        |
+| Dokumenty kontekstowe                | `context/foundation/prd.md` (v3), `roadmap.md`, `tech-stack.md`, `test-plan.md`, `infrastructure.md`; `context/changes/<id>/` (change + plan + SHA)                                                                                                                                                                    |
+| Testy adresujące ryzyko z test-planu | `context/foundation/test-plan.md` (rejestr R-01…R-08 → testy); vitest w `src/**/__tests__` (R-01, R-02, R-03, R-06, R-07); Playwright: `e2e/simulation.spec.ts` adresuje **R-05** (regresja US-01), `e2e/access-control.spec.ts` i `e2e/saved-simulations.spec.ts` adresują **R-04** (izolacja danych użytkowników)    |
+| CI                                   | `.github/workflows/ci.yml`: lint + vitest + build + e2e na każdym pushu                                                                                                                                                                                                                                                |
+| Publiczny URL                        | <https://sejmulator.daniel-wlazlo.workers.dev>                                                                                                                                                                                                                                                                         |
 
-No database tables or migrations are required — this project uses Supabase Auth's built-in `auth.users` table only.
-
-### Using a cloud Supabase project instead
-
-If you prefer to use a hosted Supabase project, add these variables to your `.env` and `.dev.vars` files:
-
-| Variable       | Description                                                |
-| -------------- | ---------------------------------------------------------- |
-| `SUPABASE_URL` | Project URL from Supabase dashboard → Settings → API       |
-| `SUPABASE_KEY` | `anon` public key from Supabase dashboard → Settings → API |
-
-```
-SUPABASE_URL=https://<project-ref>.supabase.co
-SUPABASE_KEY=<anon-key>
-```
-
-### Email confirmation in local development
-
-By default Supabase requires email confirmation before a user can sign in. To skip this during local development:
-
-1. Open the Supabase dashboard for your project
-2. Go to **Authentication → Email → Confirm email**
-3. Toggle it **off**
-
-Users can then sign in immediately after sign-up without clicking a confirmation link.
-
-### Auth routes
-
-| Route                 | Description                                                             |
-| --------------------- | ----------------------------------------------------------------------- |
-| `/auth/signin`        | Email/password sign-in form                                             |
-| `/auth/signup`        | Email/password sign-up form                                             |
-| `/auth/confirm-email` | Post-signup "check your inbox" page                                     |
-| `/dashboard`          | Example protected page (redirects to `/auth/signin` if unauthenticated) |
-
-Route protection is handled in `src/middleware.ts`. Add paths to the `PROTECTED_ROUTES` array there to require authentication.
-
-## Deployment
-
-This project deploys to [Cloudflare Workers](https://workers.cloudflare.com/).
-
-1. Build the project:
-
-```bash
-npm run build
-```
-
-2. Deploy with Wrangler:
-
-```bash
-npx wrangler deploy
-```
-
-Set `SUPABASE_URL` and `SUPABASE_KEY` as secrets in your Cloudflare dashboard or via `npx wrangler secret put`.
-
-## CI
-
-GitHub Actions runs lint + build on every push and PR to `master`. Configure `SUPABASE_URL` and `SUPABASE_KEY` as repository secrets in GitHub for the build step.
-
-## License
+## Licencja
 
 MIT
