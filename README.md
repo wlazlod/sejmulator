@@ -21,7 +21,7 @@ Symulacja i share-link są otwarte dla każdego. Opcjonalne konto daje prywatną
 
 ![Wynik symulacji: mandaty z CI, hemicycle, koalicje, mapa okręgów](docs/screenshots/04-feature-2-results.png)
 
-Pozostałe: [logowanie](docs/screenshots/01-login.png), [testy](docs/screenshots/05-tests-passing.png), [rejestr ryzyk](docs/screenshots/06-test-plan.png).
+Pozostałe: [logowanie](docs/screenshots/01-login.png), [testy](docs/screenshots/05-tests-passing.png), [rejestr ryzyk](docs/screenshots/06-test-plan.png), [polityki RLS w Supabase](docs/screenshots/08-supabase-rls.png).
 
 ## Stack
 
