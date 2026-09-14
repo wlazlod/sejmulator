@@ -28,6 +28,10 @@ const COALITIONS: Coalition[] = [
   { name: "PiS + Konf + PSL", parties: ["pis", "konfederacja", "psl"] },
   { name: "PiS + Konf + KKP", parties: ["pis", "konfederacja", "kkp"] },
   { name: "Konf + KKP", parties: ["konfederacja", "kkp"] },
+  { name: "PiS + Rozwój+", parties: ["pis", "rozwojplus"] },
+  { name: "PiS + Rozwój+ + Konf", parties: ["pis", "rozwojplus", "konfederacja"] },
+  { name: "KO + PL2050 + PSL + Rozwój+", parties: ["ko", "polska2050", "psl", "rozwojplus"] },
+  { name: "KO + Lewica + PL2050 + PSL + Rozwój+", parties: ["ko", "lewica", "polska2050", "psl", "rozwojplus"] },
 ];
 
 interface CoalitionsProps {

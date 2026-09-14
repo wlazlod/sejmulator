@@ -107,7 +107,7 @@ To niszowe rozwiązanie — mało kogo interesuje na tyle, żeby zbudować porz�
 
   > Socrates: Counter-argument: "information overload at 460 mandatów". Resolution: zredukowano do margin per-okręg (last won + first lost) zamiast per-mandat.
 
-- FR-009: System wyświetla wizualizację mandatów jako hemicycle (półkole sejmowe) z kropkami per mandat, w stałej kolejności L→P: Razem → Lewica → KO → PL2050 → PSL → PiS → Konf → KKP. Partie bez mandatów ukryte. Priority: must-have
+- FR-009: System wyświetla wizualizację mandatów jako hemicycle (półkole sejmowe) z kropkami per mandat, w stałej kolejności L→P: Razem → Lewica → KO → PL2050 → PSL → Rozwój+ → PiS → Konf → KKP (Rozwój+ dodany 2026-09-14 jako centroprawica na lewo od PiS). Partie bez mandatów ukryte. Priority: must-have
 
   > Socrates: Counter-argument: "nietrywialna geometria, ryzyko czasowe". Resolution: zostaje — kluczowa wizualizacja, warta inwestycji.
 

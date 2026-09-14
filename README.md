@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/wlazlod/sejmulator/actions/workflows/ci.yml/badge.svg)](https://github.com/wlazlod/sejmulator/actions/workflows/ci.yml)
 
-**Symulator podziału mandatów w Sejmie.** Wpisujesz wyniki sondażu, wybierasz historyczną dystrybucję geograficzną poparcia (PKW 2019/2020/2023/2025) i dostajesz podział 460 mandatów metodą d'Hondta liczoną osobno w każdym z 41 okręgów, z przedziałem ufności, hemicycle, listą koalicji i drill-downem po okręgach.
+**Symulator podziału mandatów w Sejmie.** Wpisujesz wyniki sondażu, wybierasz historyczną dystrybucję geograficzną poparcia (PKW 2011/2019/2020/2023/2025) i dostajesz podział 460 mandatów metodą d'Hondta liczoną osobno w każdym z 41 okręgów, z przedziałem ufności, hemicycle, listą koalicji i drill-downem po okręgach.
 
 Sondaże w Polsce podają globalny wynik procentowy, ale ordynacja d'Hondta w 41 małych okręgach zniekształca przełożenie procentów na mandaty. Bez symulacji nie wiadomo, czy 1 punkt procentowy różnicy w sondażu zmienia 5 czy 30 mandatów. Sejmulator nakłada wybrany historyczny wzorzec rozkładu poparcia na wynik sondażu i uruchamia d'Hondta per okręg. Dla kogo: analityk lub dziennikarz polityczny, który czyta sondaże i potrzebuje mandatowego, nie procentowego, przełożenia.
 
@@ -51,19 +51,20 @@ npm run dev      # http://localhost:4321
 
 ## Skrypty
 
-| Skrypt                 | Co robi                                                               |
-| ---------------------- | --------------------------------------------------------------------- |
-| `npm run dev`          | dev server Astro                                                      |
-| `npm run build`        | build produkcyjny (SSR, Cloudflare)                                   |
-| `npm run preview`      | podgląd builda                                                        |
-| `npm run lint`         | ESLint z regułami type-checked + prettier                             |
-| `npm run lint:fix`     | jak wyżej, z auto-naprawą                                             |
-| `npm run format`       | Prettier                                                              |
-| `npm test`             | testy jednostkowe (vitest, `src/**/__tests__/*.test.ts`)              |
-| `npm run test:watch`   | vitest w trybie watch                                                 |
-| `npm run test:e2e`     | testy Playwright (`e2e/*.spec.ts`), sam startuje dev server           |
-| `npm run test:e2e:ui`  | Playwright w trybie UI                                                |
-| `npm run prepare-data` | regeneruje `src/data/*.json` z surowych CSV PKW (`scripts/raw-data/`) |
+| Skrypt                              | Co robi                                                               |
+| ----------------------------------- | --------------------------------------------------------------------- |
+| `npm run dev`                       | dev server Astro                                                      |
+| `npm run build`                     | build produkcyjny (SSR, Cloudflare)                                   |
+| `npm run preview`                   | podgląd builda                                                        |
+| `npm run lint`                      | ESLint z regułami type-checked + prettier                             |
+| `npm run lint:fix`                  | jak wyżej, z auto-naprawą                                             |
+| `npm run format`                    | Prettier                                                              |
+| `npm test`                          | testy jednostkowe (vitest, `src/**/__tests__/*.test.ts`)              |
+| `npm run test:watch`                | vitest w trybie watch                                                 |
+| `npm run test:e2e`                  | testy Playwright (`e2e/*.spec.ts`), sam startuje dev server           |
+| `npm run test:e2e:ui`               | Playwright w trybie UI                                                |
+| `npm run prepare-data`              | regeneruje `src/data/*.json` z surowych CSV PKW (`scripts/raw-data/`) |
+| `npx tsx scripts/fetch-pkw-2011.ts` | pobiera wyniki Sejm 2011 ze strony PKW do CSV (proxy PJN dla Rozwój+) |
 
 ## Testy
 
@@ -87,10 +88,10 @@ context/
 ├── foundation/        # prd.md (v3), roadmap.md, tech-stack.md, test-plan.md, infrastructure.md
 └── changes/<id>/      # change.md + plan.md per zmiana (S-01…S-05), z SHA commitów
 e2e/                   # Playwright (*.spec.ts)
-scripts/               # prepare-pkw-data.ts + raw-data/ (surowe CSV PKW)
+scripts/               # prepare-pkw-data.ts, fetch-pkw-2011.ts + raw-data/ (surowe CSV PKW)
 src/
 ├── components/        # Simulator.tsx, Hemicycle.tsx, Coalitions.tsx, DistrictDrilldown.tsx, SaveControls.tsx, …
-├── data/              # parlamentarne-2019/2023.json, prezydenckie-2020/2025.json, party-mapping.ts
+├── data/              # parlamentarne-2011/2019/2023.json, prezydenckie-2020/2025.json, party-mapping.ts
 ├── lib/               # dhondt.ts, confidence.ts, normalization.ts, share-types.ts, saved-simulation-types.ts
 │   ├── services/      # saved-simulations.ts (dostęp do danych)
 │   └── __tests__/     # vitest

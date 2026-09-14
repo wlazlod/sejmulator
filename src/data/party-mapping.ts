@@ -99,6 +99,18 @@ export const partyDefaults: PartyDefaults = {
       "prezydenckie-2020:bosak",
     ],
   },
+  rozwojplus: {
+    displayName: "Rozwój Plus",
+    shortName: "Rozwój+",
+    // Klub wyodrębniony z PiS w lipcu 2026 (M. Morawiecki). Brak własnej historii wyborczej;
+    // najbliższe geograficzne proxy: Polska Jest Najważniejsza 2011 (umiarkowany odłam PiS).
+    defaultDistribution: "parlamentarne-2011:polska-jest-najwazniejsza",
+    alternativeDistributions: [
+      "parlamentarne-2023:trzecia-droga-polska-2050-szymona-holowni-polskie-stronnictwo-ludowe",
+      "parlamentarne-2023:prawo-i-sprawiedliwosc",
+      "prezydenckie-2025:nawrocki",
+    ],
+  },
   kkp: {
     displayName: "Konfederacja Korony Polskiej",
     shortName: "KKP",

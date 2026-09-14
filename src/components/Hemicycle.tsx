@@ -2,7 +2,7 @@
  * Hemicycle — SVG semicircular parliament visualization.
  *
  * 460 seats arranged in concentric semicircular arcs (like the Sejm chamber).
- * Fixed left-to-right political order: Razem → Lewica → KO → PL2050 → PSL → PiS → Konf → KKP.
+ * Fixed left-to-right political order: Razem → Lewica → KO → PL2050 → PSL → Rozwój+ → PiS → Konf → KKP.
  * Coloring goes column-wise (by angle) from left to right across all rows,
  * matching the Wikipedia-style Polish Sejm diagram.
  */
@@ -11,7 +11,7 @@ import { useMemo } from "react";
 import { PARTY_COLORS } from "./party-colors";
 
 /** Fixed political order from left to right */
-const PARTY_ORDER = ["razem", "lewica", "ko", "polska2050", "psl", "pis", "konfederacja", "kkp"];
+const PARTY_ORDER = ["razem", "lewica", "ko", "polska2050", "psl", "rozwojplus", "pis", "konfederacja", "kkp"];
 
 interface HemicycleProps {
   seats: Record<string, number>;
@@ -45,7 +45,7 @@ export default function Hemicycle({ seats }: HemicycleProps) {
     const rawSeatsPerRow = radii.map((r) => Math.round((r / totalArc) * totalSeats));
 
     // Adjust to exact total
-    let assigned = rawSeatsPerRow.reduce((s, v) => s + v, 0);
+    const assigned = rawSeatsPerRow.reduce((s, v) => s + v, 0);
     rawSeatsPerRow[rawSeatsPerRow.length - 1] += totalSeats - assigned;
 
     // Generate all dot positions with their angle

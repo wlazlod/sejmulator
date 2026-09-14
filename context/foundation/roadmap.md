@@ -34,6 +34,7 @@ Sondaże w Polsce podają globalny wynik procentowy, ale ordynacja d'Hondta w 41
 | S-03 | share-link           | użytkownik zapisuje symulację i udostępnia link z TTL                           | S-01          | FR-007                                        | done   |
 | S-04 | interpretation-layer | warstwa interpretacyjna: hemicycle, koalicje, próg, CI, niezdecydowani          | S-01          | FR-008–FR-014                                 | done   |
 | S-05 | saved-simulations    | zalogowany użytkownik zapisuje, otwiera, zmienia nazwę i usuwa symulacje        | S-01, S-03    | US-02, FR-015–FR-018                          | done   |
+| S-06 | rozwoj-plus          | użytkownik dodaje Rozwój+ z dystrybucją PJN 2011 lub proxy                      | S-01          | FR-002, FR-003                                | done   |
 
 ## Streams
 
@@ -148,6 +149,15 @@ What's already in place in the codebase as of 2026-05-27 (auto-researched + user
 - **Blockers:** —
 - **Unknowns:** —
 - **Risk:** Wyciek danych między użytkownikami. Mitygacja: RLS per operacja (`auth.uid() = user_id`), filtr `user_id` w serwisie, middleware (401 dla API, redirect dla stron), testy E2E izolacji (test-plan R-04).
+- **Status:** done (2026-09-14)
+
+### S-06: Partia Rozwój+ (proxy PJN 2011)
+
+- **Outcome:** użytkownik dodaje do sondażu Rozwój Plus (klub wyodrębniony z PiS w lipcu 2026) z domyślną dystrybucją geograficzną Polska Jest Najważniejsza z wyborów 2011 (najbliższy historyczny analog: umiarkowany odłam PiS) i alternatywami Trzecia Droga 2023, PiS 2023, Nawrocki 2025. Nowe źródło danych: PKW 2011 (41 okręgów × 11 komitetów).
+- **Change ID:** rozwoj-plus
+- **PRD refs:** FR-002 (nowa partia używa dystrybucji najbardziej podobnej partii), FR-003, FR-009 (kolejność w hemicycle), FR-010 (cztery nowe koalicje)
+- **Prerequisites:** S-01
+- **Risk:** literówka w ID dystrybucji (proxy wskazuje na nieistniejącą partię). Mitygacja: `party-mapping.test.ts` (test-plan R-03).
 - **Status:** done (2026-09-14)
 
 ## Backlog Handoff
