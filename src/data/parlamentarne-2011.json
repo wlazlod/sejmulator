@@ -1,0 +1,2449 @@
+{
+  "election": {
+    "id": "parlamentarne-2011",
+    "name": "Parlamentarne 2011",
+    "type": "parlamentarne",
+    "year": 2011,
+    "date": "2011-10-09"
+  },
+  "districts": [
+    {
+      "district": {
+        "number": 1,
+        "name": "Legnica",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 95277,
+          "percentage": 27.68
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 6349,
+          "percentage": 1.84
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 45825,
+          "percentage": 13.31
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 39899,
+          "percentage": 11.59
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 17985,
+          "percentage": 5.23
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2150,
+          "percentage": 0.62
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 136683,
+          "percentage": 39.71
+        }
+      ],
+      "totalValidVotes": 344168
+    },
+    {
+      "district": {
+        "number": 2,
+        "name": "Wałbrzych",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 54271,
+          "percentage": 24.06
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 4226,
+          "percentage": 1.87
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 20177,
+          "percentage": 8.95
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 28853,
+          "percentage": 12.79
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 13832,
+          "percentage": 6.13
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1797,
+          "percentage": 0.8
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 102368,
+          "percentage": 45.39
+        }
+      ],
+      "totalValidVotes": 225524
+    },
+    {
+      "district": {
+        "number": 3,
+        "name": "Wrocław",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 127311,
+          "percentage": 25.64
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 8096,
+          "percentage": 1.63
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 26754,
+          "percentage": 5.39
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 47626,
+          "percentage": 9.59
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 21946,
+          "percentage": 4.42
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2220,
+          "percentage": 0.45
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 250869,
+          "percentage": 50.53
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 11685,
+          "percentage": 2.35
+        }
+      ],
+      "totalValidVotes": 496507
+    },
+    {
+      "district": {
+        "number": 4,
+        "name": "Bydgoszcz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 80632,
+          "percentage": 21.93
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 6929,
+          "percentage": 1.88
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 38001,
+          "percentage": 10.34
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 44447,
+          "percentage": 12.09
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 30509,
+          "percentage": 8.3
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2259,
+          "percentage": 0.61
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 158938,
+          "percentage": 43.23
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 5909,
+          "percentage": 1.61
+        }
+      ],
+      "totalValidVotes": 367624
+    },
+    {
+      "district": {
+        "number": 5,
+        "name": "Toruń",
+        "districtSize": 13
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 91049,
+          "percentage": 25.89
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 5887,
+          "percentage": 1.67
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 35253,
+          "percentage": 10.02
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 37741,
+          "percentage": 10.73
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 33443,
+          "percentage": 9.51
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2178,
+          "percentage": 0.62
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 140681,
+          "percentage": 40
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 5433,
+          "percentage": 1.54
+        }
+      ],
+      "totalValidVotes": 351665
+    },
+    {
+      "district": {
+        "number": 6,
+        "name": "Lublin",
+        "districtSize": 15
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 177543,
+          "percentage": 38.58
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 11924,
+          "percentage": 2.59
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 29799,
+          "percentage": 6.48
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 54139,
+          "percentage": 11.77
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 57606,
+          "percentage": 12.52
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2294,
+          "percentage": 0.5
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 116252,
+          "percentage": 25.26
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 8779,
+          "percentage": 1.91
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 1819,
+          "percentage": 0.4
+        }
+      ],
+      "totalValidVotes": 460155
+    },
+    {
+      "district": {
+        "number": 7,
+        "name": "Chełm",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 124084,
+          "percentage": 39.03
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 6892,
+          "percentage": 2.17
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 24513,
+          "percentage": 7.71
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 38296,
+          "percentage": 12.05
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 57882,
+          "percentage": 18.21
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1787,
+          "percentage": 0.56
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 63005,
+          "percentage": 19.82
+        },
+        {
+          "partyId": "nasz-dom-polska-samoobrona-andrzeja-leppera",
+          "partyName": "Komitet Wyborczy Nasz Dom Polska-Samoobrona Andrzeja Leppera",
+          "votes": 1470,
+          "percentage": 0.46
+        }
+      ],
+      "totalValidVotes": 317929
+    },
+    {
+      "district": {
+        "number": 8,
+        "name": "Zielona Góra",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 72302,
+          "percentage": 21.73
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 5293,
+          "percentage": 1.59
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 34300,
+          "percentage": 10.31
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 38958,
+          "percentage": 11.71
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 25575,
+          "percentage": 7.69
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1720,
+          "percentage": 0.52
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 148970,
+          "percentage": 44.78
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 5538,
+          "percentage": 1.66
+        }
+      ],
+      "totalValidVotes": 332656
+    },
+    {
+      "district": {
+        "number": 9,
+        "name": "Łódź",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 90558,
+          "percentage": 25
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 5865,
+          "percentage": 1.62
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 35069,
+          "percentage": 9.68
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 39204,
+          "percentage": 10.82
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 9750,
+          "percentage": 2.69
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1703,
+          "percentage": 0.47
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 171750,
+          "percentage": 47.41
+        },
+        {
+          "partyId": "nasz-dom-polska-samoobrona-andrzeja-leppera",
+          "partyName": "Komitet Wyborczy Nasz Dom Polska-Samoobrona Andrzeja Leppera",
+          "votes": 590,
+          "percentage": 0.16
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 7774,
+          "percentage": 2.15
+        }
+      ],
+      "totalValidVotes": 362263
+    },
+    {
+      "district": {
+        "number": 10,
+        "name": "Piotrków Trybunalski",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 103472,
+          "percentage": 39.62
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 4956,
+          "percentage": 1.9
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 23988,
+          "percentage": 9.19
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 23010,
+          "percentage": 8.81
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 34789,
+          "percentage": 13.32
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1801,
+          "percentage": 0.69
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 66889,
+          "percentage": 25.61
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 2230,
+          "percentage": 0.85
+        }
+      ],
+      "totalValidVotes": 261135
+    },
+    {
+      "district": {
+        "number": 11,
+        "name": "Sieradz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 109205,
+          "percentage": 32.13
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 5866,
+          "percentage": 1.73
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 29933,
+          "percentage": 8.81
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 35623,
+          "percentage": 10.48
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 42671,
+          "percentage": 12.55
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1924,
+          "percentage": 0.57
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 106601,
+          "percentage": 31.36
+        },
+        {
+          "partyId": "nasz-dom-polska-samoobrona-andrzeja-leppera",
+          "partyName": "Komitet Wyborczy Nasz Dom Polska-Samoobrona Andrzeja Leppera",
+          "votes": 1388,
+          "percentage": 0.41
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 5713,
+          "percentage": 1.68
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 976,
+          "percentage": 0.29
+        }
+      ],
+      "totalValidVotes": 339900
+    },
+    {
+      "district": {
+        "number": 12,
+        "name": "Chrzanów",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 91220,
+          "percentage": 38.11
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 7055,
+          "percentage": 2.95
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 16438,
+          "percentage": 6.87
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 21137,
+          "percentage": 8.83
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 14074,
+          "percentage": 5.88
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1463,
+          "percentage": 0.61
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 85670,
+          "percentage": 35.79
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 2312,
+          "percentage": 0.97
+        }
+      ],
+      "totalValidVotes": 239369
+    },
+    {
+      "district": {
+        "number": 13,
+        "name": "Kraków",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 156800,
+          "percentage": 30.95
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 10749,
+          "percentage": 2.12
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 27504,
+          "percentage": 5.43
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 45079,
+          "percentage": 8.9
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 22574,
+          "percentage": 4.46
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2194,
+          "percentage": 0.43
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 224915,
+          "percentage": 44.4
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 16765,
+          "percentage": 3.31
+        }
+      ],
+      "totalValidVotes": 506580
+    },
+    {
+      "district": {
+        "number": 14,
+        "name": "Nowy Sącz",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 143543,
+          "percentage": 51.48
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 6041,
+          "percentage": 2.17
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 11750,
+          "percentage": 4.21
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 13022,
+          "percentage": 4.67
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 19387,
+          "percentage": 6.95
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1001,
+          "percentage": 0.36
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 77809,
+          "percentage": 27.9
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 4963,
+          "percentage": 1.78
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 1330,
+          "percentage": 0.48
+        }
+      ],
+      "totalValidVotes": 278846
+    },
+    {
+      "district": {
+        "number": 15,
+        "name": "Tarnów",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 112982,
+          "percentage": 43.8
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 7909,
+          "percentage": 3.07
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 13863,
+          "percentage": 5.37
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 17017,
+          "percentage": 6.6
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 25833,
+          "percentage": 10.01
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1201,
+          "percentage": 0.47
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 76688,
+          "percentage": 29.73
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 2457,
+          "percentage": 0.95
+        }
+      ],
+      "totalValidVotes": 257950
+    },
+    {
+      "district": {
+        "number": 16,
+        "name": "Płock",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 93307,
+          "percentage": 33.74
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 6740,
+          "percentage": 2.44
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 20798,
+          "percentage": 7.52
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 23175,
+          "percentage": 8.38
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 51766,
+          "percentage": 18.72
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2101,
+          "percentage": 0.76
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 78623,
+          "percentage": 28.43
+        }
+      ],
+      "totalValidVotes": 276510
+    },
+    {
+      "district": {
+        "number": 17,
+        "name": "Radom",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 103798,
+          "percentage": 40.15
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 4575,
+          "percentage": 1.77
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 19828,
+          "percentage": 7.67
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 22056,
+          "percentage": 8.53
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 36488,
+          "percentage": 14.11
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1515,
+          "percentage": 0.59
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 67349,
+          "percentage": 26.05
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 2926,
+          "percentage": 1.13
+        }
+      ],
+      "totalValidVotes": 258535
+    },
+    {
+      "district": {
+        "number": 18,
+        "name": "Siedlce",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 139926,
+          "percentage": 40.88
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 7435,
+          "percentage": 2.17
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 24418,
+          "percentage": 7.13
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 23490,
+          "percentage": 6.86
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 61136,
+          "percentage": 17.86
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1917,
+          "percentage": 0.56
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 77181,
+          "percentage": 22.55
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 5549,
+          "percentage": 1.62
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 1252,
+          "percentage": 0.37
+        }
+      ],
+      "totalValidVotes": 342304
+    },
+    {
+      "district": {
+        "number": 19,
+        "name": "Warszawa",
+        "districtSize": 20
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 277577,
+          "percentage": 27.28
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 30964,
+          "percentage": 3.04
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 78020,
+          "percentage": 7.67
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 110589,
+          "percentage": 10.87
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 17755,
+          "percentage": 1.74
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 4060,
+          "percentage": 0.4
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 498599,
+          "percentage": 49
+        }
+      ],
+      "totalValidVotes": 1017564
+    },
+    {
+      "district": {
+        "number": 20,
+        "name": "Warszawa (obwarzanek)",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 145893,
+          "percentage": 32.43
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 12151,
+          "percentage": 2.7
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 23739,
+          "percentage": 5.28
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 38482,
+          "percentage": 8.55
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 32064,
+          "percentage": 7.13
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2085,
+          "percentage": 0.46
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 182123,
+          "percentage": 40.48
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 11673,
+          "percentage": 2.59
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 1674,
+          "percentage": 0.37
+        }
+      ],
+      "totalValidVotes": 449884
+    },
+    {
+      "district": {
+        "number": 21,
+        "name": "Opole",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 65739,
+          "percentage": 20.56
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 7121,
+          "percentage": 2.23
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 24723,
+          "percentage": 7.73
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 30919,
+          "percentage": 9.67
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 18816,
+          "percentage": 5.89
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1726,
+          "percentage": 0.54
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 140641,
+          "percentage": 44
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 1967,
+          "percentage": 0.62
+        },
+        {
+          "partyId": "wyborcow-mniejszosc-niemiecka",
+          "partyName": "Komitet Wyborczy Wyborców Mniejszość Niemiecka",
+          "votes": 28014,
+          "percentage": 8.76
+        }
+      ],
+      "totalValidVotes": 319666
+    },
+    {
+      "district": {
+        "number": 22,
+        "name": "Krosno",
+        "districtSize": 11
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 133320,
+          "percentage": 44.73
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 4487,
+          "percentage": 1.51
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 18407,
+          "percentage": 6.18
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 21044,
+          "percentage": 7.06
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 37702,
+          "percentage": 12.65
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1018,
+          "percentage": 0.34
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 75403,
+          "percentage": 25.3
+        },
+        {
+          "partyId": "nasz-dom-polska-samoobrona-andrzeja-leppera",
+          "partyName": "Komitet Wyborczy Nasz Dom Polska-Samoobrona Andrzeja Leppera",
+          "votes": 981,
+          "percentage": 0.33
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 4202,
+          "percentage": 1.41
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 1466,
+          "percentage": 0.49
+        }
+      ],
+      "totalValidVotes": 298030
+    },
+    {
+      "district": {
+        "number": 23,
+        "name": "Rzeszów",
+        "districtSize": 15
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 219629,
+          "percentage": 48.03
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 8393,
+          "percentage": 1.84
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 25649,
+          "percentage": 5.61
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 30718,
+          "percentage": 6.72
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 47832,
+          "percentage": 10.46
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1541,
+          "percentage": 0.34
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 111871,
+          "percentage": 24.46
+        },
+        {
+          "partyId": "nasz-dom-polska-samoobrona-andrzeja-leppera",
+          "partyName": "Komitet Wyborczy Nasz Dom Polska-Samoobrona Andrzeja Leppera",
+          "votes": 848,
+          "percentage": 0.19
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 8555,
+          "percentage": 1.87
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 2285,
+          "percentage": 0.5
+        }
+      ],
+      "totalValidVotes": 457321
+    },
+    {
+      "district": {
+        "number": 24,
+        "name": "Białystok",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 158572,
+          "percentage": 36.99
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 9616,
+          "percentage": 2.24
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 40603,
+          "percentage": 9.47
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 34397,
+          "percentage": 8.02
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 47338,
+          "percentage": 11.04
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1669,
+          "percentage": 0.39
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 127224,
+          "percentage": 29.68
+        },
+        {
+          "partyId": "nasz-dom-polska-samoobrona-andrzeja-leppera",
+          "partyName": "Komitet Wyborczy Nasz Dom Polska-Samoobrona Andrzeja Leppera",
+          "votes": 1205,
+          "percentage": 0.28
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 6820,
+          "percentage": 1.59
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 1279,
+          "percentage": 0.3
+        }
+      ],
+      "totalValidVotes": 428723
+    },
+    {
+      "district": {
+        "number": 25,
+        "name": "Gdańsk",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 102131,
+          "percentage": 24.59
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 8584,
+          "percentage": 2.07
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 25542,
+          "percentage": 6.15
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 37615,
+          "percentage": 9.06
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 19313,
+          "percentage": 4.65
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2009,
+          "percentage": 0.48
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 219106,
+          "percentage": 52.76
+        },
+        {
+          "partyId": "nasz-dom-polska-samoobrona-andrzeja-leppera",
+          "partyName": "Komitet Wyborczy Nasz Dom Polska-Samoobrona Andrzeja Leppera",
+          "votes": 1026,
+          "percentage": 0.25
+        }
+      ],
+      "totalValidVotes": 415326
+    },
+    {
+      "district": {
+        "number": 26,
+        "name": "Gdynia",
+        "districtSize": 14
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 113647,
+          "percentage": 25.04
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 12423,
+          "percentage": 2.74
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 36190,
+          "percentage": 7.97
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 43264,
+          "percentage": 9.53
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 25485,
+          "percentage": 5.62
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2574,
+          "percentage": 0.57
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 220245,
+          "percentage": 48.53
+        }
+      ],
+      "totalValidVotes": 453828
+    },
+    {
+      "district": {
+        "number": 27,
+        "name": "Bielsko-Biała",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 98152,
+          "percentage": 31.51
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 6822,
+          "percentage": 2.19
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 19881,
+          "percentage": 6.38
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 29338,
+          "percentage": 9.42
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 21143,
+          "percentage": 6.79
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1913,
+          "percentage": 0.61
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 131471,
+          "percentage": 42.21
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 2735,
+          "percentage": 0.88
+        }
+      ],
+      "totalValidVotes": 311455
+    },
+    {
+      "district": {
+        "number": 28,
+        "name": "Częstochowa",
+        "districtSize": 7
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 61429,
+          "percentage": 27.36
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 4795,
+          "percentage": 2.14
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 23547,
+          "percentage": 10.49
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 30049,
+          "percentage": 13.39
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 19688,
+          "percentage": 8.77
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1875,
+          "percentage": 0.84
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 78500,
+          "percentage": 34.97
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 4614,
+          "percentage": 2.06
+        }
+      ],
+      "totalValidVotes": 224497
+    },
+    {
+      "district": {
+        "number": 29,
+        "name": "Katowice",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 65724,
+          "percentage": 23.37
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 6527,
+          "percentage": 2.32
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 21932,
+          "percentage": 7.8
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 30320,
+          "percentage": 10.78
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 14028,
+          "percentage": 4.99
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2385,
+          "percentage": 0.85
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 140272,
+          "percentage": 49.89
+        }
+      ],
+      "totalValidVotes": 281188
+    },
+    {
+      "district": {
+        "number": 30,
+        "name": "Rybnik",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 75504,
+          "percentage": 28.59
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 8448,
+          "percentage": 3.2
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 20908,
+          "percentage": 7.92
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 23804,
+          "percentage": 9.02
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 9206,
+          "percentage": 3.49
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1712,
+          "percentage": 0.65
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 118524,
+          "percentage": 44.89
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 5100,
+          "percentage": 1.93
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 842,
+          "percentage": 0.32
+        }
+      ],
+      "totalValidVotes": 264048
+    },
+    {
+      "district": {
+        "number": 31,
+        "name": "Sosnowiec",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 98737,
+          "percentage": 24.52
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 15614,
+          "percentage": 3.88
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 25704,
+          "percentage": 6.38
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 43884,
+          "percentage": 10.9
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 11237,
+          "percentage": 2.79
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 3442,
+          "percentage": 0.85
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 195018,
+          "percentage": 48.43
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 9079,
+          "percentage": 2.25
+        }
+      ],
+      "totalValidVotes": 402715
+    },
+    {
+      "district": {
+        "number": 32,
+        "name": "Gliwice",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 59453,
+          "percentage": 21.21
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 5856,
+          "percentage": 2.09
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 36460,
+          "percentage": 13.01
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 41504,
+          "percentage": 14.81
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 12281,
+          "percentage": 4.38
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2185,
+          "percentage": 0.78
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 120530,
+          "percentage": 43
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 2051,
+          "percentage": 0.73
+        }
+      ],
+      "totalValidVotes": 280320
+    },
+    {
+      "district": {
+        "number": 33,
+        "name": "Kielce",
+        "districtSize": 16
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 138039,
+          "percentage": 31.89
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 6982,
+          "percentage": 1.61
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 42096,
+          "percentage": 9.72
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 38331,
+          "percentage": 8.85
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 85590,
+          "percentage": 19.77
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2528,
+          "percentage": 0.58
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 109916,
+          "percentage": 25.39
+        },
+        {
+          "partyId": "nasz-dom-polska-samoobrona-andrzeja-leppera",
+          "partyName": "Komitet Wyborczy Nasz Dom Polska-Samoobrona Andrzeja Leppera",
+          "votes": 1262,
+          "percentage": 0.29
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 6754,
+          "percentage": 1.56
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 1406,
+          "percentage": 0.32
+        }
+      ],
+      "totalValidVotes": 432904
+    },
+    {
+      "district": {
+        "number": 34,
+        "name": "Elbląg",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 45403,
+          "percentage": 23.21
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 3430,
+          "percentage": 1.75
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 15091,
+          "percentage": 7.71
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 22659,
+          "percentage": 11.58
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 23870,
+          "percentage": 12.2
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1340,
+          "percentage": 0.68
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 82904,
+          "percentage": 42.37
+        },
+        {
+          "partyId": "nasz-dom-polska-samoobrona-andrzeja-leppera",
+          "partyName": "Komitet Wyborczy Nasz Dom Polska-Samoobrona Andrzeja Leppera",
+          "votes": 963,
+          "percentage": 0.49
+        }
+      ],
+      "totalValidVotes": 195660
+    },
+    {
+      "district": {
+        "number": 35,
+        "name": "Olsztyn",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 59996,
+          "percentage": 23.07
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 5276,
+          "percentage": 2.03
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 23020,
+          "percentage": 8.85
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 29122,
+          "percentage": 11.2
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 30713,
+          "percentage": 11.81
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1643,
+          "percentage": 0.63
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 108522,
+          "percentage": 41.73
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 1740,
+          "percentage": 0.67
+        }
+      ],
+      "totalValidVotes": 260032
+    },
+    {
+      "district": {
+        "number": 36,
+        "name": "Kalisz",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 82114,
+          "percentage": 24.24
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 5836,
+          "percentage": 1.72
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 40250,
+          "percentage": 11.88
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 34367,
+          "percentage": 10.14
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 43278,
+          "percentage": 12.77
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1833,
+          "percentage": 0.54
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 125596,
+          "percentage": 37.07
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 5525,
+          "percentage": 1.63
+        }
+      ],
+      "totalValidVotes": 338799
+    },
+    {
+      "district": {
+        "number": 37,
+        "name": "Konin",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 71795,
+          "percentage": 27.41
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 4751,
+          "percentage": 1.81
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 34289,
+          "percentage": 13.09
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 29236,
+          "percentage": 11.16
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 33590,
+          "percentage": 12.82
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1242,
+          "percentage": 0.47
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 80857,
+          "percentage": 30.87
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 5117,
+          "percentage": 1.95
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 1043,
+          "percentage": 0.4
+        }
+      ],
+      "totalValidVotes": 261920
+    },
+    {
+      "district": {
+        "number": 38,
+        "name": "Piła",
+        "districtSize": 9
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 50023,
+          "percentage": 19.24
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 5440,
+          "percentage": 2.09
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 29638,
+          "percentage": 11.4
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 28633,
+          "percentage": 11.01
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 31192,
+          "percentage": 12
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1801,
+          "percentage": 0.69
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 113226,
+          "percentage": 43.56
+        }
+      ],
+      "totalValidVotes": 259953
+    },
+    {
+      "district": {
+        "number": 39,
+        "name": "Poznań",
+        "districtSize": 10
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 76772,
+          "percentage": 19.19
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 8387,
+          "percentage": 2.1
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 33764,
+          "percentage": 8.44
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 46750,
+          "percentage": 11.69
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 11960,
+          "percentage": 2.99
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 2010,
+          "percentage": 0.5
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 220354,
+          "percentage": 55.09
+        }
+      ],
+      "totalValidVotes": 399997
+    },
+    {
+      "district": {
+        "number": 40,
+        "name": "Koszalin",
+        "districtSize": 8
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 45558,
+          "percentage": 21.19
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 3641,
+          "percentage": 1.69
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 24474,
+          "percentage": 11.38
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 26582,
+          "percentage": 12.36
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 13756,
+          "percentage": 6.4
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1516,
+          "percentage": 0.71
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 99506,
+          "percentage": 46.27
+        }
+      ],
+      "totalValidVotes": 215033
+    },
+    {
+      "district": {
+        "number": 41,
+        "name": "Szczecin",
+        "districtSize": 12
+      },
+      "results": [
+        {
+          "partyId": "prawo-i-sprawiedliwosc",
+          "partyName": "Komitet Wyborczy Prawo i Sprawiedliwość",
+          "votes": 82529,
+          "percentage": 21.66
+        },
+        {
+          "partyId": "polska-jest-najwazniejsza",
+          "partyName": "Komitet Wyborczy Polska Jest Najważniejsza",
+          "votes": 7062,
+          "percentage": 1.85
+        },
+        {
+          "partyId": "sojusz-lewicy-demokratycznej",
+          "partyName": "Komitet Wyborczy Sojusz Lewicy Demokratycznej",
+          "votes": 42165,
+          "percentage": 11.07
+        },
+        {
+          "partyId": "ruch-palikota",
+          "partyName": "Komitet Wyborczy Ruch Palikota",
+          "votes": 45111,
+          "percentage": 11.84
+        },
+        {
+          "partyId": "polskie-stronnictwo-ludowe",
+          "partyName": "Komitet Wyborczy Polskie Stronnictwo Ludowe",
+          "votes": 16545,
+          "percentage": 4.34
+        },
+        {
+          "partyId": "polska-partia-pracy-sierpien-80",
+          "partyName": "Komitet Wyborczy Polska Partia Pracy - Sierpień 80",
+          "votes": 1815,
+          "percentage": 0.48
+        },
+        {
+          "partyId": "platforma-obywatelska-rp",
+          "partyName": "Komitet Wyborczy Platforma Obywatelska RP",
+          "votes": 178124,
+          "percentage": 46.75
+        },
+        {
+          "partyId": "nowa-prawica-janusza-korwin-mikke",
+          "partyName": "Komitet Wyborczy Nowa Prawica - Janusza Korwin-Mikke",
+          "votes": 6290,
+          "percentage": 1.65
+        },
+        {
+          "partyId": "prawica",
+          "partyName": "Komitet Wyborczy Prawica",
+          "votes": 1379,
+          "percentage": 0.36
+        }
+      ],
+      "totalValidVotes": 381020
+    }
+  ]
+}

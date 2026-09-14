@@ -11,7 +11,7 @@ import type { ElectionData } from "../types";
 const PARLIAMENTARY_SEAT_TOTAL = 460;
 const DISTRICT_COUNT = 41;
 
-const parliamentaryElections = ["parlamentarne-2023", "parlamentarne-2019"] as const;
+const parliamentaryElections = ["parlamentarne-2023", "parlamentarne-2019", "parlamentarne-2011"] as const;
 const presidentialElections = ["prezydenckie-2025", "prezydenckie-2020"] as const;
 const allElections = [...parliamentaryElections, ...presidentialElections] as const;
 

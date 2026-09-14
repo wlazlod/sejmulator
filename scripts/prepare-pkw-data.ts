@@ -84,6 +84,13 @@ const ELECTIONS: Record<string, ElectionMeta> = {
     year: 2019,
     date: "2019-10-13",
   },
+  "parlamentarne-2011": {
+    id: "parlamentarne-2011",
+    name: "Parlamentarne 2011",
+    type: "parlamentarne",
+    year: 2011,
+    date: "2011-10-09",
+  },
   "prezydenckie-2025": {
     id: "prezydenckie-2025",
     name: "Prezydenckie 2025 (I tura)",
@@ -408,7 +415,7 @@ function main() {
   const terytMap = buildTerytToDistrictMap();
 
   // Step 2: Process parliamentary elections (per-okręg)
-  const parlElections = ["parlamentarne-2023", "parlamentarne-2019"];
+  const parlElections = ["parlamentarne-2023", "parlamentarne-2019", "parlamentarne-2011"];
   for (const electionId of parlElections) {
     try {
       const data = processParlamentarne(electionId);
