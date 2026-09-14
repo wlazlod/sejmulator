@@ -5,10 +5,11 @@
  */
 
 import { test, expect } from "@playwright/test";
+import { gotoHydrated } from "./helpers";
 
 test.describe("US-01: symulacja sondażu", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("/");
+    await gotoHydrated(page, "/");
     await expect(page.getByRole("heading", { level: 1, name: "Sejmulator" })).toBeVisible();
   });
 

@@ -10,7 +10,18 @@ Symulacja i share-link są otwarte dla każdego. Opcjonalne konto daje prywatną
 
 **Wersja produkcyjna:** <https://sejmulator.daniel-wlazlo.workers.dev>
 
-<!-- Screenshoty (docs/screenshots/): 02-home-logged-in.png, 03-feature-1-save-form.png, 04-feature-2-results.png -->
+## Zrzuty ekranu
+
+|                                                                         |                                                                                  |
+| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| ![Strona główna po zalogowaniu](docs/screenshots/02-home-logged-in.png) | ![Zapis symulacji pod nazwą](docs/screenshots/03-feature-1-save-form.png)        |
+| Sondaż po zalogowaniu (Topbar z e-mailem i „Moje symulacje")            | Formularz zapisu: nazwa + „Zapisz"                                               |
+| ![Moje symulacje](docs/screenshots/07-simulations-list.png)             | ![Tryb edycji zapisanej symulacji](docs/screenshots/03b-feature-1-edit-mode.png) |
+| Biblioteka: Otwórz / Zmień nazwę / Usuń                                 | `/simulations/[id]`: „Zapisz zmiany"                                             |
+
+![Wynik symulacji: mandaty z CI, hemicycle, koalicje, mapa okręgów](docs/screenshots/04-feature-2-results.png)
+
+Pozostałe: [logowanie](docs/screenshots/01-login.png), [testy](docs/screenshots/05-tests-passing.png), [rejestr ryzyk](docs/screenshots/06-test-plan.png).
 
 ## Stack
 

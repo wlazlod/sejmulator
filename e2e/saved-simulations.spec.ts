@@ -5,6 +5,7 @@
  */
 
 import { test, expect, type Page } from "@playwright/test";
+import { gotoHydrated } from "./helpers";
 
 const EMAIL = process.env.E2E_EMAIL;
 const PASSWORD = process.env.E2E_PASSWORD;
@@ -12,12 +13,13 @@ const PASSWORD = process.env.E2E_PASSWORD;
 test.skip(!EMAIL || !PASSWORD, "wymaga konta testowego i Supabase");
 
 async function signIn(page: Page): Promise<void> {
-  await page.goto("/auth/signin");
+  await gotoHydrated(page, "/auth/signin");
   await page.getByLabel("E-mail").fill(EMAIL ?? "");
   await page.getByLabel("Hasło", { exact: true }).fill(PASSWORD ?? "");
   await page.getByRole("button", { name: "Zaloguj się" }).click();
   await expect(page).toHaveURL(/\/$/);
   await expect(page.getByRole("link", { name: "Moje symulacje" })).toBeVisible();
+  await page.waitForFunction(() => document.querySelectorAll("astro-island[ssr]").length === 0);
 }
 
 test.describe("US-02: biblioteka zapisanych symulacji", () => {
@@ -44,7 +46,7 @@ test.describe("US-02: biblioteka zapisanych symulacji", () => {
     await expect(page.getByText("Zapisano.")).toBeVisible();
 
     // list
-    await page.goto("/simulations");
+    await gotoHydrated(page, "/simulations");
     const row = page.getByTestId("saved-simulation-row").filter({ hasText: name });
     await expect(row).toHaveCount(1);
     await expect(row.getByRole("link", { name })).toBeVisible();
@@ -64,7 +66,7 @@ test.describe("US-02: biblioteka zapisanych symulacji", () => {
     await expect(page.getByRole("button", { name: "Zapisz zmiany" })).toBeVisible();
 
     // delete
-    await page.goto("/simulations");
+    await gotoHydrated(page, "/simulations");
     page.once("dialog", (dialog) => void dialog.accept());
     await renamed.getByRole("button", { name: "Usuń" }).click();
     await expect(page.getByTestId("saved-simulation-row").filter({ hasText: `${name}-v2` })).toHaveCount(0);

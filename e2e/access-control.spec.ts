@@ -5,6 +5,7 @@
  */
 
 import { test, expect } from "@playwright/test";
+import { gotoHydrated } from "./helpers";
 
 const SAMPLE_INPUT = {
   name: "e2e-anon",
@@ -47,7 +48,7 @@ test.describe("R-04: anonim nie ma dostępu do biblioteki", () => {
   });
 
   test("R-04: anonim widzi zachętę do logowania zamiast przycisku zapisu", async ({ page }) => {
-    await page.goto("/");
+    await gotoHydrated(page, "/");
     await page.getByRole("button", { name: "Oblicz mandaty" }).click();
     await expect(page.getByRole("heading", { name: /Wynik: 460 mandatów/ })).toBeVisible();
     await expect(page.getByText("Zaloguj się, aby zapisać symulację")).toBeVisible();
