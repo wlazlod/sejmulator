@@ -1,8 +1,9 @@
 ---
 project: "Sejmulator"
-version: 2
-status: draft
+version: 3
+status: active
 created: 2026-05-26
+updated: 2026-09-14
 context_type: brownfield
 product_type: web-app
 target_scale:
@@ -40,6 +41,7 @@ To niszowe rozwiązanie — mało kogo interesuje na tyle, żeby zbudować porz�
 
 - Wyniki d'Hondta muszą być matematycznie poprawne (weryfikowalne vs. historyczne dane PKW).
 - Share link nie może ujawniać danych innych użytkowników.
+- Zapisane symulacje są widoczne i modyfikowalne wyłącznie dla ich właściciela (RLS + filtr `user_id` w API).
 
 ## User Stories
 
@@ -55,6 +57,20 @@ To niszowe rozwiązanie — mało kogo interesuje na tyle, żeby zbudować porz�
 - Suma mandatów = 460 (rozmiar Sejmu)
 - Wynik zawiera przedział ufności sygnalizujący tight races
 - Widoczny disclaimer „wyniki poglądowe"
+
+### US-02: Użytkownik zarządza biblioteką symulacji
+
+- **Given** użytkownik jest zalogowany i policzył symulację
+- **When** kliknie „Zapisz symulację", poda nazwę i zapisze
+- **Then** symulacja pojawi się na liście „Moje symulacje", skąd może ją otworzyć, zmienić nazwę, zaktualizować wejścia i usunąć
+
+#### Acceptance Criteria
+
+- Zapis wymaga zalogowania; anonim widzi zamiast przycisku tekst „Zaloguj się, aby zapisać symulację"
+- Zapisywane są wejścia (partie z dystrybucjami, inne partie, parametr CI), nie wynik; po otwarciu symulacja liczy się ponownie i daje identyczny wynik
+- Lista pokazuje tylko symulacje zalogowanego użytkownika, posortowane od ostatnio zmienionej
+- Zmiana nazwy i usunięcie działają bez przeładowania strony; usunięcie wymaga potwierdzenia
+- Próba dostępu do cudzej symulacji (strona lub API) kończy się `404`; dostęp anonimowy do `/simulations` → redirect na logowanie, do `/api/simulations` → `401`
 
 ## Functional Requirements
 
@@ -114,6 +130,23 @@ To niszowe rozwiązanie — mało kogo interesuje na tyle, żeby zbudować porz�
 - FR-014: Użytkownik może ustawić parametr przedziału ufności (perturbacja %) w polu numerycznym z domyślną wartością (1.5%). Priority: must-have
   > Socrates: Counter-argument: "95% userów nie ruszy". Resolution: pole z domyślną wartością — nie przeszkadza, koszt niski.
 
+### v3: Konto i biblioteka symulacji (S-05)
+
+- FR-015: Zalogowany użytkownik może zapisać bieżącą symulację pod nazwą (1–80 znaków). Zapisywane są wejścia: partie z procentami i dystrybucjami, „inne partie", parametr CI. Priority: must-have
+
+  > Socrates: Counter-argument: "share link już to robi". Resolution: share link jest anonimowy i wygasa po 30 dniach; biblioteka jest prywatna, nazwana i trwała — to inny przypadek użycia (własny warsztat, nie publikacja).
+
+- FR-016: Zalogowany użytkownik widzi listę swoich zapisanych symulacji (nazwa, data zmiany, partie) i może otworzyć każdą z nich; po otwarciu symulacja liczy się automatycznie. Priority: must-have
+
+  > Socrates: Counter-argument: "lista bez wyników jest mało czytelna". Resolution: pokazujemy skróty partii; wynik jest deterministyczny i liczy się w < 1 s po otwarciu, więc przechowywanie go byłoby duplikacją.
+
+- FR-017: Zalogowany użytkownik może zmienić nazwę zapisanej symulacji (z listy) oraz zaktualizować jej wejścia (z widoku edycji, przycisk „Zapisz zmiany"). Priority: must-have
+
+  > Socrates: Counter-argument: "wersjonowanie byłoby bezpieczniejsze". Resolution: nadpisanie w miejscu; historia wersji pozostaje non-goal.
+
+- FR-018: Zalogowany użytkownik może usunąć zapisaną symulację po potwierdzeniu. Priority: must-have
+  > Socrates: Brak kontrargumentu; usunięcie jest nieodwracalne, stąd potwierdzenie.
+
 ## Non-Functional Requirements
 
 - Obliczenie mandatów: odpowiedź widoczna dla użytkownika w < 5 sekund od kliknięcia „Oblicz".
@@ -131,13 +164,19 @@ Aplikacja przekłada globalny wynik sondażowy na mandaty w Sejmie przez nałoż
 
 ## Access Control
 
-Model: open access — brak autentykacji, brak kont użytkowników. Każdy otwiera stronę, wpisuje dane sondażu, dostaje wynik. Udostępnianie: unikalny URL per wynik symulacji, ważny przez ograniczony czas (TTL). Role: brak — wszyscy użytkownicy są równi, anonimowi.
+Model: **open access z opcjonalnym kontem**.
+
+- Symulacja ad hoc i share-link (`/`, `/s/:id`, `POST /api/share`) pozostają otwarte dla każdego, bez logowania. To jest natura produktu: wpisujesz sondaż, dostajesz mandaty.
+- Konto (Supabase Auth, e-mail + hasło) daje dokładnie jedną rzecz: **bibliotekę zapisanych symulacji** („Moje symulacje"). Zasobem przypisanym do użytkownika są zapisane symulacje: użytkownik loguje się do systemu i widzi wyłącznie własne zapisane symulacje; anonim liczy i udostępnia, zalogowany dodatkowo zapisuje i zarządza.
+- Role: **anonim** (liczy, udostępnia) i **zalogowany właściciel** (dodatkowo: zapisuje, listuje, otwiera, zmienia nazwę, aktualizuje, usuwa własne symulacje). Nie ma roli administratora ani współdzielenia biblioteki.
+- Egzekwowanie: `src/middleware.ts` chroni `/simulations` (redirect na `/auth/signin`) i `/api/simulations` (`401` JSON); tabela `saved_simulations` ma RLS per operacja z warunkiem `auth.uid() = user_id`; serwis dodatkowo filtruje po `user_id`. Cudzy rekord zwraca `404`, nie `403`, żeby nie ujawniać istnienia.
+- Udostępnianie: nadal unikalny URL per symulacja z TTL 30 dni, anonimowy; share-link nie jest powiązany z kontem.
 
 ## Non-Goals
 
 - **Automatyczny import sondaży z mediów** — użytkownik wpisuje dane ręcznie. Automatyzacja to osobny projekt wymagający scrapingu/API.
 - **Model predykcyjny / ML** — to kalkulator „co by było gdyby", nie prognoza. Brak własnego modelu predykcyjnego.
-- **Historia symulacji per user** — brak kont użytkowników, brak persystentnej historii. Share link z TTL wystarcza.
+- **Historia wyników i porównania w czasie** — Uchylone częściowo w v3 (2026-09-14): pierwotny non-goal „Historia symulacji per user" (v1–v2: brak kont, share link z TTL wystarcza) został uchylony, bo biblioteka wejść symulacji jest potrzebna jako zasób CRUD z kontrolą dostępu; nadal bez historii wyników i bez porównań w czasie.
 - **Edycja danych historycznych PKW przez użytkownika** — dane są preloadowane i niemodyfikowalne z poziomu UI.
 - **Animacje / transitions** — wyniki wyświetlane statycznie.
 - **Custom koalicje** — tylko predefiniowany zbiór 11 kombinacji.

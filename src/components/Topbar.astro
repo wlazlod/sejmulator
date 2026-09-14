@@ -2,36 +2,37 @@
 const { user } = Astro.locals;
 ---
 
-<div
-  class="mb-4 flex items-center justify-between rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80"
->
-  {
-    user ? (
-      <>
-        <span class="text-blue-100/70">{user.email}</span>
-        <div class="flex items-center gap-3">
-          <a href="/dashboard" class="text-purple-300 transition-colors hover:text-purple-100 hover:underline">
-            Dashboard
+<header class="border-b border-gray-200 bg-white">
+  <nav
+    class="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-2 px-4 py-2 text-sm sm:px-6"
+    aria-label="Nawigacja główna"
+  >
+    <a href="/" class="font-semibold text-gray-900 hover:text-blue-700">Sejmulator</a>
+    {
+      user ? (
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="max-w-[200px] truncate text-gray-500 sm:max-w-none" title={user.email}>
+            {user.email}
+          </span>
+          <a href="/simulations" class="text-blue-600 hover:underline">
+            Moje symulacje
           </a>
           <form method="POST" action="/api/auth/signout">
-            <button type="submit" class="text-purple-300 transition-colors hover:text-purple-100 hover:underline">
-              Sign out
+            <button type="submit" class="text-gray-600 hover:text-red-600 hover:underline">
+              Wyloguj
             </button>
           </form>
         </div>
-      </>
-    ) : (
-      <>
-        <span class="text-blue-100/70">Not signed in</span>
-        <div class="flex gap-3">
-          <a href="/auth/signin" class="text-purple-300 transition-colors hover:text-purple-100 hover:underline">
-            Sign in
+      ) : (
+        <div class="flex items-center gap-3">
+          <a href="/auth/signin" class="text-blue-600 hover:underline">
+            Zaloguj się
           </a>
-          <a href="/auth/signup" class="text-purple-300 transition-colors hover:text-purple-100 hover:underline">
-            Sign up
+          <a href="/auth/signup" class="text-gray-600 hover:underline">
+            Załóż konto
           </a>
         </div>
-      </>
-    )
-  }
-</div>
+      )
+    }
+  </nav>
+</header>

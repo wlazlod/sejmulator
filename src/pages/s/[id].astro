@@ -5,6 +5,7 @@ import { createClient } from "@/lib/supabase";
 import type { SharedPartyInput } from "@/lib/share-types";
 
 const { id } = Astro.params;
+const user = Astro.locals.user ? { email: Astro.locals.user.email ?? "" } : null;
 
 let sharedParties: SharedPartyInput[] | null = null;
 let error: string | null = null;
@@ -41,7 +42,7 @@ if (!supabase) {
         </a>
       </div>
     ) : (
-      <Simulator client:load sharedParties={sharedParties} />
+      <Simulator client:load sharedParties={sharedParties} user={user} />
     )
   }
 </Layout>

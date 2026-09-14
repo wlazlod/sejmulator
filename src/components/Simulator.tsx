@@ -13,6 +13,9 @@ import type { ElectionData } from "../data/types";
 import { simulateWithConfidence } from "../lib/confidence";
 import type { SimulationWithCI } from "../lib/confidence";
 import type { SharedPartyInput } from "../lib/share-types";
+import type { SavedSimulation } from "../lib/saved-simulation-types";
+import { SAVED_SIMULATION_NAME_MAX } from "../lib/saved-simulation-types";
+import SaveControls from "./SaveControls";
 import DistrictDrilldown from "./DistrictDrilldown";
 import Hemicycle from "./Hemicycle";
 import Coalitions from "./Coalitions";
@@ -110,31 +113,42 @@ const ELECTION_DATASETS = elections as unknown as Record<string, ElectionData>;
 
 import { PARTY_COLORS } from "./party-colors";
 
-interface SimulatorProps {
-  sharedParties?: SharedPartyInput[] | null;
+function toPartyRows(inputs: SharedPartyInput[]): PartyRow[] {
+  return inputs.map((p) => ({
+    id: p.id,
+    displayName: p.displayName,
+    shortName: p.shortName,
+    percentage: p.percentage,
+    distributionId: p.distributionId,
+  }));
 }
 
-export default function Simulator({ sharedParties }: SimulatorProps) {
+interface SimulatorProps {
+  /** Inputs loaded from a share link (`/s/:id`) */
+  sharedParties?: SharedPartyInput[] | null;
+  /** Saved simulation being edited (`/simulations/:id`) */
+  savedSimulation?: SavedSimulation | null;
+  /** Signed-in user, or null for anonymous visitors */
+  user?: { email: string } | null;
+}
+
+export default function Simulator({ sharedParties, savedSimulation, user = null }: SimulatorProps) {
   const [parties, setParties] = useState<PartyRow[]>(() => {
-    if (sharedParties && sharedParties.length > 0) {
-      return sharedParties.map((p) => ({
-        id: p.id,
-        displayName: p.displayName,
-        shortName: p.shortName,
-        percentage: p.percentage,
-        distributionId: p.distributionId,
-      }));
-    }
+    if (savedSimulation) return toPartyRows(savedSimulation.parties);
+    if (sharedParties && sharedParties.length > 0) return toPartyRows(sharedParties);
     return getDefaultParties();
   });
-  // Auto-simulate when loaded from a shared link (lazy initial state, no effect needed)
-  const [result, setResult] = useState<SimulationWithCI | null>(() =>
-    sharedParties && sharedParties.length > 0 ? runSimulation(parties, 0, 1.5, ELECTION_DATASETS) : null,
-  );
+  const [otherParties, setOtherParties] = useState(savedSimulation?.other_parties ?? 0);
+  const [perturbationPct, setPerturbationPct] = useState(savedSimulation?.perturbation_pct ?? 1.5);
+  const [name, setName] = useState(savedSimulation?.name ?? "");
+  // Auto-simulate when loaded from a share link or a saved record (lazy initial state, no effect needed)
+  const [result, setResult] = useState<SimulationWithCI | null>(() => {
+    const preloaded =
+      Boolean(savedSimulation) || (sharedParties !== null && sharedParties !== undefined && sharedParties.length > 0);
+    return preloaded ? runSimulation(parties, otherParties, perturbationPct, ELECTION_DATASETS) : null;
+  });
   const [shareUrl, setShareUrl] = useState<string | null>(null);
   const [sharing, setSharing] = useState(false);
-  const [otherParties, setOtherParties] = useState(0);
-  const [perturbationPct, setPerturbationPct] = useState(1.5);
 
   const totalPercentage = parties.reduce((s, p) => s + p.percentage, 0);
   const undecided = Math.max(0, 100 - totalPercentage - otherParties);
@@ -201,6 +215,11 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
 
   const availableToAdd = Object.keys(partyDefaults).filter((id) => !parties.some((p) => p.id === id));
 
+  const getSaveInputs = useCallback(
+    () => ({ parties, otherParties, perturbationPct }),
+    [parties, otherParties, perturbationPct],
+  );
+
   return (
     <div className="mx-auto max-w-4xl p-4 sm:p-6">
       <h1 className="mb-2 text-2xl font-bold sm:text-3xl">Sejmulator</h1>
@@ -208,6 +227,27 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
         Symulacja podziału mandatów w Sejmie metodą d&apos;Hondta na podstawie sondażu i historycznej geografii
         poparcia.
       </p>
+
+      {/* Saved simulation header (edit mode) */}
+      {savedSimulation && (
+        <div className="mb-4 flex flex-wrap items-center gap-2 rounded-lg border border-blue-200 bg-blue-50 p-3">
+          <label className="flex flex-1 items-center gap-2 text-sm text-gray-700">
+            Nazwa symulacji
+            <input
+              type="text"
+              value={name}
+              maxLength={SAVED_SIMULATION_NAME_MAX}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
+              className="min-w-0 flex-1 rounded border bg-white px-2 py-1 text-sm font-medium"
+            />
+          </label>
+          <a href="/simulations" className="text-sm text-blue-600 hover:underline">
+            ← Moje symulacje
+          </a>
+        </div>
+      )}
 
       {/* Poll Input */}
       <div className="mb-4 rounded-lg border border-gray-200 bg-white p-4">
@@ -312,9 +352,10 @@ export default function Simulator({ sharedParties }: SimulatorProps) {
         </div>
       )}
 
-      {/* Share */}
+      {/* Share + save */}
       {result && (
         <div className="mt-4 flex flex-wrap items-center gap-2">
+          <SaveControls user={user} savedId={savedSimulation?.id ?? null} name={name} getInputs={getSaveInputs} />
           <button
             onClick={handleShare}
             disabled={sharing}

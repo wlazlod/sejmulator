@@ -1,0 +1,41 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Simulator from "@/components/Simulator";
+import { createClient } from "@/lib/supabase";
+import { getSimulation } from "@/lib/services/saved-simulations";
+import type { SavedSimulation } from "@/lib/saved-simulation-types";
+
+// Protected by middleware (PROTECTED_ROUTES): anonymous requests never reach this page.
+const user = Astro.locals.user;
+const { id } = Astro.params;
+const supabase = createClient(Astro.request.headers, Astro.cookies);
+
+let record: SavedSimulation | null = null;
+if (user && supabase && id) {
+  try {
+    record = await getSimulation(supabase, user.id, id);
+  } catch {
+    record = null;
+  }
+}
+
+if (!record) {
+  Astro.response.status = 404;
+}
+---
+
+<Layout title={record ? `Sejmulator — ${record.name}` : "Sejmulator — Nie znaleziono"}>
+  {
+    record ? (
+      <Simulator client:load savedSimulation={record} user={{ email: user?.email ?? "" }} />
+    ) : (
+      <main class="mx-auto max-w-4xl p-6">
+        <h1 class="mb-4 text-2xl font-bold">Nie znaleziono symulacji</h1>
+        <p class="text-sm text-gray-600">Ta symulacja nie istnieje albo nie należy do Ciebie.</p>
+        <a href="/simulations" class="mt-4 inline-block text-sm text-blue-600 hover:underline">
+          ← Moje symulacje
+        </a>
+      </main>
+    )
+  }
+</Layout>

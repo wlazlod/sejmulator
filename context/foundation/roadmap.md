@@ -1,17 +1,17 @@
 ---
 project: "Sejmulator"
-version: 1
-status: draft
+version: 2
+status: active
 created: 2026-05-27
-updated: 2026-05-27
-prd_version: 1
+updated: 2026-09-14
+prd_version: 3
 main_goal: speed
 top_blocker: skills
 ---
 
 # Roadmap: Sejmulator
 
-> Derived from `context/foundation/prd.md` (v1) + auto-researched codebase baseline.
+> Derived from `context/foundation/prd.md` (v3) + auto-researched codebase baseline.
 > Edit-in-place; archive when superseded.
 > Slices below are listed in dependency order. The "At a glance" table is the index.
 
@@ -33,6 +33,7 @@ Sondaże w Polsce podają globalny wynik procentowy, ale ordynacja d'Hondta w 41
 | S-02 | district-drilldown   | użytkownik przechodzi do widoku per okręg z tight races                         | S-01          | FR-006                                        | done   |
 | S-03 | share-link           | użytkownik zapisuje symulację i udostępnia link z TTL                           | S-01          | FR-007                                        | done   |
 | S-04 | interpretation-layer | warstwa interpretacyjna: hemicycle, koalicje, próg, CI, niezdecydowani          | S-01          | FR-008–FR-014                                 | done   |
+| S-05 | saved-simulations    | zalogowany użytkownik zapisuje, otwiera, zmienia nazwę i usuwa symulacje        | S-01, S-03    | US-02, FR-015–FR-018                          | done   |
 
 ## Streams
 
@@ -50,7 +51,7 @@ What's already in place in the codebase as of 2026-05-27 (auto-researched + user
 - **Frontend:** present — Astro 6 + React 19 + Tailwind v4, file-based routing, src/pages/, astro.config.mjs
 - **Backend / API:** partial — 3 auth API routes (Astro file-based); brak ogólnego backendu, ale PRD nie wymaga dedykowanego serwera (open access, obliczenia client-side)
 - **Data:** partial — Supabase client (src/lib/supabase.ts) skonfigurowany; brak schematów, migracji, seeded data
-- **Auth:** partial — auth routes istnieją w starterze, ale PRD wymaga open access (brak autentykacji); auth routes nie będą używane
+- **Auth:** present (od S-05, 2026-09-14) — Supabase Auth e-mail + hasło; middleware chroni `/simulations` i `/api/simulations`; symulacja ad hoc i share-link pozostają otwarte
 - **Deploy / infra:** partial — .github/workflows/ci.yml present; brak wrangler.toml / Cloudflare Pages deploy config
 - **Observability:** absent — brak logging/monitoring; PRD nie wymaga (speed goal, niszowy produkt)
 
@@ -137,6 +138,18 @@ What's already in place in the codebase as of 2026-05-27 (auto-researched + user
 - **Risk:** Hemicycle to najtrudniejsza wizualizacja; reszta to proste zmiany w silniku + UI. Tygodniowy timeline agresywny.
 - **Status:** proposed
 
+### S-05: Biblioteka zapisanych symulacji
+
+- **Outcome:** zalogowany użytkownik zapisuje bieżącą symulację pod nazwą, widzi listę „Moje symulacje", otwiera zapis (auto-symulacja), zmienia nazwę, aktualizuje wejścia i usuwa. Anonim nadal liczy i udostępnia bez konta.
+- **Change ID:** saved-simulations
+- **PRD refs:** US-02, FR-015, FR-016, FR-017, FR-018; PRD §Access Control (v3)
+- **Prerequisites:** S-01 (symulacja), S-03 (ten sam kształt wejść co share-link)
+- **Parallel with:** —
+- **Blockers:** —
+- **Unknowns:** —
+- **Risk:** Wyciek danych między użytkownikami. Mitygacja: RLS per operacja (`auth.uid() = user_id`), filtr `user_id` w serwisie, middleware (401 dla API, redirect dla stron), testy E2E izolacji (test-plan R-04).
+- **Status:** done (2026-09-14)
+
 ## Backlog Handoff
 
 | Roadmap ID | Change ID            | Suggested issue title                         | Ready for `/10x-plan` | Notes                                |
@@ -147,6 +160,7 @@ What's already in place in the codebase as of 2026-05-27 (auto-researched + user
 | S-02       | district-drilldown   | Dodaj drill-down per okręg z tight races      | no                    | Czeka na S-01                        |
 | S-03       | share-link           | Dodaj share link z TTL                        | no                    | Czeka na S-01                        |
 | S-04       | interpretation-layer | Warstwa interpretacyjna (hemicycle, koalicje) | yes                   | Run `/10x-plan interpretation-layer` |
+| S-05       | saved-simulations    | Konto + biblioteka zapisanych symulacji       | done                  | `context/changes/saved-simulations/` |
 
 ## Open Roadmap Questions
 
@@ -158,7 +172,6 @@ What's already in place in the codebase as of 2026-05-27 (auto-researched + user
 
 - **Automatyczny import sondaży z mediów** — Why parked: PRD §Non-Goals. Wymaga scrapingu/API, osobny projekt.
 - **Model predykcyjny / ML** — Why parked: PRD §Non-Goals. To kalkulator "co by było gdyby", nie prognoza.
-- **Historia symulacji per user** — Why parked: PRD §Non-Goals. Brak kont użytkowników.
 - **Edycja danych historycznych PKW przez użytkownika** — Why parked: PRD §Non-Goals. Dane preloadowane i niemodyfikowalne.
 
 ## Done

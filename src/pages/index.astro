@@ -1,8 +1,10 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Simulator from "@/components/Simulator";
+
+const user = Astro.locals.user ? { email: Astro.locals.user.email ?? "" } : null;
 ---
 
 <Layout title="Sejmulator — Symulacja mandatów w Sejmie">
-  <Simulator client:load />
+  <Simulator client:load user={user} />
 </Layout>

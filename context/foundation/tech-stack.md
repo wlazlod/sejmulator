@@ -12,7 +12,7 @@ hints:
   path_taken: standard
   quality_override: false
   self_check_answers: null
-  has_auth: false
+  has_auth: true
   has_payments: false
   has_realtime: false
   has_ai: false

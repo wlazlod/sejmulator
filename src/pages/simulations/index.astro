@@ -1,0 +1,42 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import SavedSimulationsList from "@/components/SavedSimulationsList";
+import { createClient } from "@/lib/supabase";
+import { listSimulations } from "@/lib/services/saved-simulations";
+import type { SavedSimulationSummary } from "@/lib/saved-simulation-types";
+
+// Protected by middleware (PROTECTED_ROUTES): anonymous requests never reach this page.
+const user = Astro.locals.user;
+
+let items: SavedSimulationSummary[] = [];
+let error: string | null = null;
+
+const supabase = createClient(Astro.request.headers, Astro.cookies);
+if (!user) {
+  error = "Musisz być zalogowany.";
+} else if (!supabase) {
+  error = "Baza danych jest niedostępna.";
+} else {
+  try {
+    items = await listSimulations(supabase, user.id);
+  } catch (err) {
+    error = `Nie udało się pobrać listy (${err instanceof Error ? err.message : "błąd"}).`;
+  }
+}
+---
+
+<Layout title="Sejmulator — Moje symulacje">
+  <main class="mx-auto max-w-4xl p-4 sm:p-6">
+    <div class="mb-4 flex flex-wrap items-center justify-between gap-2">
+      <h1 class="text-2xl font-bold sm:text-3xl">Moje symulacje</h1>
+      <a href="/" class="text-sm text-blue-600 hover:underline">+ Nowa symulacja</a>
+    </div>
+    {
+      error ? (
+        <div class="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700">{error}</div>
+      ) : (
+        <SavedSimulationsList client:load items={items} />
+      )
+    }
+  </main>
+</Layout>
