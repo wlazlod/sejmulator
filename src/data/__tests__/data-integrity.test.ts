@@ -1,3 +1,4 @@
+// test-plan: R-03
 /**
  * Data integrity tests for PKW election data.
  * Verifies all generated JSON files conform to expected structure and values.

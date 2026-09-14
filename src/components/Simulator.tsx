@@ -417,6 +417,7 @@ function PartyInput({
         max={100}
         step={0.1}
         value={party.percentage}
+        aria-label={`Wynik ${party.shortName}`}
         onChange={(e) => {
           onPercentageChange(party.id, parseFloat(e.target.value) || 0);
         }}
@@ -442,6 +443,7 @@ function PartyInput({
         }}
         className="text-lg leading-none text-gray-400 hover:text-red-500"
         title="Usuń"
+        aria-label={`Usuń ${party.shortName}`}
       >
         ×
       </button>
@@ -524,7 +526,11 @@ function SimulationResults({
                 {barWidth > 0 && (
                   <div className="h-full rounded" style={{ width: `${barWidth}%`, backgroundColor: color }} />
                 )}
-                <span className="absolute inset-y-0 right-2 flex items-center text-xs font-bold">
+                <span
+                  className="absolute inset-y-0 right-2 flex items-center text-xs font-bold"
+                  data-testid={`seats-${partyId}`}
+                  data-seats={seats}
+                >
                   {seats}
                   {hasRange && (
                     <span className="ml-1 font-normal text-gray-500">

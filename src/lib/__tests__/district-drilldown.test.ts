@@ -1,3 +1,4 @@
+// test-plan: R-07
 /**
  * Tests for district drilldown: sort/filter logic and map data integrity.
  */

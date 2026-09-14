@@ -1,3 +1,4 @@
+// test-plan: R-06
 /**
  * Tests for share-types validation.
  */

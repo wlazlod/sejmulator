@@ -40,4 +40,4 @@ US-02 / FR-015–FR-018: zalogowany użytkownik zapisuje, listuje, otwiera, zmie
 
 ## Progress
 
-- Phase 1–3: done (commit SHA uzupełniony poniżej po commicie)
+- Phase 1–3: done (commit `a151c2a`)

@@ -1,3 +1,4 @@
+// test-plan: R-02
 /**
  * Tests for poll normalization.
  */
